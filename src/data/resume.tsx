@@ -99,7 +99,7 @@ export const DATA = {
   work: [
     {
       company: 'Freelance',
-      href: 'https://mirzaianov.com/cv',
+      href: '/resume',
       badges: [],
       location: 'Remote',
       title: 'Frontend Developer',
@@ -145,6 +145,28 @@ export const DATA = {
       end: 2008,
     },
   ],
+  resume: {
+    title: 'Riaz Mirzaianov',
+    href: '/resume',
+    dates: '',
+    active: true,
+    description: 'Frontend Developer',
+    technologies: ['JavaScript', 'React', 'TypeScript', 'Redux', 'Tailwind'],
+    links: [
+      {
+        type: 'Online',
+        href: '/resume',
+        icon: <Icons.account className="size-3" />,
+      },
+      {
+        type: 'Download',
+        href: '/MIRZAIANOV_CV_A4EN.pdf',
+        icon: <Icons.download className="size-3" />,
+      },
+    ],
+    image: '',
+    video: '/resume.mp4',
+  },
   projects: [
     {
       title: 'alsu.',

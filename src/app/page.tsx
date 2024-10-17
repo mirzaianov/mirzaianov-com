@@ -130,6 +130,49 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Resume */}
+      <section id="resume">
+        <div className="w-full space-y-12 py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
+                  My Resume
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Reach my resume
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Get acquainted with the resume online or immidiately download
+                  it via{' '}
+                  <Link
+                    href="/MIRZAIANOV_CV_A4EN.pdf"
+                    className="text-gray-900 underline dark:text-white"
+                  >
+                    the link.
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="mx-auto grid max-w-[306px] grid-cols-1">
+            <BlurFade delay={BLUR_FADE_DELAY * 12}>
+              <ProjectCard
+                href={DATA.resume.href}
+                key={DATA.resume.title}
+                title={DATA.resume.title}
+                description={DATA.resume.description}
+                dates={DATA.resume.dates}
+                tags={DATA.resume.technologies}
+                image={DATA.resume.image}
+                video={DATA.resume.video}
+                links={DATA.resume.links}
+              />
+            </BlurFade>
+          </div>
+        </div>
+      </section>
+
       {/* Projects */}
       <section id="projects">
         <div className="w-full space-y-12 py-12">
