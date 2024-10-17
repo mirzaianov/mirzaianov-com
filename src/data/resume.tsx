@@ -218,6 +218,32 @@ export const DATA = {
   ],
   courses: [
     {
+      title: 'JavaScript + React Complete Course',
+      date: '2022',
+      source: 'Udemy',
+      description:
+        'Master the most popular programming language - JavaScript, the React library and learn how to apply it in practice!',
+      image: '/icons/js.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/javascript_full',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-javascript-react',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-1f0a1090-1098-48ef-9491-d7be1350699b.pdf',
+        },
+      ],
+    },
+    {
       title: 'WEB Developer',
       date: '2022',
       source: 'Udemy',
