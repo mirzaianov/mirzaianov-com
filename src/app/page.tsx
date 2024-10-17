@@ -188,7 +188,7 @@ export default function Page() {
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out some of my work
+                  Check out my work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
@@ -236,19 +236,18 @@ export default function Page() {
                   Courses
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like to learn new things
+                  I am eager to learn
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my path as a developer, I completed{' '}
+                  To boost my professional growth and broaden horizons, I
+                  completed{' '}
                   <Link
                     href="/courses"
                     className="text-gray-900 underline dark:text-white"
                   >
                     {DATA.courses.length}+ online courses.
                   </Link>{' '}
-                  It is eye-opening to see the endless possibilities in
-                  professional growth that these classes provide with. Here are
-                  some of the latest ones.
+                  Here are some of the latest ones.
                 </p>
               </div>
             </div>
