@@ -193,5 +193,5 @@ export const DATA = {
       video: '/shopping-list.mp4',
     },
   ],
-  credits: 'insipred by [dillion.io](https://dillion.io/)',
+  credits: 'Insipred by [dillion.io](https://dillion.io/)',
 } as const;

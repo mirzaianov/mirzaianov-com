@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardHeader } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { ChevronRightIcon } from "lucide-react";
-import Link from "next/link";
-import React from "react";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardHeader } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
+import { ChevronRightIcon } from 'lucide-react';
+import Link from 'next/link';
+import React from 'react';
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -40,13 +40,15 @@ export const ResumeCard = ({
 
   return (
     <Link
-      href={href || "#"}
+      href={href || '#'}
+      rel="noopener noreferrer"
+      target="_blank"
       className="block cursor-pointer"
       onClick={handleClick}
     >
       <Card className="flex">
         <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+          <Avatar className="bg-muted-background m-auto size-12 border dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
               alt={altText}
@@ -55,10 +57,10 @@ export const ResumeCard = ({
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
+        <div className="group ml-4 flex-grow flex-col items-center">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+              <h3 className="inline-flex items-center justify-center text-xs font-semibold leading-none sm:text-sm">
                 {title}
                 {badges && (
                   <span className="inline-flex gap-x-1">
@@ -75,12 +77,12 @@ export const ResumeCard = ({
                 )}
                 <ChevronRightIcon
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
+                    'size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100',
+                    isExpanded ? 'rotate-90' : 'rotate-0',
                   )}
                 />
               </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+              <div className="text-right text-xs tabular-nums text-muted-foreground sm:text-sm">
                 {period}
               </div>
             </div>
@@ -92,7 +94,7 @@ export const ResumeCard = ({
               animate={{
                 opacity: isExpanded ? 1 : 0,
 
-                height: isExpanded ? "auto" : 0,
+                height: isExpanded ? 'auto' : 0,
               }}
               transition={{
                 duration: 0.7,
@@ -101,11 +103,7 @@ export const ResumeCard = ({
               className="mt-2 text-xs sm:text-sm"
             >
               {description.split('. ').map((paragraph, index) => (
-                <p
-                  key={index}
-                >
-                  • {paragraph}
-                </p>
+                <p key={index}>• {paragraph}</p>
               ))}
             </motion.div>
           )}

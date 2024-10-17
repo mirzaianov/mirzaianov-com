@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { DATA } from '@/data/resume';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
+import rehypeExternalLinks from 'rehype-external-links';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -49,7 +50,10 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
+          <Markdown
+            rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+            className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert"
+          >
             {DATA.summary}
           </Markdown>
         </BlurFade>
@@ -190,6 +194,8 @@ export default function Page() {
                 challenges. Just shoot me a dm{' '}
                 <Link
                   href={DATA.contact.social.Telegram.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="text-gray-900 underline dark:text-white"
                 >
                   with a direct question on Telegram
@@ -205,7 +211,10 @@ export default function Page() {
       <section id="credits">
         <div className="grid w-full items-center justify-center gap-4 px-4 py-12 text-center md:px-6">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
+            <Markdown
+              rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+              className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert"
+            >
               {DATA.credits}
             </Markdown>
           </BlurFade>
