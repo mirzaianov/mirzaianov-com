@@ -106,6 +106,7 @@ export function ProjectCard({
               <Link
                 href={link?.href}
                 key={idx}
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <Badge
