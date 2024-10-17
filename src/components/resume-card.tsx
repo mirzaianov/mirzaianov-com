@@ -102,7 +102,7 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              {description.split('. ').map((paragraph, index) => (
+              {description.split('|').map((paragraph, index) => (
                 <p key={index}>• {paragraph}</p>
               ))}
             </motion.div>
