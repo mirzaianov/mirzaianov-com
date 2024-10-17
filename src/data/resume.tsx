@@ -17,7 +17,7 @@ export const DATA = {
     'Frontend Developer. I love to deliver interfaces that harmonize functionality and appearance.',
   summary:
     "In 2022, I quit my job as an R&D Engineer from an [international A-Tier automotive manufacturer](https://www.knorr-bremse.com/de/), moved abroad and started a fresh new journey as a software engineer. In the past, I had pursued a Master's Degree in Engineering Technology at [Kazan Aviation University](https://kai.ru/web/en/our-history), passed English [IELTS test](https://ielts.org/) at C1 level, and participated in several engineering workshops in Europe.",
-  avatarUrl: '/me.png',
+  avatarUrl: '/icons/me.png',
   skills: [
     'JavaScript',
     'React',
@@ -103,7 +103,7 @@ export const DATA = {
       badges: [],
       location: 'Remote',
       title: 'Frontend Developer',
-      logoUrl: '/rm.png',
+      logoUrl: '/icons/rm.png',
       start: 'April 2023',
       end: null,
       description:
@@ -115,7 +115,7 @@ export const DATA = {
       badges: [],
       location: 'Türkiye',
       title: 'Career transition',
-      logoUrl: '/react.png',
+      logoUrl: '/icons/react.png',
       start: 'October 2022',
       end: 'March 2023',
       description:
@@ -127,7 +127,7 @@ export const DATA = {
       href: 'https://www.knorr-bremse.com/de/',
       location: 'Russia',
       title: 'R&D Engineer',
-      logoUrl: '/knorr.png',
+      logoUrl: '/icons/knorr.png',
       start: 'April 2017',
       end: 'September 2022',
       description:
@@ -140,7 +140,7 @@ export const DATA = {
         'Kazan National Research Technical University named after A.N. Tupolev – KAI',
       href: 'https://kai.ru/web/en/',
       degree: "Master's Degree in Engineering Technology",
-      logoUrl: '/kai.png',
+      logoUrl: '/icons/kai.png',
       start: 2003,
       end: 2008,
     },
@@ -160,12 +160,12 @@ export const DATA = {
       },
       {
         type: 'Download',
-        href: '/MIRZAIANOV_CV_A4EN.pdf',
+        href: '/pdf/MIRZAIANOV_CV_A4EN.pdf',
         icon: <Icons.download className="size-3" />,
       },
     ],
     image: '',
-    video: '/resume.mp4',
+    video: '/videos/resume.mp4',
   },
   projects: [
     {
@@ -189,7 +189,7 @@ export const DATA = {
         },
       ],
       image: '',
-      video: '/alsu-me.mp4',
+      video: '/videos/alsu-me.mp4',
     },
     {
       title: 'Shopping List',
@@ -212,7 +212,7 @@ export const DATA = {
         },
       ],
       image: '',
-      video: '/shopping-list.mp4',
+      video: '/videos/shopping-list.mp4',
     },
   ],
   credits: 'Insipred by [dillion.io](https://dillion.io/)',

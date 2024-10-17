@@ -146,7 +146,7 @@ export default function Page() {
                   Get acquainted with the resume online or immidiately download
                   it via{' '}
                   <Link
-                    href="/MIRZAIANOV_CV_A4EN.pdf"
+                    href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
                     className="text-gray-900 underline dark:text-white"
                   >
                     the link.
