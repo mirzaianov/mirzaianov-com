@@ -148,6 +148,8 @@ export default function Page() {
                   Get acquainted with the resume online or immidiately download
                   it via{' '}
                   <Link
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
                     className="text-gray-900 underline dark:text-white"
                   >

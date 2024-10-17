@@ -24,6 +24,7 @@ interface Props {
     icon: React.ReactNode;
     type: string;
     href: string;
+    blank?: boolean;
   }[];
   className?: string;
 }
@@ -107,7 +108,7 @@ export function ProjectCard({
                 href={link?.href}
                 key={idx}
                 rel="noopener noreferrer"
-                target="_blank"
+                target={link?.blank ? '_self' : '_blank'}
               >
                 <Badge
                   key={idx}
