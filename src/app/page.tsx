@@ -1,3 +1,4 @@
+import { CourseCard } from '@/components/course-card';
 import BlurFade from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
 import { ProjectCard } from '@/components/project-card';
@@ -219,6 +220,55 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Courses */}
+      <section id="courses">
+        <div className="w-full space-y-12 py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
+                  Courses
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  I like to learn new things
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  During my path as a developer, I completed{' '}
+                  <Link
+                    href="/courses"
+                    className="text-gray-900 underline dark:text-white"
+                  >
+                    {DATA.courses.length}+ online courses.
+                  </Link>{' '}
+                  It is eye-opening to see the endless possibilities in
+                  professional growth that these classes provide with. Here are
+                  some of the latest ones.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+              {DATA.courses.map((project, id) => (
+                <BlurFade
+                  key={project.title + project.date}
+                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                >
+                  <CourseCard
+                    title={project.title}
+                    description={project.description}
+                    source={project.source}
+                    date={project.date}
+                    image={project.image}
+                    links={project.links}
+                  />
+                </BlurFade>
+              ))}
+            </ul>
+          </BlurFade>
         </div>
       </section>
 

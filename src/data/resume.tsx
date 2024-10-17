@@ -216,5 +216,33 @@ export const DATA = {
       video: '/videos/shopping-list.mp4',
     },
   ],
+  courses: [
+    {
+      title: 'WEB Developer',
+      date: '2022',
+      source: 'Udemy',
+      description:
+        'Master everything you need to create web products and start making money from it!',
+      image: '/icons/html.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/webdeveloper/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-web-developer',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-03049cff-42f9-4689-8384-3bd33140d70b.pdf',
+        },
+      ],
+    },
+  ],
   credits: 'Insipred by [dillion.io](https://dillion.io/)',
 } as const;
