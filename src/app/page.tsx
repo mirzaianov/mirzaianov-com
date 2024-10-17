@@ -171,6 +171,7 @@ export default function Page() {
                 image={DATA.resume.image}
                 video={DATA.resume.video}
                 links={DATA.resume.links}
+                self={DATA.resume.self}
               />
             </BlurFade>
           </div>

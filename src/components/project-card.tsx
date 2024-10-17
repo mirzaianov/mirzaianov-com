@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
+import rehypeExternalLinks from 'rehype-external-links';
 
 interface Props {
   title: string;
@@ -24,9 +25,10 @@ interface Props {
     icon: React.ReactNode;
     type: string;
     href: string;
-    blank?: boolean;
+    self?: boolean;
   }[];
   className?: string;
+  self?: boolean;
 }
 
 export function ProjectCard({
@@ -40,6 +42,7 @@ export function ProjectCard({
   video,
   links,
   className,
+  self = false,
 }: Props) {
   return (
     <Card
@@ -50,7 +53,7 @@ export function ProjectCard({
       <Link
         href={href || '#'}
         rel="noopener noreferrer"
-        target="_blank"
+        target={self ? '_self' : '_blank'}
         className={cn('block cursor-pointer', className)}
       >
         {video && (
@@ -80,7 +83,10 @@ export function ProjectCard({
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace('https://', '').replace('www.', '').replace('/', '')}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+          <Markdown
+            rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+            className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert"
+          >
             {description}
           </Markdown>
         </div>
@@ -108,7 +114,7 @@ export function ProjectCard({
                 href={link?.href}
                 key={idx}
                 rel="noopener noreferrer"
-                target={link?.blank ? '_self' : '_blank'}
+                target={link?.self ? '_self' : '_blank'}
               >
                 <Badge
                   key={idx}

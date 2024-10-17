@@ -158,7 +158,7 @@ export const DATA = {
         type: 'Online',
         href: '/resume',
         icon: <Icons.account className="size-3" />,
-        blank: true,
+        self: true,
       },
       {
         type: 'Download',
@@ -168,6 +168,7 @@ export const DATA = {
     ],
     image: '',
     video: '/videos/resume.mp4',
+    self: true,
   },
   projects: [
     {
