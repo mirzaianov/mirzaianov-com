@@ -220,6 +220,50 @@ export const DATA = {
   ],
   courses: [
     {
+      title: 'Conquering Responsive Layouts',
+      date: '2023',
+      source: 'KP',
+      author: 'Kevin Powell',
+      description:
+        'Jump in on this 21-day challenge, put the time in, and you will walk out understanding how you can make a responsive layouts.',
+      image: '/icons/css.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://courses.kevinpowell.co/conquering-responsive-layouts',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/conquering-responsive-layouts',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/Conquering Responsive Layouts-certificate.pdf',
+        },
+      ],
+    },
+    {
+      title: 'CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass)',
+      date: '2023',
+      source: 'Udemy',
+      author: 'Maximilian Schwarzmüller',
+      description:
+        'Learn CSS for the first time or brush up your CSS skills and dive in even deeper. EVERY web developer has to know CSS.',
+      image: '/icons/css.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/',
+        },
+      ],
+    },
+    {
       title: 'JavaScript + React Complete Course',
       date: '2022',
       source: 'Udemy',
