@@ -7,6 +7,7 @@ interface Props {
   description: string;
   date: string;
   source: string;
+  author: string;
   image?: string;
   links?: readonly {
     icon: React.ReactNode;
@@ -20,6 +21,7 @@ export function CourseCard({
   description,
   date,
   source,
+  author,
   image,
   links,
 }: Props) {
@@ -39,6 +41,7 @@ export function CourseCard({
         <h2 className="font-semibold leading-none">{title}</h2>
         <p className="text-sm text-muted-foreground">
           {source && <span>{source} • </span>}
+          {author && <span>{author} • </span>}
           {date && <span>{date}</span>}
         </p>
         {description && (

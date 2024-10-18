@@ -263,6 +263,7 @@ export default function Page() {
                     title={course.title}
                     description={course.description}
                     source={course.source}
+                    author={course.author}
                     date={course.date}
                     image={course.image}
                     links={course.links}

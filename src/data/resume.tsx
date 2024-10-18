@@ -223,6 +223,7 @@ export const DATA = {
       title: 'JavaScript + React Complete Course',
       date: '2022',
       source: 'Udemy',
+      author: 'Ivan Petrychenko',
       description:
         'Master the most popular programming language - JavaScript, the React library and learn how to apply it in practice!',
       image: '/icons/js.png',
@@ -249,6 +250,7 @@ export const DATA = {
       title: 'WEB Developer',
       date: '2022',
       source: 'Udemy',
+      author: 'Ivan Petrychenko',
       description:
         'Master everything you need to create web products and start making money from it!',
       image: '/icons/html.png',
