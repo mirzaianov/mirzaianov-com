@@ -236,7 +236,7 @@ export default function Page() {
                   Courses
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I am eager to learn
+                  Follow my path
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   To boost my professional growth and broaden horizons, I
