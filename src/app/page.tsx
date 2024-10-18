@@ -254,18 +254,18 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.courses.map((project, id) => (
+              {DATA.courses.map((course, id) => (
                 <BlurFade
-                  key={project.title + project.date}
+                  key={course.title + course.date}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
                   <CourseCard
-                    title={project.title}
-                    description={project.description}
-                    source={project.source}
-                    date={project.date}
-                    image={project.image}
-                    links={project.links}
+                    title={course.title}
+                    description={course.description}
+                    source={course.source}
+                    date={course.date}
+                    image={course.image}
+                    links={course.links}
                   />
                 </BlurFade>
               ))}
