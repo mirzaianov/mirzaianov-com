@@ -220,6 +220,60 @@ export const DATA = {
   ],
   courses: [
     {
+      title: 'The Complete Regular Expressions (Regex) Course For Beginners',
+      date: '2024',
+      source: 'Udemy',
+      author: 'George S',
+      active: true,
+      description: 'Deeply understand JavaScript’s newest features',
+      image: '/icons/regexp.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/regular-expressions-mastery',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-regex',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-e6d84011-c920-48c1-ad31-2716a9b348cd.pdf',
+        },
+      ],
+    },
+    {
+      title: 'JavaScript: Understanding ES6 and Beyond',
+      date: '2024',
+      source: 'Udemy',
+      author: 'Anthony Alicea',
+      active: true,
+      description: 'Deeply understand JavaScript’s newest features',
+      image: '/icons/js.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/javascript-understanding-es6-and-beyond',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-es6-beyond',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-0b371869-51c5-4be6-9be8-c270a8433e9c.pdf',
+        },
+      ],
+    },
+    {
       title: 'React & TypeScript - The Practical Guide',
       date: '2024',
       source: 'Udemy',
@@ -272,6 +326,34 @@ export const DATA = {
           title: 'Certificate',
           icon: <Icons.download className="h-4 w-4" />,
           href: '/certificates/UC-4de5d88a-3db6-453e-ad89-f86f5f108353.pdf',
+        },
+      ],
+    },
+    {
+      title: 'API and Web Service Introduction',
+      date: '2024',
+      source: 'Udemy',
+      author: 'Nate Ross',
+      active: true,
+      description:
+        'Introduction to APIs and RESTful Web Services. Includes HTTP, JSON, XML, REST, SOAP, OAuth, OpenID Connect, Postman, and Python',
+      image: '/icons/api.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/api-and-web-service-introduction/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-api',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-6d5861d0-2a0e-4be8-99b1-e0ef1e16342b.pdf',
         },
       ],
     },
@@ -331,6 +413,34 @@ export const DATA = {
           title: 'Source',
           icon: <Icons.github className="h-4 w-4" />,
           href: 'https://github.com/mirzaianov/udemy-react-ru',
+        },
+      ],
+    },
+    {
+      title: 'Responsive UX/UI Design in Figma 1.5h deep dive 2024 UPDATE!',
+      date: '2022',
+      source: 'Udemy',
+      author: 'Christine moonlearning',
+      active: true,
+      description:
+        'Figma Auto Layout, Constraints and Breakpoints: Responsive setup, testing and design documentation, min/max width, wrap',
+      image: '/icons/figma.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/responsive-ui-design-in-figma-2h-deep-dive/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-responsive-ui-design-in-figma',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-e67bb419-5e23-4b4c-b54d-f9f50b816155.pdf',
         },
       ],
     },
@@ -398,34 +508,6 @@ export const DATA = {
       ],
     },
     {
-      title: 'API and Web Service Introduction',
-      date: '2024',
-      source: 'Udemy',
-      author: 'Nate Ross',
-      active: true,
-      description:
-        'Introduction to APIs and RESTful Web Services. Includes HTTP, JSON, XML, REST, SOAP, OAuth, OpenID Connect, Postman, and Python',
-      image: '/icons/api.png',
-      mlh: '',
-      links: [
-        {
-          title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: 'https://www.udemy.com/course/api-and-web-service-introduction/',
-        },
-        {
-          title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
-          href: 'https://github.com/mirzaianov/udemy-api',
-        },
-        {
-          title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
-          href: '/certificates/UC-6d5861d0-2a0e-4be8-99b1-e0ef1e16342b.pdf',
-        },
-      ],
-    },
-    {
       title: 'Conquering Responsive Layouts',
       date: '2023',
       source: 'KP',
@@ -454,7 +536,7 @@ export const DATA = {
       ],
     },
     {
-      title: 'CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass)',
+      title: 'CSS - The Complete Guide 2024 (incl. Flexbox, Grid & Sass)',
       date: '2023',
       source: 'Udemy',
       author: 'Maximilian Schwarzmüller',
