@@ -226,7 +226,7 @@ export const DATA = {
       author: 'Kevin Powell',
       active: true,
       description:
-        'Jump in on this 21-day challenge, put the time in, and you will walk out understanding how you can make a responsive layouts.',
+        'Jump in on this 21-day challenge, put the time in, and you will walk out understanding how you can make a responsive layouts',
       image: '/icons/css.png',
       mlh: '',
       links: [
@@ -254,7 +254,7 @@ export const DATA = {
       author: 'Maximilian Schwarzmüller',
       active: true,
       description:
-        'Learn CSS for the first time or brush up your CSS skills and dive in even deeper. EVERY web developer has to know CSS.',
+        'Learn CSS for the first time or brush up your CSS skills and dive in even deeper. EVERY web developer has to know CSS',
       image: '/icons/css.png',
       mlh: '',
       links: [

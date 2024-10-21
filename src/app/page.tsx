@@ -153,8 +153,9 @@ export default function Page() {
                     href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    the link.
+                    the link
                   </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -197,8 +198,9 @@ export default function Page() {
                     href="/projects"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    on this page.
+                    on this page
                   </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -236,7 +238,7 @@ export default function Page() {
                   Courses
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Follow my path
+                  Follow my study path
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   To boost my professional growth and broaden horizons, I
@@ -245,9 +247,9 @@ export default function Page() {
                     href="/courses"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    {DATA.courses.length}+ online courses.
-                  </Link>{' '}
-                  Here are some of the latest ones.
+                    {DATA.courses.length}+ online courses
+                  </Link>
+                  . Here are some of the latest ones.
                 </p>
               </div>
             </div>
