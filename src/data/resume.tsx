@@ -220,6 +220,212 @@ export const DATA = {
   ],
   courses: [
     {
+      title: 'React & TypeScript - The Practical Guide',
+      date: '2024',
+      source: 'Udemy',
+      author: 'Maximilian Schwarzmüller',
+      active: true,
+      description:
+        'Build type-safe React apps & use TypeScript to enhance your components, state management, Redux & side effects code',
+      image: '/icons/ts.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/react-typescript-the-practical-guide',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-react-typescript-practical',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-6dfcde92-f3f1-4dba-ad8f-a34292cac315.pdf',
+        },
+      ],
+    },
+    {
+      title: 'Modern TypeScript Complete Course',
+      date: '2024',
+      source: 'Udemy',
+      author: 'Ivan Petrychenko',
+      active: true,
+      description:
+        'Learn to use typing for the sake of results, and not just for the sake of it',
+      image: '/icons/ts.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/modern_typescript/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-modern-typescript',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-4de5d88a-3db6-453e-ad89-f86f5f108353.pdf',
+        },
+      ],
+    },
+    {
+      title: 'React - The Complete Guide 2024 (incl.  React Router & Redux)',
+      date: '2022',
+      source: 'Udemy',
+      author: 'Maximilian Schwarzmüller',
+      active: true,
+      description:
+        'Dive in and learn React.js from scratch! Learn React, Hooks, Redux, React Router, Next.js, Best Practices and way more!',
+      image: '/icons/react.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
+        },
+      ],
+    },
+    {
+      title: 'Git & GitHub - The Practical Guide',
+      date: '2022',
+      source: 'Udemy',
+      author: 'Maximilian Schwarzmüller',
+      active: true,
+      description:
+        'Learn Git & GitHub and master working with commits, branches, the stash, cherry picking, rebasing, pull requests & more!',
+      image: '/icons/git.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/git-github-practical-guide/',
+        },
+      ],
+    },
+    {
+      title: 'React - React & Redux Complete Course',
+      date: '2024',
+      source: 'Udemy',
+      author: 'Bogdan Stashchuk',
+      active: true,
+      description:
+        'Understand and learn all the key features of React: Components, JSX, Props, State, useState, useEffect, and Redux',
+      image: '/icons/redux.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/react-ru/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-react-ru',
+        },
+      ],
+    },
+    {
+      title: 'NEW Figma 2023: Getting started the Beginner to Pro Class',
+      date: '2022',
+      source: 'Udemy',
+      author: 'Christine moonlearning',
+      active: true,
+      description:
+        'The only class fully updated with the latest Figma UI and features, released in October 2024!',
+      image: '/icons/figma.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/figma-beginner/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-figma-beginner',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-22e5f94e-48a0-44bd-9e2a-c16979f328bd.pdf',
+        },
+      ],
+    },
+    {
+      title: 'JavaScript Algorithms and Data Structures Masterclass',
+      date: '2022',
+      source: 'Udemy',
+      author: 'Colt Steele',
+      active: true,
+      description: 'The Missing Computer Science and Coding Interview Bootcamp',
+      image: '/icons/dsa.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/',
+        },
+      ],
+    },
+    {
+      title: 'The Complete JavaScript Course 2024: From Zero to Expert!',
+      date: '2022',
+      source: 'Udemy',
+      author: 'Jonas Schmedtmann',
+      active: true,
+      description:
+        'The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!',
+      image: '/icons/js.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/the-complete-javascript-course/',
+        },
+      ],
+    },
+    {
+      title: 'API and Web Service Introduction',
+      date: '2024',
+      source: 'Udemy',
+      author: 'Nate Ross',
+      active: true,
+      description:
+        'Introduction to APIs and RESTful Web Services. Includes HTTP, JSON, XML, REST, SOAP, OAuth, OpenID Connect, Postman, and Python',
+      image: '/icons/api.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.udemy.com/course/api-and-web-service-introduction/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="h-4 w-4" />,
+          href: 'https://github.com/mirzaianov/udemy-api',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="h-4 w-4" />,
+          href: '/certificates/UC-6d5861d0-2a0e-4be8-99b1-e0ef1e16342b.pdf',
+        },
+      ],
+    },
+    {
       title: 'Conquering Responsive Layouts',
       date: '2023',
       source: 'KP',
