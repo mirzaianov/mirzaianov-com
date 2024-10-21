@@ -177,7 +177,7 @@ export const DATA = {
       dates: 'Jun 2024 - Jul 2024',
       active: true,
       description:
-        'A personal website for a professional tutor, translator & interpreter. Designed [the UI in Figma](https://www.figma.com/design/OVTqGfHWzeTCEd0fpX456Z/karimova-me?node-id=0-1&t=i7E8AZOM53lRpkkz-1), crafted the code in React & Tailwind, and deployed the site on Vercel.',
+        'A personal website for a professional tutor, translator & interpreter. Designed [in Figma](https://www.figma.com/design/OVTqGfHWzeTCEd0fpX456Z/karimova-me?node-id=0-1&t=i7E8AZOM53lRpkkz-1), crafted with React & Tailwind, and deployed on Vercel.',
       technologies: ['Vite', 'React', 'Tailwind'],
       links: [
         {
@@ -200,7 +200,7 @@ export const DATA = {
       dates: 'Nov 2023 - Jan 2024',
       active: true,
       description:
-        'A lightweight web application to help always keep the shopping list close. It allows you to organize the cart in a simple and convenient way.',
+        'A lightweight web application to help always keep the shopping list close. It allows to organize a cart in a simple and convenient way.',
       technologies: ['Vite', 'React', 'Tailwind', 'Firebase'],
       links: [
         {
