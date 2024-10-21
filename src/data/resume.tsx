@@ -220,6 +220,132 @@ export const DATA = {
   ],
   courses: [
     {
+      title: 'Asynchronous Programming in JavaScript',
+      date: '2024',
+      source: 'Pluralsight',
+      author: 'Nate Taylor',
+      active: true,
+      description:
+        "Asynchronous programming is often intimidating, it's not how we normally consider writing code. This course shows how promises and async/await can help simplify async programming.",
+      image: '/icons/js.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.pluralsight.com/courses/javascript-asynchronous-programming',
+        },
+      ],
+    },
+    {
+      title: "The Beginner's Guide to React",
+      date: '2024',
+      source: 'egghead.io',
+      author: 'Kent C. Dodds',
+      active: true,
+      description:
+        'This course is for React newbies and anyone looking to build a solid foundation. It’s designed to teach you everything you need to start building web applications in React right away',
+      image: '/icons/react.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://frontendmasters.com/courses/css-grid-flexbox-v2/',
+        },
+      ],
+    },
+    {
+      title: 'CSS Grid & Flexbox for Responsive Layouts, v2',
+      date: '2024',
+      source: 'Frontend Masters',
+      author: 'Jen Kramer',
+      active: true,
+      description:
+        "Learn the essential CSS layout techniques for building responsive, beautiful web applications. You'll get hands-on practice using CSS Grid for two-dimensional, grid-based layouts and Flexbox for styling one-directional flow. You'll master using these techniques and responsive images to build real-world, responsive web layouts!",
+      image: '/icons/css.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://frontendmasters.com/courses/css-grid-flexbox-v2/',
+        },
+      ],
+    },
+    {
+      title: 'Git: course',
+      date: '2024',
+      source: 'YouTube',
+      author: 'JavaScript.ru',
+      active: true,
+      description:
+        'A neat, necessary, slightly "advanced" course on Git that makes a developer\'s life easier. Detailed, from simple to complex, with detailed explanations',
+      image: '/icons/git.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.youtube.com/playlist?list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb',
+        },
+      ],
+    },
+    {
+      title: 'TypeScript 5+ Fundamentals, v4',
+      date: '2024',
+      source: 'Frontend Masters',
+      author: 'Mike North',
+      active: true,
+      description:
+        'Learn all the key Typescript features such as variable typing, function signatures, union and intersection types, type aliases, and generics. Use effective strategies for transitioning your codebase to TypeScript for more robust and scalable applications',
+      image: '/icons/ts.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://frontendmasters.com/courses/typescript-v4/',
+        },
+      ],
+    },
+    {
+      title: 'CSS Animations and Transitions',
+      date: '2024',
+      source: 'Frontend Masters',
+      author: 'David Khourshid',
+      active: true,
+      description:
+        'Learn CSS animation basics and transition to advanced concepts like orchestration and choreography. Techniques you’ll learn: CSS transitions, animations, custom properties, data attributes, choreography, animation states, layout animations, and reactive animations with a little bit of JavaScript',
+      image: '/icons/css.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://frontendmasters.com/courses/css-animations/',
+        },
+      ],
+    },
+    {
+      title: 'Strings and Regular Expressions in JavaScript',
+      date: '2024',
+      source: 'Pluralsight',
+      author: 'Andrejs Doronins',
+      active: true,
+      description:
+        'Working with text is a fundamentally crucial task in every programming language. This course will help you deepen your knowledge of the String and Regex API of the JavaScript language',
+      image: '/icons/regexp.png',
+      mlh: '',
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: 'https://www.pluralsight.com/courses/javascript-strings-regular-expressions',
+        },
+      ],
+    },
+    {
       title: 'The Complete Regular Expressions (Regex) Course For Beginners',
       date: '2024',
       source: 'Udemy',
