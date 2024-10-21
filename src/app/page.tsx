@@ -6,6 +6,7 @@ import { ResumeCard } from '@/components/resume-card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { DATA } from '@/data/resume';
+import CoursesList from '@/components/courses-list';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
@@ -206,24 +207,28 @@ export default function Page() {
             </div>
           </BlurFade>
           <div className="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
+            {DATA.projects.map((project, id) => {
+              if (id < 2) {
+                return (
+                  <BlurFade
+                    key={project.title}
+                    delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                  >
+                    <ProjectCard
+                      href={project.href}
+                      key={project.title}
+                      title={project.title}
+                      description={project.description}
+                      dates={project.dates}
+                      tags={project.technologies}
+                      image={project.image}
+                      video={project.video}
+                      links={project.links}
+                    />
+                  </BlurFade>
+                );
+              }
+            })}
           </div>
         </div>
       </section>
@@ -247,33 +252,15 @@ export default function Page() {
                     href="/courses"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    {DATA.courses.length}+ online courses
+                    {DATA.courses.filter((course) => course.active).length}+
+                    online courses
                   </Link>
                   . Here are some of the latest ones.
                 </p>
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.courses.map((course, id) => (
-                <BlurFade
-                  key={course.title + course.date}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <CourseCard
-                    title={course.title}
-                    description={course.description}
-                    source={course.source}
-                    author={course.author}
-                    date={course.date}
-                    image={course.image}
-                    links={course.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
+          <CoursesList limit={2} />
         </div>
       </section>
 
