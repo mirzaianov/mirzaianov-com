@@ -224,6 +224,7 @@ export const DATA = {
       date: '2023',
       source: 'KP',
       author: 'Kevin Powell',
+      active: true,
       description:
         'Jump in on this 21-day challenge, put the time in, and you will walk out understanding how you can make a responsive layouts.',
       image: '/icons/css.png',
@@ -251,6 +252,7 @@ export const DATA = {
       date: '2023',
       source: 'Udemy',
       author: 'Maximilian Schwarzmüller',
+      active: true,
       description:
         'Learn CSS for the first time or brush up your CSS skills and dive in even deeper. EVERY web developer has to know CSS.',
       image: '/icons/css.png',
@@ -268,6 +270,7 @@ export const DATA = {
       date: '2022',
       source: 'Udemy',
       author: 'Ivan Petrychenko',
+      active: true,
       description:
         'Master the most popular programming language - JavaScript, the React library and learn how to apply it in practice!',
       image: '/icons/js.png',
@@ -295,6 +298,7 @@ export const DATA = {
       date: '2022',
       source: 'Udemy',
       author: 'Ivan Petrychenko',
+      active: true,
       description:
         'Master everything you need to create web products and start making money from it!',
       image: '/icons/html.png',
