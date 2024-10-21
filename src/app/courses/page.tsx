@@ -23,7 +23,7 @@ export default async function CoursesPage() {
                 <span>
                   {DATA.courses.filter((course) => course.active).length}
                 </span>
-                + online courses. Here are some of the latest ones.
+                + online courses.
               </p>
             </div>
           </div>
