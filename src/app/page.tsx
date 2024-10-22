@@ -146,18 +146,24 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Reach my resume
                 </h2>
-                  Get acquainted with the resume online or immidiately download
-                  it via{' '}
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+                  Get acquainted with the resume{' '}
+                  <Link
+                    href="/resume"
+                    className="text-gray-900 underline dark:text-white"
+                  >
+                    online
+                  </Link>{' '}
+                  or immidiately{' '}
                   <Link
                     rel="noopener noreferrer"
                     target="_blank"
                     href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    the link
-                  </Link>
-                  .
+                    download
+                  </Link>{' '}
+                  it.
                 </p>
               </div>
             </div>
