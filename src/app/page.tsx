@@ -11,6 +11,7 @@ import Link from 'next/link';
 import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
 import ProjectsList from '@/components/projects-list';
+import NotesList from '@/components/notes-list';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -245,6 +246,35 @@ export default function Page() {
             </div>
           </BlurFade>
           <CoursesList limit={2} />
+        </div>
+      </section>
+
+      {/* Notes */}
+      <section id="notes">
+        <div className="w-full space-y-12 pb-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
+                  My Notes
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Dig in the latest notes
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+                  I study a lot and usually take notes to keep them in mind.{' '}
+                  <Link
+                    href="/notes"
+                    className="text-gray-900 underline dark:text-white"
+                  >
+                    Click here
+                  </Link>{' '}
+                  to find more.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <NotesList limit={2} />
         </div>
       </section>
 
