@@ -146,9 +146,9 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Reach my resume
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Get acquainted with the resume online or immidiately download
                   it via{' '}
+                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   <Link
                     rel="noopener noreferrer"
                     target="_blank"
@@ -193,7 +193,7 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my work
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
                   websites to complex web applications. Find more{' '}
                   <Link
@@ -223,7 +223,7 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Follow my study path
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   To boost my professional growth and broaden horizons, I
                   completed{' '}
                   <Link
