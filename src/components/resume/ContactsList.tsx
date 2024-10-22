@@ -1,8 +1,8 @@
 import Contact from './Contact';
 
-const ContactsList = () => {
+export default function ContactsList() {
   return (
-    <div className="list">
+    <div className="flex flex-col gap-1">
       <Contact
         name="LinkedIn:"
         href="https://linkedin.com/in/mirzaianov/"
@@ -31,10 +31,8 @@ const ContactsList = () => {
       <Contact
         name="Location:"
         href="https://maps.app.goo.gl/sfzLu94hcytEdaMv7"
-        path="Bursa, Türkiye"
+        path="Serbia"
       />
     </div>
   );
-};
-
-export default ContactsList;
+}

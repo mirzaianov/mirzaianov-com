@@ -2,7 +2,7 @@ import Language from './Language';
 
 const LanguagesList = () => {
   return (
-    <div className="list-0">
+    <div className="flex flex-col">
       <Language
         language={'English'}
         level={'Advanced C1 • IELTS 7.5'}

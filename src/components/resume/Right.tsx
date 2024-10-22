@@ -1,18 +1,15 @@
 import CoursesBlock from './CoursesBlock';
-import Divider from './Divider';
 import EducationBlock from './EducationBlock';
 import WorkExperienceBlock from './WorkExperienceBlock';
 
-const Right = () => {
+export default function Right() {
   return (
-    <section className="flex flex-col gap-4 rounded-l-lg p-6 py-[19px]">
+    <section className="flex w-[469px] flex-col justify-between gap-4 rounded-l-lg p-6 py-[19px]">
       <WorkExperienceBlock />
-      <Divider />
+      <div className="block min-h-[1px] w-full rounded-sm bg-primary" />
       <CoursesBlock />
-      <Divider />
+      <div className="block min-h-[1px] w-full rounded-sm bg-primary" />
       <EducationBlock />
     </section>
   );
-};
-
-export default Right;
+}

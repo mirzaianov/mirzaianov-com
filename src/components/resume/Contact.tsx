@@ -1,4 +1,4 @@
-const InfoItem = ({ name, href, path }) => {
+export default function InfoItem({ name, href, path }) {
   return (
     <div className="flex items-center gap-2">
       <div className="flex min-w-[59px] items-center gap-1">
@@ -12,6 +12,4 @@ const InfoItem = ({ name, href, path }) => {
       </a>
     </div>
   );
-};
-
-export default InfoItem;
+}

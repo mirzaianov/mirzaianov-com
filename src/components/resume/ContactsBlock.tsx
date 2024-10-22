@@ -1,12 +1,12 @@
 import ContactsList from './ContactsList';
 
-const ContactsBlock = () => {
+export default function ContactsBlock() {
   return (
-    <article className="block">
-      <header className="h2-700-up">Contacts</header>
+    <article className="flex flex-col gap-2">
+      <header className="text-xl font-bold uppercase leading-[1.2]">
+        Contacts
+      </header>
       <ContactsList />
     </article>
   );
-};
-
-export default ContactsBlock;
+}

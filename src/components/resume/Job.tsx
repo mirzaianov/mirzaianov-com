@@ -2,15 +2,15 @@ import Duties from './Duties';
 
 const Job = ({ jobTitle, company, date, field, specificity, achievements }) => {
   return (
-    <div className="list list-xs">
-      <div className="list">
-        <div className="h3-700">{jobTitle}</div>
-        <div className="job__info">
-          <div className="h3-700">{company}</div>
-          <div className="h3-400">•</div>
-          <div className="h3-400">{date}</div>
+    <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
+        <div className="text-base font-bold leading-[1.2]">{jobTitle}</div>
+        <div className="flex flex-wrap items-center gap-1">
+          <div className="text-base font-bold leading-[1.2]">{company}</div>
+          <div className="text-base leading-[1.2]">•</div>
+          <div className="text-base leading-[1.2]">{date}</div>
         </div>
-        <div className="job__field">
+        <div className="flex flex-wrap items-center gap-1">
           <div>{field}</div>
           <div>•</div>
           <div>{specificity}</div>

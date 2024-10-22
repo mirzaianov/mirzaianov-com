@@ -2,8 +2,10 @@ import CoursesList from './CoursesList';
 
 const CoursesBlock = () => {
   return (
-    <article className="block">
-      <header className="h2-700-up">Additional Education</header>
+    <article className="flex flex-col gap-2">
+      <header className="text-xl font-bold uppercase leading-[1.2]">
+        Additional Education
+      </header>
       <CoursesList />
     </article>
   );

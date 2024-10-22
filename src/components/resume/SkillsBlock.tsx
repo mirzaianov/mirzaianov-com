@@ -2,9 +2,11 @@ import Skill from './Skill';
 
 const SkillsBlock = () => {
   return (
-    <article className="block">
-      <header className="h2-700-up">Skills</header>
-      <div className="skills-list__block">
+    <article className="flex flex-col gap-2">
+      <header className="text-xl font-bold uppercase leading-[1.2]">
+        Skills
+      </header>
+      <div className="flex flex-wrap gap-1">
         <Skill skillName="JavaScript" />
         <Skill skillName="React" />
         <Skill skillName="TypeScript" />

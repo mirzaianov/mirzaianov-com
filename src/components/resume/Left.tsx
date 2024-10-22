@@ -3,22 +3,19 @@ import ContactsBlock from './ContactsBlock';
 import AboutBlock from './AboutBlock';
 import SkillsBlock from './SkillsBlock';
 import LanguagesBlock from './LanguagesBlock';
-import Divider from './Divider';
 
-const Left = () => {
+export default function Left() {
   return (
-    <section className="flex w-[4/10] flex-col gap-4 rounded-l-lg bg-secondary p-6 pt-[18px]">
+    <section className="flex w-[325px] flex-col justify-between rounded-l-lg bg-secondary p-6 pt-[18px]">
       <InfoBlock />
-      <Divider />
+      <div className="block min-h-[1px] w-full rounded-sm bg-primary" />
       <ContactsBlock />
-      <Divider />
+      <div className="block min-h-[1px] w-full rounded-sm bg-primary" />
       <AboutBlock />
-      <Divider />
+      <div className="block min-h-[1px] w-full rounded-sm bg-primary" />
       <SkillsBlock />
-      <Divider />
+      <div className="block min-h-[1px] w-full rounded-sm bg-primary" />
       <LanguagesBlock />
     </section>
   );
-};
-
-export default Left;
+}

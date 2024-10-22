@@ -2,8 +2,10 @@ import LanguagesList from './LanguagesList';
 
 const LanguagesBlock = () => {
   return (
-    <article className="block">
-      <header className="h2-700-up">Languages</header>
+    <article className="flex flex-col gap-2">
+      <header className="text-xl font-bold uppercase leading-[1.2]">
+        Languages
+      </header>
       <LanguagesList />
     </article>
   );

@@ -2,7 +2,7 @@ import List from './List';
 
 const Duties = ({ duties }) => {
   return (
-    <div className="list">
+    <div className="flex flex-col gap-1">
       <List items={duties} />
     </div>
   );

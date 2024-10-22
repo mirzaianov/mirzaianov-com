@@ -1,14 +1,16 @@
 const Course = ({ courseName, resource, author, year, href }) => {
   return (
-    <li className="list-0">
+    <li className="flex flex-col">
       <a
-        className="link"
+        className="self-start"
         href={href}
         target="_blank"
       >
-        <p className="p-700 course__name">{courseName}</p>
+        <p className="flex-nowrap overflow-hidden text-ellipsis font-bold">
+          {courseName}
+        </p>
       </a>
-      <div className="course__info">
+      <div className="flex items-center gap-1 py-[1px] pl-4">
         <p>{resource}</p>
         <p>•</p>
         <p>{author}</p>

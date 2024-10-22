@@ -2,7 +2,7 @@ import Course from './Course';
 
 const CoursesList = () => {
   return (
-    <ul className="list">
+    <ul className="flex flex-col gap-1">
       <Course
         courseName="React & TypeScript - The Practical Guide"
         resource="Udemy"

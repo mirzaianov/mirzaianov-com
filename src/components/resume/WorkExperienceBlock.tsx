@@ -19,8 +19,10 @@ const knorrAchievements = [
 
 const Experience = () => {
   return (
-    <article className="block-s block">
-      <header className="h2-700-up">Work Experience</header>
+    <article className="flex flex-col gap-4">
+      <header className="text-xl font-bold uppercase leading-[1.2]">
+        Work Experience
+      </header>
       <Job
         jobTitle="Frontend Developer"
         company="Freelance"
