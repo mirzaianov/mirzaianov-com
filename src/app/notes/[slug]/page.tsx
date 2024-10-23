@@ -3,6 +3,12 @@ import { DATA } from '@/data/resume';
 import { formatDate } from '@/lib/utils';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
+import BlurFade from '@/components/magicui/blur-fade';
+import Link from 'next/link';
+import Markdown from 'react-markdown';
+import rehypeExternalLinks from 'rehype-external-links';
+
+const BLUR_FADE_DELAY = 0.04;
 
 export default async function Notes({
   params,
@@ -38,20 +44,42 @@ export default async function Notes({
           }),
         }}
       />
-      <h1 className="title max-w-[650px] text-2xl font-medium tracking-tighter">
-        {note.metadata.title}
-      </h1>
-      <div className="mb-8 mt-2 flex max-w-[650px] items-center justify-between text-sm">
-        <Suspense fallback={<p className="h-5" />}>
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            {formatDate(note.metadata.publishedAt)}
-          </p>
-        </Suspense>
+      <div className="w-full space-y-12 pb-12">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
+                Note
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                {note.metadata.title}
+              </h2>
+              <Suspense fallback={<p className="h-5" />}>
+                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+                  {formatDate(note.metadata.publishedAt)}
+                </p>
+              </Suspense>
+            </div>
+          </div>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 15}>
+          <article className="prose dark:prose-invert">
+            <Markdown
+              rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+            >
+              {note.source}
+            </Markdown>
+          </article>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 19}>
+          <Link
+            href="/notes"
+            className="text-gray-900 underline dark:text-white"
+          >
+            Back to notes
+          </Link>
+        </BlurFade>
       </div>
-      <article
-        className="prose dark:prose-invert"
-        dangerouslySetInnerHTML={{ __html: note.source }}
-      ></article>
     </main>
   );
 }
