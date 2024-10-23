@@ -1,55 +1,8 @@
-import { getNotesPosts, getPost } from '@/data/notes';
+import { getPost } from '@/data/notes';
 import { DATA } from '@/data/resume';
 import { formatDate } from '@/lib/utils';
-import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
-
-export async function generateStaticParams() {
-  const posts = await getNotesPosts();
-  return posts.map((post) => ({ slug: post.slug }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: {
-    slug: string;
-  };
-}): Promise<Metadata | undefined> {
-  let post = await getPost(params.slug);
-
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image,
-  } = post.metadata;
-  let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
-
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      publishedTime,
-      url: `${DATA.url}/notes/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [ogImage],
-    },
-  };
-}
 
 export default async function Notes({
   params,
@@ -58,14 +11,14 @@ export default async function Notes({
     slug: string;
   };
 }) {
-  let post = await getPost(params.slug);
+  let note = await getPost(params.slug);
 
-  if (!post) {
+  if (!note) {
     notFound();
   }
 
   return (
-    <section id="note">
+    <main id="note">
       <script
         type="application/ld+json"
         suppressHydrationWarning
@@ -73,14 +26,11 @@ export default async function Notes({
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'NotesPosting',
-            headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
-            description: post.metadata.summary,
-            image: post.metadata.image
-              ? `${DATA.url}${post.metadata.image}`
-              : `${DATA.url}/og?title=${post.metadata.title}`,
-            url: `${DATA.url}/notes/${post.slug}`,
+            headline: note.metadata.title,
+            datePublished: note.metadata.publishedAt,
+            description: note.metadata.summary,
+            tags: note.metadata.tags,
+            url: `${DATA.url}/notes/${note.slug}`,
             author: {
               '@type': 'Person',
               name: DATA.name,
@@ -89,19 +39,19 @@ export default async function Notes({
         }}
       />
       <h1 className="title max-w-[650px] text-2xl font-medium tracking-tighter">
-        {post.metadata.title}
+        {note.metadata.title}
       </h1>
       <div className="mb-8 mt-2 flex max-w-[650px] items-center justify-between text-sm">
         <Suspense fallback={<p className="h-5" />}>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            {formatDate(post.metadata.publishedAt)}
+            {formatDate(note.metadata.publishedAt)}
           </p>
         </Suspense>
       </div>
       <article
         className="prose dark:prose-invert"
-        dangerouslySetInnerHTML={{ __html: post.source }}
+        dangerouslySetInnerHTML={{ __html: note.source }}
       ></article>
-    </section>
+    </main>
   );
 }
