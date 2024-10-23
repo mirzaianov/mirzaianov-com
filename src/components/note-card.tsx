@@ -10,7 +10,7 @@ interface Props {
   href?: string;
   summary: string;
   publishedAt: string;
-  tags: readonly string[];
+  tags: string;
 }
 
 export default function NoteCard({
@@ -45,7 +45,7 @@ export default function NoteCard({
         <CardContent className="mt-auto flex flex-col px-2 pb-2">
           {tags && tags.length > 0 && (
             <div className="mt-2 flex flex-wrap gap-1">
-              {tags?.map((tag) => (
+              {tags?.split(', ').map((tag) => (
                 <Badge
                   className="px-1 py-0 text-[10px]"
                   variant="secondary"
