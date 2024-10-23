@@ -6,7 +6,7 @@ import { Suspense } from 'react';
 import BlurFade from '@/components/magicui/blur-fade';
 import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
-import BackButton from '@/components/BackButton';
+import BackButton from '@/components/back-button';
 
 const BLUR_FADE_DELAY = 0.04;
 
