@@ -65,7 +65,7 @@ export default async function Notes({
   }
 
   return (
-    <section id="notes">
+    <section id="note">
       <script
         type="application/ld+json"
         suppressHydrationWarning
