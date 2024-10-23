@@ -307,7 +307,7 @@ export const DATA = {
       description:
         'Build type-safe React apps & use TypeScript to enhance your components, state management, Redux & side effects code',
       image: '/icons/ts.png',
-      mlh: '',
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -335,7 +335,7 @@ export const DATA = {
       description:
         'Learn to use typing for the sake of results, and not just for the sake of it',
       image: '/icons/ts.png',
-      mlh: '',
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -363,7 +363,7 @@ export const DATA = {
       description:
         'Introduction to APIs and RESTful Web Services. Includes HTTP, JSON, XML, REST, SOAP, OAuth, OpenID Connect, Postman, and Python',
       image: '/icons/api.png',
-      mlh: '',
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -390,7 +390,7 @@ export const DATA = {
       active: true,
       description: 'Deeply understand JavaScript’s newest features',
       image: '/icons/regexp.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -418,7 +418,7 @@ export const DATA = {
       description:
         'Dive in and learn React.js from scratch! Learn React, Hooks, Redux, React Router, Next.js, Best Practices and way more!',
       image: '/icons/react.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -436,7 +436,7 @@ export const DATA = {
       description:
         'Learn Git & GitHub and master working with commits, branches, the stash, cherry picking, rebasing, pull requests & more!',
       image: '/icons/git.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -454,7 +454,7 @@ export const DATA = {
       description:
         'Understand and learn all the key features of React: Components, JSX, Props, State, useState, useEffect, and Redux',
       image: '/icons/redux.png',
-      mlh: '',
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -476,7 +476,7 @@ export const DATA = {
       active: false,
       description: 'The Missing Computer Science and Coding Interview Bootcamp',
       image: '/icons/dsa.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -494,7 +494,7 @@ export const DATA = {
       description:
         'The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!',
       image: '/icons/js.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -511,7 +511,7 @@ export const DATA = {
       active: true,
       description: 'Deeply understand JavaScript’s newest features',
       image: '/icons/js.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -540,7 +540,7 @@ export const DATA = {
       description:
         'Learn all the key Typescript features such as variable typing, function signatures, union and intersection types, type aliases, and generics. Use effective strategies for transitioning your codebase to TypeScript for more robust and scalable applications',
       image: '/icons/ts.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -558,7 +558,7 @@ export const DATA = {
       description:
         'This course is for React newbies and anyone looking to build a solid foundation. It’s designed to teach you everything you need to start building web applications in React right away',
       image: '/icons/react.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -576,7 +576,7 @@ export const DATA = {
       description:
         'A neat, necessary, slightly "advanced" course on Git that makes a developer\'s life easier. Detailed, from simple to complex, with detailed explanations',
       image: '/icons/git.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -594,7 +594,7 @@ export const DATA = {
       description:
         "Asynchronous programming is often intimidating, it's not how we normally consider writing code. This course shows how promises and async/await can help simplify async programming.",
       image: '/icons/js.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -612,7 +612,7 @@ export const DATA = {
       description:
         'Jump in on this 21-day challenge, put the time in, and you will walk out understanding how you can make a responsive layouts',
       image: '/icons/css.png',
-      mlh: '',
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -640,7 +640,7 @@ export const DATA = {
       description:
         'Figma Auto Layout, Constraints and Breakpoints: Responsive setup, testing and design documentation, min/max width, wrap',
       image: '/icons/figma.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -668,7 +668,7 @@ export const DATA = {
       description:
         'The only class fully updated with the latest Figma UI and features, released in October 2024!',
       image: '/icons/figma.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -696,7 +696,7 @@ export const DATA = {
       description:
         'Learn CSS animation basics and transition to advanced concepts like orchestration and choreography. Techniques you’ll learn: CSS transitions, animations, custom properties, data attributes, choreography, animation states, layout animations, and reactive animations with a little bit of JavaScript',
       image: '/icons/css.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -714,7 +714,7 @@ export const DATA = {
       description:
         'Working with text is a fundamentally crucial task in every programming language. This course will help you deepen your knowledge of the String and Regex API of the JavaScript language',
       image: '/icons/regexp.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -732,7 +732,7 @@ export const DATA = {
       description:
         'Learn CSS for the first time or brush up your CSS skills and dive in even deeper. EVERY web developer has to know CSS',
       image: '/icons/css.png',
-      mlh: '',
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -751,7 +751,7 @@ export const DATA = {
       description:
         'Master the most popular programming language - JavaScript, the React library and learn how to apply it in practice!',
       image: '/icons/js.png',
-      mlh: '',
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -779,7 +779,7 @@ export const DATA = {
       description:
         "Learn the essential CSS layout techniques for building responsive, beautiful web applications. You'll get hands-on practice using CSS Grid for two-dimensional, grid-based layouts and Flexbox for styling one-directional flow. You'll master using these techniques and responsive images to build real-world, responsive web layouts!",
       image: '/icons/css.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -797,7 +797,7 @@ export const DATA = {
       description:
         'Master everything you need to create web products and start making money from it!',
       image: '/icons/html.png',
-      mlh: '',
+      inResume: false,
       links: [
         {
           title: 'Website',
