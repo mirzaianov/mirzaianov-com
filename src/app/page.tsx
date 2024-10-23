@@ -12,10 +12,13 @@ import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
 import ProjectsList from '@/components/projects-list';
 import NotesList from '@/components/notes-list';
+import { getNotesPosts } from '@/data/notes';
 
 const BLUR_FADE_DELAY = 0.04;
 
-export default function Page() {
+export default async function Page() {
+  const notes = await getNotesPosts();
+
   return (
     <main className="flex min-h-[100dvh] flex-col space-y-10">
       {/* Hero */}
@@ -262,14 +265,14 @@ export default function Page() {
                   Dig in the latest notes
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                  I study a lot and usually take notes to keep them in mind.{' '}
+                  I study a lot and usually take notes to keep them in mind.
+                  Check out{' '}
                   <Link
                     href="/notes"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    Click here
+                    {notes.length}+ notes in my collection.
                   </Link>{' '}
-                  to find more.
                 </p>
               </div>
             </div>
