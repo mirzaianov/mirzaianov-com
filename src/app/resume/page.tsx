@@ -6,7 +6,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default async function ResumePage() {
   return (
-    <section id="resume">
+    <main id="resume">
       <div className="w-full space-y-12">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -36,6 +36,6 @@ export default async function ResumePage() {
           <ResumeLayout />
         </BlurFade>
       </div>
-    </section>
+    </main>
   );
 }

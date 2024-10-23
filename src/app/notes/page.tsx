@@ -5,7 +5,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function NotePage() {
   return (
-    <section id="notes">
+    <main id="notes">
       <div className="w-full space-y-12 pb-12">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -25,6 +25,6 @@ export default function NotePage() {
         </BlurFade>
         <NotesList />
       </div>
-    </section>
+    </main>
   );
 }
