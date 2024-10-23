@@ -1,13 +1,6 @@
 import { Badge } from '@/components/ui/badge';
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
@@ -39,7 +32,7 @@ export default function NoteCard({
       >
         <CardHeader className="px-2">
           <div className="space-y-1">
-            <CardTitle className="mt-1 text-base">{title}</CardTitle>
+            <CardTitle className="mt-2 text-base">{title}</CardTitle>
             <time className="font-sans text-xs">{publishedAt}</time>
             <Markdown
               rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}

@@ -13,7 +13,7 @@ export default async function NotesList({
 
   return (
     <BlurFade delay={BLUR_FADE_DELAY * 14}>
-      <div className="grid place-content-center">
+      <div className="grid place-content-center justify-stretch">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {notes
             .sort((a, b) => {
