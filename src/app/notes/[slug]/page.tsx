@@ -4,9 +4,9 @@ import { formatDate } from '@/lib/utils';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 import BlurFade from '@/components/magicui/blur-fade';
-import Link from 'next/link';
 import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
+import BackButton from '@/components/BackButton';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -17,7 +17,7 @@ export default async function Notes({
     slug: string;
   };
 }) {
-  let note = await getPost(params.slug);
+  const note = await getPost(params.slug);
 
   if (!note) {
     notFound();
@@ -72,12 +72,7 @@ export default async function Notes({
           </article>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 19}>
-          <Link
-            href="/notes"
-            className="text-gray-900 underline dark:text-white"
-          >
-            Back to notes
-          </Link>
+          <BackButton />
         </BlurFade>
       </div>
     </main>
