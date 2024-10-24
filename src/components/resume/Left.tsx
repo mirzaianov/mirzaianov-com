@@ -2,7 +2,7 @@ import InfoBlock from './info-block';
 import ContactsBlock from './contacts-block';
 import AboutBlock from './about-block';
 import SkillsBlock from './SkillsBlock';
-import LanguagesBlock from './LanguagesBlock';
+import LanguagesBlock from './languages-block';
 
 export default function Left() {
   return (

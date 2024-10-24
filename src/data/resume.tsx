@@ -58,6 +58,24 @@ export const DATA = {
     'ESLint',
     'Prettier',
   ],
+  languages: [
+    {
+      name: 'English',
+      level: 'Advanced C1 • IELTS 7.5',
+    },
+    {
+      name: 'Turkish',
+      level: 'Beginner A2',
+    },
+    {
+      name: 'Russian',
+      level: 'Native',
+    },
+    {
+      name: 'Tatar',
+      level: 'Native',
+    },
+  ],
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
     { href: '/resume', icon: User, label: 'Resume' },
