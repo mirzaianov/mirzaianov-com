@@ -64,7 +64,7 @@ export default async function Page() {
             rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
             className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert"
           >
-            {DATA.summary}
+            {DATA.summary.reduce((prev, curr) => `${prev} ${curr}`, '')}
           </Markdown>
         </BlurFade>
       </section>
