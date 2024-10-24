@@ -136,8 +136,15 @@ export const DATA = {
       logoUrl: '/icons/rm.png',
       start: 'April 2023',
       end: null,
-      description:
-        'Crafted 10 compelling landing pages from scratch, harnessing HTML, CSS (SASS), and JavaScript (ES6+) to captivate audiences|Leveraged cutting-edge Flexbox, Grid, Transitions, and Animations to deliver seamless experiences, resulting in a 20% increase in customer engagement|Engineered 3 top-of-the-line single-page applications (SPAs) using React & Tailwind, transforming audience interactions with intuitive interfaces and faster load times, leading to a 30% boost in user retention|Refactored a major project by migrating from JavaScript to React, integrating advanced features like react-hooks, react-router, and lazy-loading, culminating in a 55% improvement in overall efficiency|Overhauled 2 JavaScript projects, ensuring cross-browser compatibility and adaptive, responsive layouts, driving a 150% surge in conversion rates and client satisfaction|Led a successful collaboration with a backend team to integrate RESTful APIs into frontend applications, enhancing data retrieval efficiency by 40% and improving overall application performance|Conceptualized and delivered 5 captivating User Interfaces in Figma, surpassing client expectations with innovative usage of Variables, Styles, and Components|Embraced Responsive Design principles (Auto Layout) for flawless cross-platform usability',
+      description: [
+        'Crafted 10 compelling landing pages from scratch, harnessing HTML, CSS (SASS), and JavaScript (ES6+) to captivate audiences',
+        'Leveraged cutting-edge Flexbox, Grid, Transitions, and Animations to deliver seamless experiences, resulting in a 20% increase in customer engagement',
+        'Engineered 3 top-of-the-line single-page applications (SPAs) using React & Tailwind, transforming audience interactions with intuitive interfaces and faster load times, leading to a 30% boost in user retention|Refactored a major project by migrating from JavaScript to React, integrating advanced features like react-hooks, react-router, and lazy-loading, culminating in a 55% improvement in overall efficiency',
+        'Overhauled 2 JavaScript projects, ensuring cross-browser compatibility and adaptive, responsive layouts, driving a 150% surge in conversion rates and client satisfaction',
+        'Led a successful collaboration with a backend team to integrate RESTful APIs into frontend applications, enhancing data retrieval efficiency by 40% and improving overall application performance',
+        'Conceptualized and delivered 5 captivating User Interfaces in Figma, surpassing client expectations with innovative usage of Variables, Styles, and Components',
+        'Embraced Responsive Design principles (Auto Layout) for flawless cross-platform usability',
+      ],
     },
     {
       company: 'Career Break',
@@ -148,8 +155,12 @@ export const DATA = {
       logoUrl: '/icons/react.png',
       start: 'October 2022',
       end: 'March 2023',
-      description:
-        'Moved abroad|Intensively learned WEB development, JavaScript, React, TypeScript, Redux| Utilized Git & Jira|Practised DSA',
+      description: [
+        'Moved abroad',
+        'Intensively learned WEB development, JavaScript, React, TypeScript, Redux',
+        'Utilized Git & Jira',
+        'Practised DSA',
+      ],
     },
     {
       company: 'Knorr-Bremse AG',
@@ -160,8 +171,13 @@ export const DATA = {
       logoUrl: '/icons/knorr.png',
       start: 'April 2017',
       end: 'September 2022',
-      description:
-        'Completed 3 localization projects of Air Disk Brake (ADB) components, started the serial manufacturing|Implemented 100+ devices, toolings and equipment in production lines, measuring and testing laboratories|Designed 700+ component, assembly, installation drawings, specifications, using PTC CREO, Teamcenter & MathCad|Managed DFMEA analysis for 3 products utilizing PLATO SCIO|Mentored 5 junior engineers in R&D processes and CAD work',
+      description: [
+        'Completed 3 localization projects of Air Disk Brake (ADB) components, started the serial manufacturing',
+        'Implemented 100+ devices, toolings and equipment in production lines, measuring and testing laboratories',
+        'Designed 700+ component, assembly, installation drawings, specifications, using PTC CREO, Teamcenter & MathCad',
+        'Managed DFMEA analysis for 3 products utilizing PLATO SCIO',
+        'Mentored 5 junior engineers in R&D processes and CAD work',
+      ],
     },
   ],
   education: [
@@ -173,7 +189,10 @@ export const DATA = {
       logoUrl: '/icons/kai.png',
       start: 2003,
       end: 2008,
-      description: `Kazan National Research Technical University named after A.N. Tupolev (often called KAI or KNRTU-KAI) is one of Russia's major technical universities, located in Kazan, the capital of Tatarstan. Founded in 1932, it was originally established as the Kazan Aviation Institute. The university is named after Andrey Tupolev, a famous Soviet aircraft designer.|The university specializes in Aviation and Aerospace Engineering, Technical and Engineering Sciences, Information Technology, Radio Electronics, Economics and Management. It's considered one of the leading aerospace education institutions in Russia and has strong connections with the Russian aviation industry. A lot of large-scale projects in composite materials, laser technologies, industrial robots, new engine development and the like are implemented by the university.`,
+      description: [
+        "Kazan National Research Technical University named after A.N. Tupolev (often called KAI or KNRTU-KAI) is one of Russia's major technical universities, located in Kazan, the capital of Tatarstan. Founded in 1932, it was originally established as the Kazan Aviation Institute. The university is named after Andrey Tupolev, a famous Soviet aircraft designer.",
+        "The university specializes in Aviation and Aerospace Engineering, Technical and Engineering Sciences, Information Technology, Radio Electronics, Economics and Management. It's considered one of the leading aerospace education institutions in Russia and has strong connections with the Russian aviation industry. A lot of large-scale projects in composite materials, laser technologies, industrial robots, new engine development and the like are implemented by the university.",
+      ],
     },
   ],
   resume: {
