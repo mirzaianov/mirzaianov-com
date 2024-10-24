@@ -1,4 +1,4 @@
-const EducationBlock = () => {
+export default function Education() {
   return (
     <article>
       <header className="text-xl font-bold uppercase leading-[1.2]">
@@ -26,6 +26,4 @@ const EducationBlock = () => {
       </div>
     </article>
   );
-};
-
-export default EducationBlock;
+}

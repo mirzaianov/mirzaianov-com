@@ -1,6 +1,6 @@
 import { DATA } from '@/data/resume';
 
-const InfoBlock = () => {
+export default function Info() {
   return (
     <article className="flex flex-col gap-4">
       <h1 className="inline-block text-[40px] font-bold uppercase leading-[1.1]">
@@ -17,6 +17,4 @@ const InfoBlock = () => {
       </div>
     </article>
   );
-};
-
-export default InfoBlock;
+}

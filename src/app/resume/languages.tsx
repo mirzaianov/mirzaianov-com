@@ -1,6 +1,6 @@
 import { DATA } from '@/data/resume';
 
-const LanguagesBlock = () => {
+export default function Languages() {
   return (
     <article className="flex flex-col gap-2">
       <header className="text-xl font-bold uppercase leading-[1.2]">
@@ -23,6 +23,4 @@ const LanguagesBlock = () => {
       </ul>
     </article>
   );
-};
-
-export default LanguagesBlock;
+}

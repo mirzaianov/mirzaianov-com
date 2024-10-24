@@ -1,28 +1,47 @@
-import { DATA } from '@/data/resume';
 import { formatUrl } from '@/lib/utils';
+import { type IconProps } from '@/components/icons';
 
-export default function ContactsBlock() {
+type Contact = {
+  name: string;
+  url: string;
+  icon: (props: IconProps) => JSX.Element;
+  navbar?: boolean;
+};
+
+type Location = string;
+
+type LocationLink = string;
+
+type Props = {
+  contacts: {
+    [key: string]: Contact;
+  };
+  location: Location;
+  locationLink: LocationLink;
+};
+
+export default function Contacts({ contacts, location, locationLink }: Props) {
   return (
     <article className="flex flex-col gap-2">
       <header className="text-xl font-bold uppercase leading-[1.2]">
         Contacts
       </header>
       <ul className="flex flex-col gap-1">
-        {Object.entries(DATA.contact.social)
-          .filter(([_, social]) => social.navbar)
-          .map(([_, social]) => (
+        {Object.entries(contacts)
+          .filter(([_, contact]) => contact.navbar)
+          .map(([_, contact]) => (
             <li
-              key={social.name}
+              key={contact.name}
               className="flex items-center gap-2"
             >
               <div className="flex min-w-[59px] items-center gap-1">
-                <p>{social.name}</p>
+                <p>{contact.name}</p>
               </div>
               <a
-                href={social.url}
+                href={contact.url}
                 target="_blank"
               >
-                {formatUrl(social.url)}
+                {formatUrl(contact.url)}
               </a>
             </li>
           ))}
@@ -31,10 +50,10 @@ export default function ContactsBlock() {
             <p>Location</p>
           </div>
           <a
-            href={DATA.locationLink}
+            href={locationLink}
             target="_blank"
           >
-            {DATA.location}
+            {location}
           </a>
         </div>
       </ul>
