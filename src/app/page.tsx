@@ -1,4 +1,3 @@
-import { CourseCard } from '@/components/course-card';
 import BlurFade from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
 import { ProjectCard } from '@/components/project-card';
@@ -35,10 +34,7 @@ export default async function Page() {
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
-                text={DATA.description.reduce(
-                  (prev, curr) => `${prev} ${curr}`,
-                  '',
-                )}
+                text={DATA.description}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
@@ -64,7 +60,7 @@ export default async function Page() {
             rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
             className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert"
           >
-            {DATA.summary.reduce((prev, curr) => `${prev} ${curr}`, '')}
+            {DATA.summary}
           </Markdown>
         </BlurFade>
       </section>
