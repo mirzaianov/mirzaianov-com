@@ -1,5 +1,5 @@
 import CoursesBlock from './courses-block';
-import EducationBlock from './EducationBlock';
+import EducationBlock from './education-block';
 import WorkExperienceBlock from './WorkExperienceBlock';
 
 export default function Right() {
