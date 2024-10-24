@@ -17,8 +17,8 @@ export default function NotePage() {
                 Dig in the latest notes
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                I study a lot and usually take notes to keep them in mind. Here
-                I share some of my notes.
+                I study a lot and usually save notes that seemed useful. Here I
+                share some of my notes.
               </p>
             </div>
           </div>

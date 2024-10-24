@@ -265,8 +265,8 @@ export default async function Page() {
                   Dig in the latest notes
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                  I study a lot and usually take notes to keep them in mind.
-                  Check out{' '}
+                  I study a lot and usually save notes that seemed useful. Check
+                  out{' '}
                   <Link
                     href="/notes"
                     className="text-gray-900 underline dark:text-white"
