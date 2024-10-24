@@ -1,4 +1,4 @@
-import CoursesBlock from './CoursesBlock';
+import CoursesBlock from './courses-block';
 import EducationBlock from './EducationBlock';
 import WorkExperienceBlock from './WorkExperienceBlock';
 
