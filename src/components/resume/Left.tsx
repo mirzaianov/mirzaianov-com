@@ -1,4 +1,4 @@
-import InfoBlock from './InfoBlock';
+import InfoBlock from './info-block';
 import ContactsBlock from './contacts-block';
 import AboutBlock from './about-block';
 import SkillsBlock from './SkillsBlock';
