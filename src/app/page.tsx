@@ -175,13 +175,12 @@ export default async function Page() {
           <div className="mx-auto grid max-w-[306px] grid-cols-1">
             <BlurFade delay={BLUR_FADE_DELAY * 12}>
               <ProjectCard
-                href={DATA.resume.href}
-                key={DATA.resume.title}
-                title={DATA.resume.title}
-                description={DATA.resume.description}
-                dates={DATA.resume.dates}
-                tags={DATA.resume.technologies}
-                image={DATA.resume.image}
+                href="/resume"
+                key={DATA.name}
+                title={DATA.name}
+                description={DATA.role}
+                dates=""
+                tags={DATA.skills.filter((_, index) => index < 5)}
                 video={DATA.resume.video}
                 links={DATA.resume.links}
                 self={DATA.resume.self}

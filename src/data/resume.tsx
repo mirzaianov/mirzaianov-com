@@ -196,12 +196,6 @@ export const DATA = {
     },
   ],
   resume: {
-    title: 'Riaz Mirzaianov',
-    href: '/resume',
-    dates: '',
-    // active: true,
-    description: 'Frontend Developer',
-    technologies: ['JavaScript', 'React', 'TypeScript', 'Redux', 'Tailwind'],
     links: [
       {
         type: 'Online',
@@ -215,7 +209,6 @@ export const DATA = {
         icon: <Icons.download className="size-3" />,
       },
     ],
-    image: '',
     video: '/videos/resume.mp4',
     self: true,
   },
