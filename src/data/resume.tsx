@@ -16,6 +16,8 @@ export const DATA = {
   locationLink: 'https://www.google.com/maps/place/bursa',
   description:
     'Frontend Developer. I love to deliver interfaces that harmonize functionality and appearance.',
+  about:
+    '1.5 years in Frontend Development, Higher technical education (GPA 4.2), advanced English (C1), collaboration in international cross-functional teams|Technology Stack: HTML, CSS, JavaScript, React, Next, Redux, TypeScript, Tailwind|Solid in Algorithms and DSA, have skills in Figma|Eager to create eye-catching interfaces with cutting-edge web technologies|Focused on blending aesthetics and functionality, driven by a keen eye for detail|Goal for the nearest future is to continuously evolve in the realm of modern Frontend Development',
   summary:
     "In 2022, I quit my job as an R&D Engineer from an [international A-Tier automotive manufacturer](https://www.knorr-bremse.com/de/), moved abroad and started a fresh new journey as a software engineer. In the past, I had pursued a Master's Degree in Engineering Technology at [Kazan Aviation University](https://kai.ru/web/en/our-history), passed English [IELTS test](https://ielts.org/) at C1 level, and participated in several engineering workshops in Europe.",
   avatarUrl: '/icons/me.png',
