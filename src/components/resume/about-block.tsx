@@ -7,7 +7,7 @@ const AboutBlock = () => {
         About
       </header>
       <ul>
-        {DATA.about.split('|').map((paragraph, index) => (
+        {DATA.about.map((paragraph, index) => (
           <li
             key={index}
             className="flex gap-[2px]"
