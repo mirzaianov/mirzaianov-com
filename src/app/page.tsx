@@ -35,7 +35,10 @@ export default async function Page() {
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
-                text={DATA.description}
+                text={DATA.description.reduce(
+                  (prev, curr) => `${prev} ${curr}`,
+                  '',
+                )}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
