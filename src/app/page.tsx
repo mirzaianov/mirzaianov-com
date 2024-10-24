@@ -86,7 +86,6 @@ export default async function Page() {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-                href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? 'Present'}`}
                 description={work.description}
@@ -109,12 +108,10 @@ export default async function Page() {
             >
               <ResumeCard
                 key={education.school}
-                href={education.href}
                 logoUrl={education.logoUrl}
                 altText={education.school}
                 title={education.school}
                 subtitle={education.degree}
-                // period={`${education.start} - ${education.end}`}
                 description={education.description}
               />
             </BlurFade>
