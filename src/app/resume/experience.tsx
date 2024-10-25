@@ -23,7 +23,7 @@ export default function Experience() {
                     {job.company}
                   </div>
                   <div className="text-base leading-[1.2]">•</div>
-                  <div className="text-base leading-[1.2]">{`${job.start} - ${job.end}`}</div>
+                  <div className="text-base leading-[1.2]">{`${job.start} - ${job.end || 'Present'}`}</div>
                 </div>
                 <div className="flex flex-wrap items-center gap-1">
                   <div>{job.field}</div>
