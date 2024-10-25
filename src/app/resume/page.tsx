@@ -21,7 +21,7 @@ export default async function ResumePage() {
     <main id="resume">
       <div className="w-full space-y-12 pb-12">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <section className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
                 My Resume
@@ -30,7 +30,8 @@ export default async function ResumePage() {
                 Reach my resume
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                Get acquainted with the resume online or immediately{' '}
+                Get acquainted with the resume online or
+                <br /> immediately{' '}
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
@@ -42,12 +43,12 @@ export default async function ResumePage() {
                 it.
               </p>
             </div>
-          </div>
+          </section>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 15}>
-          <main className="flex justify-center text-xs leading-[1.2]">
-            <div className="relative flex min-w-[325px] max-w-[325px] flex-col rounded-lg shadow-[5px_5px_0px_0px] outline outline-1 outline-primary md:max-h-[1122px] md:min-h-[1122px] md:min-w-[794px] md:max-w-[794px] md:flex-row">
-              <section className="flex w-[325px] flex-col justify-between rounded-l-lg bg-secondary p-6 pt-[18px]">
+          <section className="flex justify-center text-xs leading-[1.2]">
+            <div className="relative flex w-10/12 min-w-[325px] max-w-sm flex-col rounded-lg shadow-[5px_5px_0px_0px] outline outline-1 outline-primary sm:w-full sm:max-w-full sm:flex-row lg:h-[1122px] lg:min-w-[794px]">
+              <article className="flex flex-col justify-between gap-4 rounded-t-lg bg-secondary p-6 pt-[18px] sm:w-5/12 sm:rounded-l-lg lg:w-[325px]">
                 <Info />
                 <Divider />
                 <Contacts
@@ -61,16 +62,16 @@ export default async function ResumePage() {
                 <Skills />
                 <Divider />
                 <Languages />
-              </section>
-              <section className="flex w-[469px] flex-col justify-between gap-4 rounded-l-lg p-6 pt-[19px]">
+              </article>
+              <article className="flex flex-col justify-between gap-4 rounded-b-lg p-6 pt-[19px] sm:w-7/12 sm:rounded-l-lg lg:w-[469px]">
                 <Experience />
                 <Divider />
                 <Courses courses={DATA.courses} />
                 <Divider />
                 <Education />
-              </section>
+              </article>
             </div>
-          </main>
+          </section>
         </BlurFade>
       </div>
     </main>

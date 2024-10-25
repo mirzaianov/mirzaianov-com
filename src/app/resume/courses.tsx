@@ -37,7 +37,7 @@ export default function Courses({ courses }: Props) {
             >
               {course.links && course.links.length > 0 && (
                 <Link
-                  className="self-start"
+                  className="w-full self-start"
                   href={
                     course.links.find((field) => field.title === 'Website')
                       ?.href || ''
@@ -45,9 +45,7 @@ export default function Courses({ courses }: Props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="flex-nowrap overflow-hidden text-ellipsis font-bold">
-                    {course.title}
-                  </p>
+                  <p className="truncate font-bold">{course.title}</p>
                 </Link>
               )}
 

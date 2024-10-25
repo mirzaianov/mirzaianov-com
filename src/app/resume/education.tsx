@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <article>
+    <article className="flex flex-col gap-2">
       <header className="text-xl font-bold uppercase leading-[1.2]">
         Education
       </header>

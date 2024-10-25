@@ -168,7 +168,7 @@ export default async function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="mx-auto grid max-w-[306px] grid-cols-1">
+          <div className="mx-auto grid grid-cols-1 sm:max-w-[306px]">
             <BlurFade delay={BLUR_FADE_DELAY * 12}>
               <ProjectCard
                 href="/resume"
