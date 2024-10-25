@@ -10,6 +10,8 @@ import BackButton from '@/components/back-button';
 
 const BLUR_FADE_DELAY = 0.04;
 
+export const dynamic = 'force-static';
+
 export default async function Notes({
   params,
 }: {
