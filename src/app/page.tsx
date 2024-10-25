@@ -154,7 +154,8 @@ export default async function Page() {
                   >
                     online
                   </Link>{' '}
-                  or immidiately{' '}
+                  or
+                  <br /> immediately{' '}
                   <Link
                     rel="noopener noreferrer"
                     target="_blank"
