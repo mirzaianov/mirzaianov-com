@@ -12,7 +12,7 @@ export default function ProjectsList({ limit = Infinity }: { limit?: number }) {
           return (
             <BlurFade
               key={project.title}
-              delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              delay={BLUR_FADE_DELAY * 15 + id * 0.05}
             >
               <ProjectCard
                 href={project.href}
