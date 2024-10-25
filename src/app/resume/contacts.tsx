@@ -38,6 +38,7 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
                 <p>{contact.name}</p>
               </div>
               <a
+                className="truncate [direction:rtl] hover:text-clip"
                 href={contact.url}
                 target="_blank"
               >

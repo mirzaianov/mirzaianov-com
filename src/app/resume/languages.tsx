@@ -17,7 +17,7 @@ export default function Languages() {
               <p className="uppercase">{language.name}</p>
             </div>
             <p>-</p>
-            <p>{language.level}</p>
+            <p className="truncate">{language.level}</p>
           </li>
         ))}
       </ul>
