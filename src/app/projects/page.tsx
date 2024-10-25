@@ -8,7 +8,7 @@ export default async function ProjectsPage() {
     <main id="projects">
       <div className="w-full space-y-12 pb-12">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <section className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
                 My Projects
@@ -22,7 +22,7 @@ export default async function ProjectsPage() {
                 which make money. Here are a few of my favorites.
               </p>
             </div>
-          </div>
+          </section>
         </BlurFade>
         <ProjectsList />
       </div>
