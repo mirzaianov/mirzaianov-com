@@ -4,7 +4,7 @@ export default function Education() {
       <header className="text-xl font-bold uppercase leading-[1.2]">
         Education
       </header>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         <div className="flex flex-wrap items-center gap-1">
           <div className="text-base font-bold leading-[1.2]">
             Master’s Degree

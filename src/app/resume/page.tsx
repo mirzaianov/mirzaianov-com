@@ -63,7 +63,7 @@ export default async function ResumePage() {
                 <Divider />
                 <Languages />
               </article>
-              <article className="flex flex-col justify-between gap-4 rounded-b-lg p-6 pt-[19px] sm:w-7/12 sm:rounded-l-lg lg:w-[469px]">
+              <article className="flex flex-col gap-4 rounded-b-lg px-6 py-[21px] sm:w-7/12 sm:justify-between sm:gap-0 sm:rounded-l-lg lg:w-[469px]">
                 <Experience />
                 <Divider />
                 <Courses courses={DATA.courses} />
