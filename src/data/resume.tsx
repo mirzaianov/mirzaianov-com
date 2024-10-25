@@ -106,7 +106,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: 'LinkedIn',
-        url: 'https://linkedin.com/in/mirzaianov/',
+        url: 'https://linkedin.com/in/mirzaianov',
         icon: Icons.linkedin,
         navbar: true,
         mobile: true,
@@ -120,7 +120,7 @@ export const DATA = {
       },
       LeetCode: {
         name: 'LeetCode',
-        url: 'https://leetcode.com/mirzaianov/',
+        url: 'https://leetcode.com/mirzaianov',
         icon: Icons.leetcode,
         navbar: true,
         mobile: false,
