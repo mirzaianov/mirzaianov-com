@@ -30,7 +30,7 @@ export default async function ResumePage() {
                 Reach my resume
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                Get acquainted with the resume online or immidiately{' '}
+                Get acquainted with the resume online or immediately{' '}
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
