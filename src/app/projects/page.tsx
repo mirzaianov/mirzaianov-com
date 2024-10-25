@@ -24,7 +24,9 @@ export default async function ProjectsPage() {
             </div>
           </section>
         </BlurFade>
-        <ProjectsList />
+        <BlurFade delay={BLUR_FADE_DELAY * 15}>
+          <ProjectsList />
+        </BlurFade>
       </div>
     </main>
   );
