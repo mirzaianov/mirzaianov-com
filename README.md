@@ -42,7 +42,7 @@ Next will start the server on http://localhost:3000/
 
 ### Open the [Config file](./src/data/resume.tsx) and make changes
 
-## Licence
+## License
 
 ### MIT license
 
