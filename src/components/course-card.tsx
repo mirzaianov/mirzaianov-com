@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
+import { CardContent, CardFooter, CardTitle } from './ui/card';
 
 interface Props {
   title: string;
@@ -38,8 +39,8 @@ export function CourseCard({
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
       </div>
-      <div className="flex flex-1 flex-col justify-start gap-1">
-        <h2 className="font-semibold leading-none">{title}</h2>
+      <CardTitle className="mt-1 text-base">{title}</CardTitle>
+      <CardContent className="mt-auto flex flex-col gap-1">
         <p className="text-sm text-muted-foreground">
           {source && <span>{source} • </span>}
           {author && <span>{author} • </span>}
@@ -50,28 +51,30 @@ export function CourseCard({
             {description}
           </span>
         )}
-      </div>
-      {links && links.length > 0 && (
-        <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
-          {links?.map((link, idx) => (
-            <Link
-              rel="noopener noreferrer"
-              target="_blank"
-              href={link.href}
-              key={idx}
-            >
-              <Badge
+      </CardContent>
+      <CardFooter>
+        {links && links.length > 0 && (
+          <div className="flex flex-row flex-wrap items-start gap-1">
+            {links?.map((link, idx) => (
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href={link.href}
                 key={idx}
-                title={link.title}
-                className="flex gap-2"
               >
-                {link.icon}
-                {link.title}
-              </Badge>
-            </Link>
-          ))}
-        </div>
-      )}
+                <Badge
+                  key={idx}
+                  title={link.title}
+                  className="flex gap-2 px-2 py-1 text-[10px]"
+                >
+                  {link.icon}
+                  {link.title}
+                </Badge>
+              </Link>
+            ))}
+          </div>
+        )}
+      </CardFooter>
     </li>
   );
 }

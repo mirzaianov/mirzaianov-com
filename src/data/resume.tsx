@@ -409,17 +409,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/react-typescript-the-practical-guide',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-react-typescript-practical',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-6dfcde92-f3f1-4dba-ad8f-a34292cac315.pdf',
         },
       ],
@@ -437,17 +437,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/modern_typescript/',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-modern-typescript',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-4de5d88a-3db6-453e-ad89-f86f5f108353.pdf',
         },
       ],
@@ -465,17 +465,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/api-and-web-service-introduction/',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-api',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-6d5861d0-2a0e-4be8-99b1-e0ef1e16342b.pdf',
         },
       ],
@@ -492,17 +492,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/regular-expressions-mastery',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-regex',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-e6d84011-c920-48c1-ad31-2716a9b348cd.pdf',
         },
       ],
@@ -520,7 +520,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
         },
       ],
@@ -538,7 +538,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/git-github-practical-guide/',
         },
       ],
@@ -556,12 +556,12 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/react-ru/',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-react-ru',
         },
       ],
@@ -578,7 +578,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/',
         },
       ],
@@ -596,7 +596,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/the-complete-javascript-course/',
         },
       ],
@@ -613,17 +613,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/javascript-understanding-es6-and-beyond',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-es6-beyond',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-0b371869-51c5-4be6-9be8-c270a8433e9c.pdf',
         },
       ],
@@ -642,7 +642,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://frontendmasters.com/courses/typescript-v4/',
         },
       ],
@@ -660,7 +660,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://frontendmasters.com/courses/css-grid-flexbox-v2/',
         },
       ],
@@ -678,7 +678,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.youtube.com/playlist?list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb',
         },
       ],
@@ -696,7 +696,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.pluralsight.com/courses/javascript-asynchronous-programming',
         },
       ],
@@ -714,17 +714,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://courses.kevinpowell.co/conquering-responsive-layouts',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/conquering-responsive-layouts',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/Conquering Responsive Layouts-certificate.pdf',
         },
       ],
@@ -742,17 +742,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/responsive-ui-design-in-figma-2h-deep-dive/',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-responsive-ui-design-in-figma',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-e67bb419-5e23-4b4c-b54d-f9f50b816155.pdf',
         },
       ],
@@ -770,17 +770,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/figma-beginner/',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-figma-beginner',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-22e5f94e-48a0-44bd-9e2a-c16979f328bd.pdf',
         },
       ],
@@ -798,7 +798,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://frontendmasters.com/courses/css-animations/',
         },
       ],
@@ -816,7 +816,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.pluralsight.com/courses/javascript-strings-regular-expressions',
         },
       ],
@@ -834,7 +834,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/',
         },
       ],
@@ -853,17 +853,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/javascript_full',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-javascript-react',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-1f0a1090-1098-48ef-9491-d7be1350699b.pdf',
         },
       ],
@@ -881,7 +881,7 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://frontendmasters.com/courses/css-grid-flexbox-v2/',
         },
       ],
@@ -899,17 +899,17 @@ export const DATA = {
       links: [
         {
           title: 'Website',
-          icon: <Icons.globe className="h-4 w-4" />,
+          icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/webdeveloper/',
         },
         {
           title: 'Source',
-          icon: <Icons.github className="h-4 w-4" />,
+          icon: <Icons.github className="size-3" />,
           href: 'https://github.com/mirzaianov/udemy-web-developer',
         },
         {
           title: 'Certificate',
-          icon: <Icons.download className="h-4 w-4" />,
+          icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-03049cff-42f9-4689-8384-3bd33140d70b.pdf',
         },
       ],
