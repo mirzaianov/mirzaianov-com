@@ -30,9 +30,9 @@ export default function NoteCard({
         href={`/notes/${href}` || '#'}
         className={cn('block cursor-pointer')}
       >
-        <CardHeader className="px-2">
+        <CardHeader className="p-2">
           <div className="space-y-1">
-            <CardTitle className="mt-2 text-base">{title}</CardTitle>
+            <CardTitle className="text-base">{title}</CardTitle>
             <time className="font-sans text-xs">{publishedAt}</time>
             <Markdown
               rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
@@ -44,7 +44,7 @@ export default function NoteCard({
         </CardHeader>
         <CardContent className="mt-auto flex flex-col px-2 pb-2">
           {tags && tags.length > 0 && (
-            <div className="mt-2 flex flex-wrap gap-1">
+            <div className="flex flex-wrap gap-1">
               {tags?.split(', ').map((tag) => (
                 <Badge
                   className="px-1 py-0 text-[10px]"
