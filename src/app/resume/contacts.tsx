@@ -1,5 +1,6 @@
 import { formatUrl } from '@/lib/utils';
 import { type IconProps } from '@/components/icons';
+import BlurFade from '@/components/magicui/blur-fade';
 
 type Contact = {
   name: string;
@@ -20,44 +21,48 @@ type Props = {
   locationLink: LocationLink;
 };
 
+const BLUR_FADE_DELAY = 0.04;
+
 export default function Contacts({ contacts, location, locationLink }: Props) {
   return (
-    <article className="flex flex-col gap-2">
-      <header className="text-xl font-bold uppercase leading-[1.2]">
-        Contacts
-      </header>
-      <ul className="flex flex-col gap-1">
-        {Object.entries(contacts)
-          .filter(([_, contact]) => contact.navbar)
-          .map(([_, contact]) => (
-            <li
-              key={contact.name}
-              className="flex items-center gap-2"
-            >
-              <div className="flex min-w-[59px] items-center gap-1">
-                <p>{contact.name}</p>
-              </div>
-              <a
-                className="truncate [direction:rtl] hover:text-clip"
-                href={contact.url}
-                target="_blank"
+    <BlurFade delay={BLUR_FADE_DELAY * 14}>
+      <article className="flex flex-col gap-2">
+        <header className="text-xl font-bold uppercase leading-[1.2]">
+          Contacts
+        </header>
+        <ul className="flex flex-col gap-1">
+          {Object.entries(contacts)
+            .filter(([_, contact]) => contact.navbar)
+            .map(([_, contact]) => (
+              <li
+                key={contact.name}
+                className="flex items-center gap-2"
               >
-                {formatUrl(contact.url)}
-              </a>
-            </li>
-          ))}
-        <div className="flex items-center gap-2">
-          <div className="flex min-w-[59px] items-center gap-1">
-            <p>Location</p>
+                <div className="flex min-w-[59px] items-center gap-1">
+                  <p>{contact.name}</p>
+                </div>
+                <a
+                  className="truncate [direction:rtl] hover:text-clip"
+                  href={contact.url}
+                  target="_blank"
+                >
+                  {formatUrl(contact.url)}
+                </a>
+              </li>
+            ))}
+          <div className="flex items-center gap-2">
+            <div className="flex min-w-[59px] items-center gap-1">
+              <p>Location</p>
+            </div>
+            <a
+              href={locationLink}
+              target="_blank"
+            >
+              {location}
+            </a>
           </div>
-          <a
-            href={locationLink}
-            target="_blank"
-          >
-            {location}
-          </a>
-        </div>
-      </ul>
-    </article>
+        </ul>
+      </article>
+    </BlurFade>
   );
 }

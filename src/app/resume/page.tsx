@@ -12,15 +12,19 @@ import { DATA } from '@/data/resume';
 
 const BLUR_FADE_DELAY = 0.04;
 
-function Divider() {
-  return <div className="block min-h-[1px] w-full rounded-sm bg-primary" />;
+function Divider({ rate }: { rate: number }) {
+  return (
+    <BlurFade delay={BLUR_FADE_DELAY * 14}>
+      <div className="block min-h-[1px] w-full rounded-sm bg-primary" />
+    </BlurFade>
+  );
 }
 
 export default async function ResumePage() {
   return (
     <main id="resume">
       <div className="w-full space-y-12 pb-12">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+        <BlurFade delay={BLUR_FADE_DELAY * 5}>
           <section className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
@@ -45,7 +49,7 @@ export default async function ResumePage() {
             </div>
           </section>
         </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 15}>
+        <BlurFade delay={BLUR_FADE_DELAY * 10}>
           <section className="flex justify-center text-xs leading-[1.2]">
             <div className="relative flex w-10/12 min-w-[325px] max-w-sm flex-col rounded-lg shadow-[5px_5px_0px_0px] outline outline-1 outline-primary sm:w-full sm:max-w-full sm:flex-row lg:h-[1122px] lg:min-w-[794px]">
               <article className="flex flex-col justify-between gap-4 rounded-t-lg bg-secondary p-6 pt-[18px] sm:w-5/12 sm:rounded-l-lg lg:w-[325px]">
@@ -54,24 +58,24 @@ export default async function ResumePage() {
                   role={DATA.role}
                   skills={DATA.skills}
                 />
-                <Divider />
+                <Divider rate={13} />
                 <Contacts
                   contacts={DATA.contact.social}
                   location={DATA.location}
                   locationLink={DATA.locationLink}
                 />
-                <Divider />
+                <Divider rate={15} />
                 <About about={DATA.about} />
-                <Divider />
+                <Divider rate={17} />
                 <Skills resumeSkills={DATA.resume.skills} />
-                <Divider />
+                <Divider rate={19} />
                 <Languages languages={DATA.languages} />
               </article>
               <article className="flex flex-col gap-4 rounded-b-lg px-6 py-[21px] sm:w-7/12 sm:justify-between sm:gap-0 sm:rounded-l-lg lg:w-[469px]">
                 <Experience work={DATA.work} />
-                <Divider />
+                <Divider rate={15} />
                 <Courses courses={DATA.courses} />
-                <Divider />
+                <Divider rate={18} />
                 <Education education={DATA.education} />
               </article>
             </div>
