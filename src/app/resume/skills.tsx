@@ -9,7 +9,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Skills({ resumeSkills }: Props) {
   return (
     <BlurFade delay={BLUR_FADE_DELAY * 18}>
-      <article className="flex flex-col gap-2">
+      <article className="flex cursor-default flex-col gap-2">
         <header className="text-xl font-bold uppercase leading-[1.2]">
           Skills
         </header>
@@ -21,7 +21,7 @@ export default function Skills({ resumeSkills }: Props) {
             >
               <li
                 key={skill}
-                className="inline-block rounded-sm px-2 py-1 outline outline-1 -outline-offset-1 outline-primary"
+                className="inline-block rounded-sm px-2 py-1 outline outline-1 -outline-offset-1 outline-primary transition-colors hover:bg-foreground hover:text-background"
               >
                 {skill}
               </li>
