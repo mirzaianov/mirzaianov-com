@@ -148,7 +148,7 @@ export const DATA = {
       ],
       inResume: true,
       field: 'Software Engineering',
-      specificity: 'Web Development',
+      specialization: 'Web Development',
     },
     {
       company: 'Career Break',
@@ -167,7 +167,7 @@ export const DATA = {
       ],
       inResume: false,
       field: 'Software Engineering',
-      specificity: 'Web Development',
+      specialization: 'Web Development',
     },
     {
       company: 'Knorr-Bremse AG',
@@ -187,18 +187,21 @@ export const DATA = {
       ],
       inResume: true,
       field: 'Automotive',
-      specificity: 'Braking Systems',
+      specialization: 'Braking Systems',
     },
   ],
   education: [
     {
-      school:
-        'Kazan National Research Technical University named after A.N. Tupolev – KAI',
+      name: 'Kazan National Research Technical University named after A.N. Tupolev–KAI',
       href: 'https://kai.ru/web/en/',
-      degree: "Master's Degree in Engineering Technology",
+      degree: "Master's Degree",
+      specialization: 'Engineering Technology',
       logoUrl: '/icons/kai.png',
       start: 2003,
       end: 2008,
+      gpa: 4.2,
+      type: 'Higher Education',
+      mode: 'Full-time',
       description: [
         "Kazan National Research Technical University named after A.N. Tupolev (often called KAI or KNRTU-KAI) is one of Russia's major technical universities, located in Kazan, the capital of Tatarstan. Founded in 1932, it was originally established as the Kazan Aviation Institute. The university is named after Andrey Tupolev, a famous Soviet aircraft designer.",
         "The university specializes in Aviation and Aerospace Engineering, Technical and Engineering Sciences, Information Technology, Radio Electronics, Economics and Management. It's considered one of the leading aerospace education institutions in Russia and has strong connections with the Russian aviation industry. A lot of large-scale projects in composite materials, laser technologies, industrial robots, new engine development and the like are implemented by the university.",

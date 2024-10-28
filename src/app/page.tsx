@@ -97,18 +97,18 @@ export default async function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
-          {DATA.education.map((education, id) => (
+          {DATA.education.map((school, id) => (
             <BlurFade
-              key={education.school}
+              key={school.name}
               delay={BLUR_FADE_DELAY * 8 + id * 0.05}
             >
               <ResumeCard
-                key={education.school}
-                logoUrl={education.logoUrl}
-                altText={education.school}
-                title={education.school}
-                subtitle={education.degree}
-                description={education.description}
+                key={school.name}
+                logoUrl={school.logoUrl}
+                altText={school.name}
+                title={school.name}
+                subtitle={`${school.degree} in ${school.specialization}`}
+                description={school.description}
               />
             </BlurFade>
           ))}

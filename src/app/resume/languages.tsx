@@ -1,13 +1,20 @@
-import { DATA } from '@/data/resume';
+type Language = {
+  name: string;
+  level: string;
+};
 
-export default function Languages() {
+type Props = {
+  languages: readonly Language[];
+};
+
+export default function Languages({ languages }: Props) {
   return (
     <article className="flex flex-col gap-2">
       <header className="text-xl font-bold uppercase leading-[1.2]">
         Languages
       </header>
       <ul className="flex flex-col">
-        {DATA.languages.map((language) => (
+        {languages.map((language) => (
           <li
             key={language.name}
             className="flex items-center gap-1"

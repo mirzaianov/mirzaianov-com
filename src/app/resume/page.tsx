@@ -10,11 +10,11 @@ import Education from './education';
 import Experience from './experience';
 import { DATA } from '@/data/resume';
 
+const BLUR_FADE_DELAY = 0.04;
+
 function Divider() {
   return <div className="block min-h-[1px] w-full rounded-sm bg-primary" />;
 }
-
-const BLUR_FADE_DELAY = 0.04;
 
 export default async function ResumePage() {
   return (
@@ -49,7 +49,11 @@ export default async function ResumePage() {
           <section className="flex justify-center text-xs leading-[1.2]">
             <div className="relative flex w-10/12 min-w-[325px] max-w-sm flex-col rounded-lg shadow-[5px_5px_0px_0px] outline outline-1 outline-primary sm:w-full sm:max-w-full sm:flex-row lg:h-[1122px] lg:min-w-[794px]">
               <article className="flex flex-col justify-between gap-4 rounded-t-lg bg-secondary p-6 pt-[18px] sm:w-5/12 sm:rounded-l-lg lg:w-[325px]">
-                <Info />
+                <Info
+                  name={DATA.name}
+                  role={DATA.role}
+                  skills={DATA.skills}
+                />
                 <Divider />
                 <Contacts
                   contacts={DATA.contact.social}
@@ -59,16 +63,16 @@ export default async function ResumePage() {
                 <Divider />
                 <About about={DATA.about} />
                 <Divider />
-                <Skills />
+                <Skills resumeSkills={DATA.resume.skills} />
                 <Divider />
-                <Languages />
+                <Languages languages={DATA.languages} />
               </article>
               <article className="flex flex-col gap-4 rounded-b-lg px-6 py-[21px] sm:w-7/12 sm:justify-between sm:gap-0 sm:rounded-l-lg lg:w-[469px]">
-                <Experience />
+                <Experience work={DATA.work} />
                 <Divider />
                 <Courses courses={DATA.courses} />
                 <Divider />
-                <Education />
+                <Education education={DATA.education} />
               </article>
             </div>
           </section>

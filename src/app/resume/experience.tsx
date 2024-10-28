@@ -1,13 +1,26 @@
-import { DATA } from '@/data/resume';
+type Job = {
+  company: string;
+  title: string;
+  start: string;
+  end?: string;
+  field: string;
+  specialization: string;
+  description: readonly string[];
+  inResume: boolean;
+};
 
-export default function Experience() {
+type Props = {
+  work: readonly Job[];
+};
+
+export default function Experience({ work }: Props) {
   return (
     <article className="flex flex-col gap-4">
       <header className="text-xl font-bold uppercase leading-[1.2]">
         Work Experience
       </header>
       <ul className="flex flex-col gap-4">
-        {DATA.work
+        {work
           .filter((job) => job.inResume)
           .map((job) => (
             <ul
@@ -28,7 +41,7 @@ export default function Experience() {
                 <div className="flex flex-wrap items-center gap-1">
                   <div>{job.field}</div>
                   <div>•</div>
-                  <div>{job.specificity}</div>
+                  <div>{job.specialization}</div>
                 </div>
               </div>
               <div className="flex flex-col gap-1">

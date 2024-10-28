@@ -5,9 +5,6 @@ type Course = {
   date: string;
   source: string;
   author: string;
-  active?: boolean;
-  description: string;
-  image?: string;
   inResume?: boolean;
   links?: readonly {
     title: string;
