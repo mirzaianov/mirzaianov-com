@@ -54,7 +54,7 @@ export const ResumeCard = ({
         <div className="group ml-4 flex-grow flex-col items-center">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center text-xs font-semibold leading-none sm:text-sm">
+              <h3 className="inline-flex items-center justify-center font-semibold leading-none">
                 {title}
                 {badges && (
                   <span className="inline-flex gap-x-1">
@@ -80,7 +80,7 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {subtitle && <div className="font-sans text-sm">{subtitle}</div>}
           </CardHeader>
           {description && description.length > 0 && (
             <motion.ul
@@ -98,10 +98,11 @@ export const ResumeCard = ({
             >
               {description.map((paragraph, index) => (
                 <li
-                  className="text-xs"
+                  className="flex gap-0.5 text-xs"
                   key={index}
                 >
-                  • {paragraph}
+                  <p>•</p>
+                  <p>{paragraph}</p>
                 </li>
               ))}
             </motion.ul>
