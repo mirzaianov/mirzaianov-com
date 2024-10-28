@@ -137,7 +137,7 @@ export const DATA = {
       title: 'Frontend Developer',
       logoUrl: '/icons/rm.png',
       start: 'April 2023',
-      end: null,
+      end: '',
       description: [
         'Crafted 10 compelling landing pages from scratch, harnessing HTML, CSS (SASS), and JavaScript (ES6+) to captivate audiences. Leveraged cutting-edge Flexbox, Grid, Transitions, and Animations to deliver seamless experiences, resulting in a 20% increase in customer engagement',
         'Engineered 3 top-of-the-line single-page applications (SPAs) using React & Tailwind, transforming audience interactions with intuitive interfaces and faster load times, leading to a 30% boost in user retention',

@@ -83,7 +83,7 @@ export default async function Page() {
                 title={work.company}
                 subtitle={work.title}
                 badges={work.badges}
-                period={`${work.start} - ${work.end ?? 'Present'}`}
+                period={`${work.start} - ${work.end || 'Present'}`}
                 description={work.description}
               />
             </BlurFade>
