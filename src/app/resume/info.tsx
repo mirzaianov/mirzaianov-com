@@ -1,5 +1,6 @@
 import BlurFade from '@/components/magicui/blur-fade';
 import HyperText from '@/components/magicui/hyper-text';
+import { VelocityScroll } from '@/components/magicui/scroll-based-velocity';
 
 type Props = {
   name: string;
@@ -27,10 +28,12 @@ export default function Info({ name, role, skills }: Props) {
           <h2 className="text-base uppercase leading-[1.2] lg:text-xl lg:leading-[1.2]">
             {role}
           </h2>
-          <h3 className="text-xs leading-[1.2] lg:text-base lg:leading-[1.2]">
-            {skills.length > 0 &&
-              skills.filter((_, index) => index < 3).join(' • ')}
-          </h3>
+          {skills.length > 0 && (
+            <VelocityScroll
+              className="text-xs leading-[1.2] lg:text-base lg:leading-[1.2]"
+              text={`${skills.filter((_, index) => index < 5).join(' • ')} • `}
+            />
+          )}
         </div>
       </article>
     </BlurFade>
