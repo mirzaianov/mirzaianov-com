@@ -44,9 +44,9 @@ export default async function ResumePage() {
                   href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
                   className="text-gray-900 underline dark:text-white"
                 >
-                  download
-                </Link>{' '}
-                it in PDF format (EN, A4).
+                  download it in PDF format (EN, A4)
+                </Link>
+                .
               </p>
             </div>
           </section>
