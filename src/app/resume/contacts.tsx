@@ -1,6 +1,7 @@
 import { formatUrl } from '@/lib/utils';
 import { type IconProps } from '@/components/icons';
 import BlurFade from '@/components/magicui/blur-fade';
+import Link from 'next/link';
 
 type Contact = {
   name: string;
@@ -41,25 +42,27 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
                 <div className="flex min-w-[59px] items-center gap-1">
                   <p>{contact.name}</p>
                 </div>
-                <a
+                <Link
                   className="truncate [direction:rtl] hover:text-clip"
                   href={contact.url}
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {formatUrl(contact.url)}
-                </a>
+                </Link>
               </li>
             ))}
           <div className="flex items-center gap-2">
             <div className="flex min-w-[59px] items-center gap-1">
               <p>Location</p>
             </div>
-            <a
+            <Link
               href={locationLink}
               target="_blank"
+              rel="noopener noreferrer"
             >
               {location}
-            </a>
+            </Link>
           </div>
         </ul>
       </article>
