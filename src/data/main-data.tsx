@@ -132,8 +132,8 @@ export const MAIN_DATA = {
   },
   work: [
     {
-      company: 'Freelance',
-      href: '/resume',
+      company: 'Self Employed',
+      href: '/',
       badges: [],
       location: 'Remote',
       title: 'Frontend Developer',
@@ -154,7 +154,7 @@ export const MAIN_DATA = {
     },
     {
       company: 'Career Break',
-      href: '#',
+      href: '/projects',
       badges: [],
       location: 'Türkiye',
       title: 'Career transition',

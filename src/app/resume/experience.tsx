@@ -1,8 +1,10 @@
 import BlurFade from '@/components/magicui/blur-fade';
+import Link from 'next/link';
 
 type Job = {
   company: string;
   title: string;
+  href: string;
   start: string;
   end?: string;
   field: string;
@@ -37,9 +39,12 @@ export default function Experience({ work }: Props) {
                     {job.title}
                   </div>
                   <div className="flex flex-wrap items-center gap-1">
-                    <div className="text-base font-bold leading-[1.2]">
+                    <Link
+                      href={job.href}
+                      className="lg:link-hover-effect lg:link-hover-effect:hover lg:no-truncate truncate text-base font-bold leading-[1.2] underline underline-offset-[0.1rem] lg:self-start lg:overflow-auto lg:no-underline"
+                    >
                       {job.company}
-                    </div>
+                    </Link>
                     <div className="text-base leading-[1.2]">•</div>
                     <div className="text-base leading-[1.2]">{`${job.start} - ${job.end || 'Present'}`}</div>
                   </div>
