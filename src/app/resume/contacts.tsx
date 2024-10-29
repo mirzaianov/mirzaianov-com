@@ -43,7 +43,7 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
                   <p>{contact.name}</p>
                 </div>
                 <Link
-                  className="truncate [direction:rtl] hover:text-clip"
+                  className="link-hover-effect link-hover-effect:hover truncate [direction:rtl] hover:text-clip"
                   href={contact.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -57,6 +57,7 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
               <p>Location</p>
             </div>
             <Link
+              className="link-hover-effect link-hover-effect:hover truncate [direction:rtl] hover:text-clip"
               href={locationLink}
               target="_blank"
               rel="noopener noreferrer"

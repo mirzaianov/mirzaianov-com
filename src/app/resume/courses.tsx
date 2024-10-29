@@ -38,7 +38,7 @@ export default function Courses({ courses }: Props) {
               >
                 {course.links && course.links.length > 0 && (
                   <Link
-                    className="w-full self-start"
+                    className="link-hover-effect link-hover-effect:hover self-start truncate font-bold"
                     href={
                       course.links.find((field) => field.title === 'Website')
                         ?.href || ''
@@ -46,10 +46,9 @@ export default function Courses({ courses }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <p className="truncate font-bold">{course.title}</p>
+                    {course.title}
                   </Link>
                 )}
-
                 <div className="flex items-center gap-1 py-[1px] pl-4">
                   <p>{course.source}</p>
                   <p>•</p>
