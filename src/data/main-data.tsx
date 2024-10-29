@@ -12,8 +12,8 @@ export const MAIN_DATA = {
   initials: 'RM',
   role: 'Frontend Developer',
   url: 'https://mirzaianov.com',
-  location: 'Novi Sad, Serbia',
-  locationLink: 'https://www.google.com/maps/place/bursa',
+  currentCity: 'Novi Sad',
+  currentCountry: 'Serbia',
   description:
     'Frontend Developer. I love to deliver interfaces that harmonize functionality and appearance.',
   about: [

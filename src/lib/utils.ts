@@ -39,3 +39,7 @@ export function formatDate(date: string) {
 export function formatUrl(url: string) {
   return url.replace(/(^https?:\/\/)|(^mailto:)/, '');
 }
+
+export function cityToMapsLink(cityName: string): string {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cityName.trim())}`;
+}

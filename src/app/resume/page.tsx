@@ -10,6 +10,7 @@ import Education from './education';
 import Experience from './experience';
 import { MAIN_DATA } from '@/data/main-data';
 import { COURSES_DATA } from '@/data/courses-data';
+import { cityToMapsLink } from '@/lib/utils';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -62,8 +63,8 @@ export default async function ResumePage() {
                 <Divider rate={13} />
                 <Contacts
                   contacts={MAIN_DATA.contact.social}
-                  location={MAIN_DATA.location}
-                  locationLink={MAIN_DATA.locationLink}
+                  location={`${MAIN_DATA.currentCity}, ${MAIN_DATA.currentCountry}`}
+                  locationLink={cityToMapsLink(MAIN_DATA.currentCity)}
                 />
                 <Divider rate={15} />
                 <About about={MAIN_DATA.about} />
