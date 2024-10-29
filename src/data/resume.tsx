@@ -165,7 +165,7 @@ export const DATA = {
         'Moved abroad',
         'Intensively learned WEB development, JavaScript, React, TypeScript, Redux',
         'Utilized Git & Jira',
-        'Practised DSA',
+        'Practiced DSA',
       ],
       inResume: false,
       field: 'Software Engineering',
@@ -273,6 +273,5 @@ export const DATA = {
     video: '/videos/resume.mp4',
     self: true,
   },
-
-  credits: 'Insipred by [dillion.io](https://dillion.io/)',
+  credits: 'Inspired by [dillion.io](https://dillion.io/)',
 } as const;
