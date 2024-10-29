@@ -38,7 +38,7 @@ export default function Courses({ courses }: Props) {
               >
                 {course.links && course.links.length > 0 && (
                   <Link
-                    className="link-hover-effect link-hover-effect:hover self-start truncate font-bold"
+                    className="lg:link-hover-effect lg:link-hover-effect:hover lg:no-truncate truncate font-bold underline lg:self-start lg:overflow-auto lg:no-underline"
                     href={
                       course.links.find((field) => field.title === 'Website')
                         ?.href || ''
