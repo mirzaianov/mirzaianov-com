@@ -1,5 +1,5 @@
 import BlurFade from '@/components/magicui/blur-fade';
-import { DATA } from '@/data/resume';
+import { PROJECTS_DATA } from '@/data/projects-data';
 import { ProjectCard } from './project-card';
 
 const BLUR_FADE_DELAY = 0.04;
@@ -7,7 +7,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function ProjectsList({ limit = Infinity }: { limit?: number }) {
   return (
     <section className="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
-      {DATA.projects.list.map((project, id) => {
+      {PROJECTS_DATA.list.map((project, id) => {
         if (id < limit) {
           return (
             <BlurFade

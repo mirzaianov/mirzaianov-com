@@ -6,6 +6,7 @@ import { ResumeCard } from '@/components/resume-card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { DATA } from '@/data/resume';
+import { PROJECTS_DATA } from '@/data/projects-data';
 import CoursesList from '@/components/courses-list';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
@@ -193,10 +194,10 @@ export default async function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                  {DATA.projects.pageBadge}
+                  {PROJECTS_DATA.pageBadge}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  {DATA.projects.pageTitle}
+                  {PROJECTS_DATA.pageTitle}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
