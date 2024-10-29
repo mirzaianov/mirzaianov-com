@@ -1,7 +1,7 @@
 import Navbar from '@/components/navbar';
 import { ThemeProvider } from '@/components/theme-provider';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import { DATA } from '@/data/resume';
+import { MAIN_DATA } from '@/data/main-data';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Inter as FontSans } from 'next/font/google';
@@ -13,17 +13,17 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: new URL(MAIN_DATA.url),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: MAIN_DATA.name,
+    template: `%s | ${MAIN_DATA.name}`,
   },
-  description: DATA.description,
+  description: MAIN_DATA.description,
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
+    title: `${MAIN_DATA.name}`,
+    description: MAIN_DATA.description,
+    url: MAIN_DATA.url,
+    siteName: `${MAIN_DATA.name}`,
     locale: 'en_US',
     type: 'website',
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: `${MAIN_DATA.name}`,
     card: 'summary_large_image',
   },
   verification: {

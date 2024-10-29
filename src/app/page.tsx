@@ -5,16 +5,16 @@ import { ProjectCard } from '@/components/project-card';
 import { ResumeCard } from '@/components/resume-card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
-import { DATA } from '@/data/resume';
-import { PROJECTS_DATA } from '@/data/projects-data';
 import CoursesList from '@/components/courses-list';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
 import ProjectsList from '@/components/projects-list';
 import NotesList from '@/components/notes-list';
-import { getNotesPosts, NOTES_DATA } from '@/data/notes-data';
+import { MAIN_DATA } from '@/data/main-data';
+import { PROJECTS_DATA } from '@/data/projects-data';
 import { COURSES_DATA } from '@/data/courses-data';
+import { getNotesPosts, NOTES_DATA } from '@/data/notes-data';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -30,21 +30,21 @@ export default async function Page() {
             <div className="flex flex-1 flex-col space-y-1.5">
               <WordPullUp
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                words={`Hi, I'm ${DATA.name.split(' ')[0]}`}
+                words={`Hi, I'm ${MAIN_DATA.name.split(' ')[0]}`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
-                text={DATA.description}
+                text={MAIN_DATA.description}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage
-                  alt={DATA.name}
-                  src={DATA.avatarUrl}
+                  alt={MAIN_DATA.name}
+                  src={MAIN_DATA.avatarUrl}
                 />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
+                <AvatarFallback>{MAIN_DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
@@ -61,7 +61,7 @@ export default async function Page() {
             rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
             className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert"
           >
-            {DATA.summary}
+            {MAIN_DATA.summary}
           </Markdown>
         </BlurFade>
       </section>
@@ -72,7 +72,7 @@ export default async function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
           </BlurFade>
-          {DATA.work.map((work, id) => (
+          {MAIN_DATA.work.map((work, id) => (
             <BlurFade
               key={work.company}
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
@@ -98,7 +98,7 @@ export default async function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
-          {DATA.education.map((school, id) => (
+          {MAIN_DATA.education.map((school, id) => (
             <BlurFade
               key={school.name}
               delay={BLUR_FADE_DELAY * 8 + id * 0.05}
@@ -123,7 +123,7 @@ export default async function Page() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
+            {MAIN_DATA.skills.map((skill, id) => (
               <BlurFade
                 key={skill}
                 delay={BLUR_FADE_DELAY * 10 + id * 0.05}
@@ -142,10 +142,10 @@ export default async function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                  {DATA.resume.pageBadge}
+                  {MAIN_DATA.resume.pageBadge}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  {DATA.resume.pageTitle}
+                  {MAIN_DATA.resume.pageTitle}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   Get acquainted with the resume{' '}
@@ -174,14 +174,14 @@ export default async function Page() {
             <BlurFade delay={BLUR_FADE_DELAY * 12}>
               <ProjectCard
                 href="/resume"
-                key={DATA.name}
-                title={DATA.name}
-                description={DATA.role}
+                key={MAIN_DATA.name}
+                title={MAIN_DATA.name}
+                description={MAIN_DATA.role}
                 dates=""
-                tags={DATA.skills.filter((_, index) => index < 5)}
-                video={DATA.resume.video}
-                links={DATA.resume.links}
-                self={DATA.resume.self}
+                tags={MAIN_DATA.skills.filter((_, index) => index < 5)}
+                video={MAIN_DATA.resume.video}
+                links={MAIN_DATA.resume.links}
+                self={MAIN_DATA.resume.self}
               />
             </BlurFade>
           </div>
@@ -284,16 +284,16 @@ export default async function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                {DATA.contact.pageBadge}
+                {MAIN_DATA.contact.pageBadge}
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                {DATA.contact.pageTitle}
+                {MAIN_DATA.contact.pageTitle}
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Have an offer or want to chat? I am always open to new
                 challenges. Just shoot me a dm{' '}
                 <Link
-                  href={DATA.contact.social.Telegram.url}
+                  href={MAIN_DATA.contact.social.Telegram.url}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-gray-900 underline dark:text-white"
@@ -315,7 +315,7 @@ export default async function Page() {
               rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
               className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert"
             >
-              {DATA.credits}
+              {MAIN_DATA.credits}
             </Markdown>
           </BlurFade>
         </div>

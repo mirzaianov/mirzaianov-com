@@ -7,7 +7,7 @@ import {
   GraduationCap,
 } from 'lucide-react';
 
-export const DATA = {
+export const MAIN_DATA = {
   name: 'Riaz Mirzaianov',
   initials: 'RM',
   role: 'Frontend Developer',

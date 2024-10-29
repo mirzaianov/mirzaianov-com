@@ -1,5 +1,5 @@
 import { getPost } from '@/data/notes-data';
-import { DATA } from '@/data/resume';
+import { MAIN_DATA } from '@/data/main-data';
 import { formatDate } from '@/lib/utils';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
@@ -38,10 +38,10 @@ export default async function Notes({
             datePublished: note.metadata.publishedAt,
             description: note.metadata.summary,
             tags: note.metadata.tags,
-            url: `${DATA.url}/notes/${note.slug}`,
+            url: `${MAIN_DATA.url}/notes/${note.slug}`,
             author: {
               '@type': 'Person',
-              name: DATA.name,
+              name: MAIN_DATA.name,
             },
           }),
         }}
