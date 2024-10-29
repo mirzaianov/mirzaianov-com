@@ -30,7 +30,7 @@ export default function Info({ name, role, skills }: Props) {
           </h2>
           {skills.length > 0 && (
             <VelocityScroll
-              className="text-xs leading-[1.2] lg:text-base lg:leading-[1.2]"
+              className="text-sm leading-[1.2] lg:text-base lg:leading-[1.2]"
               text={`${skills.filter((_, index) => index < 5).join(' • ')} • `}
             />
           )}
