@@ -609,7 +609,7 @@ export const DATA = {
       source: 'Udemy',
       author: 'Anthony Alicea',
       active: true,
-      description: 'Deeply understand JavaScript’s newest features',
+      description: "Deeply understand JavaScript's newest features",
       image: '/icons/js.png',
       inResume: false,
       links: [
