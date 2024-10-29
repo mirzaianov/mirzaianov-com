@@ -223,10 +223,10 @@ export default async function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                  My Courses
+                  {DATA.courses.pageBadge}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Follow my study path
+                  {DATA.courses.pageTitle}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   To boost my professional growth and broaden horizons, I
@@ -235,8 +235,8 @@ export default async function Page() {
                     href="/courses"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    {DATA.courses.filter((course) => course.active).length}+
-                    online courses
+                    {DATA.courses.list.filter((course) => course.active).length}
+                    + online courses
                   </Link>
                   . Here are some of the latest ones.
                 </p>

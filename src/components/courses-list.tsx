@@ -8,7 +8,7 @@ export default function CoursesList({ limit = Infinity }: { limit?: number }) {
   return (
     <BlurFade delay={BLUR_FADE_DELAY * 14}>
       <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-        {DATA.courses
+        {DATA.courses.list
           .filter((course) => course.active)
           .map((course, id) => {
             if (id < limit) {
