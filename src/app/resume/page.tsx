@@ -28,10 +28,10 @@ export default async function ResumePage() {
           <section className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                My Resume
+                {DATA.resume.pageBadge}
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Reach my resume
+                {DATA.resume.pageTitle}
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                 Get acquainted with the resume online or

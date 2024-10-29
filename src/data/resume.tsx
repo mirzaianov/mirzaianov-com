@@ -209,6 +209,8 @@ export const DATA = {
     },
   ],
   resume: {
+    pageBadge: 'My Resume',
+    pageTitle: 'Reach my resume',
     skills: [
       'JavaScript',
       'React',
