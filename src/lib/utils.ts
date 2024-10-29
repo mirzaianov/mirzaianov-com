@@ -36,7 +36,7 @@ export function formatDate(date: string) {
   }
 }
 
-export function formatUrl(url: string) {
+export function formatUrl(url: string): string {
   return url.replace(/(^https?:\/\/)|(^mailto:)/, '');
 }
 
