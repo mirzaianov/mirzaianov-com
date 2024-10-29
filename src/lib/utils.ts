@@ -43,3 +43,11 @@ export function formatUrl(url: string): string {
 export function cityToMapsLink(cityName: string): string {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cityName.trim())}`;
 }
+
+export function shortenDate(date: string): string {
+  if (!date.length) return date;
+
+  const [month, year] = date.split(' ');
+
+  return `${month.slice(0, 3)} ${year}`;
+}
