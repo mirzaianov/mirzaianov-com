@@ -90,6 +90,8 @@ export const DATA = {
     { href: '/notes', icon: PencilLine, label: 'Notes', mobile: false },
   ],
   contact: {
+    pageBadge: 'Contact',
+    pageTitle: 'Get in touch',
     social: {
       Telegram: {
         name: 'Telegram',
