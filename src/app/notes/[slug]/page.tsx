@@ -1,4 +1,4 @@
-import { getPost } from '@/data/notes';
+import { getPost } from '@/data/notes-data';
 import { DATA } from '@/data/resume';
 import { formatDate } from '@/lib/utils';
 import { notFound } from 'next/navigation';

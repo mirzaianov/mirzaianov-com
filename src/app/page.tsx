@@ -13,7 +13,7 @@ import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
 import ProjectsList from '@/components/projects-list';
 import NotesList from '@/components/notes-list';
-import { getNotesPosts, NOTES_DATA } from '@/data/notes';
+import { getNotesPosts, NOTES_DATA } from '@/data/notes-data';
 import { COURSES_DATA } from '@/data/courses-data';
 
 const BLUR_FADE_DELAY = 0.04;

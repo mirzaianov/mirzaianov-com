@@ -1,6 +1,6 @@
 import BlurFade from '@/components/magicui/blur-fade';
 import NotesList from '@/components/notes-list';
-import { NOTES_DATA } from '@/data/notes';
+import { NOTES_DATA } from '@/data/notes-data';
 
 const BLUR_FADE_DELAY = 0.04;
 
