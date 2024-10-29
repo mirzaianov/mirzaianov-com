@@ -9,6 +9,7 @@ import Courses from './courses';
 import Education from './education';
 import Experience from './experience';
 import { MAIN_DATA } from '@/data/main-data';
+import { COURSES_DATA } from '@/data/courses-data';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -74,7 +75,7 @@ export default async function ResumePage() {
               <article className="flex flex-col gap-4 rounded-b-lg px-6 py-[21px] sm:w-7/12 sm:justify-between sm:gap-0 sm:rounded-l-lg lg:w-[469px]">
                 <Experience work={MAIN_DATA.work} />
                 <Divider rate={15} />
-                <Courses courses={MAIN_DATA.courses.list} />
+                <Courses courses={COURSES_DATA.list} />
                 <Divider rate={18} />
                 <Education education={MAIN_DATA.education} />
               </article>
