@@ -46,7 +46,7 @@ export default async function ResumePage() {
                 >
                   download
                 </Link>{' '}
-                it.
+                it in PDF format (EN, A4).
               </p>
             </div>
           </section>
