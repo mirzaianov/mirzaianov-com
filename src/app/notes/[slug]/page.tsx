@@ -53,7 +53,7 @@ export default async function Notes({
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
                 Note
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-balance text-3xl font-bold tracking-tighter sm:text-5xl">
                 {note.metadata.title}
               </h2>
               <Suspense fallback={<p className="h-5" />}>

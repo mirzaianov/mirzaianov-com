@@ -17,7 +17,7 @@ export default async function CoursesPage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 {COURSES_DATA.pageTitle}
               </h2>
-              <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+              <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                 To boost my professional growth and broaden horizons, I
                 completed{' '}
                 <span>

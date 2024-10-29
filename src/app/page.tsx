@@ -33,7 +33,7 @@ export default async function Page() {
                 words={`Hi, I'm ${MAIN_DATA.name.split(' ')[0]}`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] text-balance md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={MAIN_DATA.description}
               />
@@ -147,7 +147,7 @@ export default async function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   {MAIN_DATA.resume.pageTitle}
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   Get acquainted with the resume{' '}
                   <Link
                     href="/resume"
@@ -200,7 +200,7 @@ export default async function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   {PROJECTS_DATA.pageTitle}
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
                   websites to complex web applications. Find more{' '}
                   <Link
@@ -230,7 +230,7 @@ export default async function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   {COURSES_DATA.pageTitle}
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   To boost my professional growth and broaden horizons, I
                   completed{' '}
                   <Link
@@ -261,7 +261,7 @@ export default async function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   {NOTES_DATA.pageTitle}
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+                <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   I study a lot and usually save notes that seemed useful. Check
                   out{' '}
                   <Link
@@ -289,7 +289,7 @@ export default async function Page() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 {MAIN_DATA.contact.pageTitle}
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="mx-auto max-w-[600px] text-balance text-muted-foreground md:text-xl/relaxed lg:text-xl/relaxed">
                 Have an offer or want to chat? I am always open to new
                 challenges. Just shoot me a dm{' '}
                 <Link
@@ -313,7 +313,7 @@ export default async function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <Markdown
               rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
-              className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert"
+              className="prose max-w-full text-balance font-sans text-base text-muted-foreground dark:prose-invert"
             >
               {MAIN_DATA.credits}
             </Markdown>

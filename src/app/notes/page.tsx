@@ -17,7 +17,7 @@ export default function NotePage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 {NOTES_DATA.pageTitle}
               </h2>
-              <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+              <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                 I study a lot and usually save notes that seemed useful. Here I
                 share some of my notes.
               </p>

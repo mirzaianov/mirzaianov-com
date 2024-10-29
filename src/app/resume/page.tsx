@@ -35,7 +35,7 @@ export default async function ResumePage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 {MAIN_DATA.resume.pageTitle}
               </h2>
-              <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+              <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                 Get acquainted with the resume online or
                 <br /> immediately{' '}
                 <Link
