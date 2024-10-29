@@ -1,6 +1,6 @@
 import BlurFade from '@/components/magicui/blur-fade';
-import { DATA } from '@/data/resume';
 import { CourseCard } from '@/components/course-card';
+import { COURSES_DATA } from '@/data/courses-data';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -8,7 +8,7 @@ export default function CoursesList({ limit = Infinity }: { limit?: number }) {
   return (
     <BlurFade delay={BLUR_FADE_DELAY * 14}>
       <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-        {DATA.courses.list
+        {COURSES_DATA.list
           .filter((course) => course.active)
           .map((course, id) => {
             if (id < limit) {

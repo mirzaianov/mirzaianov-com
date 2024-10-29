@@ -14,6 +14,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 import ProjectsList from '@/components/projects-list';
 import NotesList from '@/components/notes-list';
 import { getNotesPosts, NOTES_DATA } from '@/data/notes';
+import { COURSES_DATA } from '@/data/courses-data';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -224,10 +225,10 @@ export default async function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                  {DATA.courses.pageBadge}
+                  {COURSES_DATA.pageBadge}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  {DATA.courses.pageTitle}
+                  {COURSES_DATA.pageTitle}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   To boost my professional growth and broaden horizons, I
@@ -236,7 +237,7 @@ export default async function Page() {
                     href="/courses"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    {DATA.courses.list.filter((course) => course.active).length}
+                    {COURSES_DATA.list.filter((course) => course.active).length}
                     + online courses
                   </Link>
                   . Here are some of the latest ones.
