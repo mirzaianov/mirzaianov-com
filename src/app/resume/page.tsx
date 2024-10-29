@@ -14,7 +14,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 function Divider({ rate }: { rate: number }) {
   return (
-    <BlurFade delay={BLUR_FADE_DELAY * 14}>
+    <BlurFade delay={BLUR_FADE_DELAY * rate}>
       <div className="block min-h-[1px] w-full rounded-sm bg-primary" />
     </BlurFade>
   );
