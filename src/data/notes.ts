@@ -7,6 +7,11 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import { unified } from 'unified';
 
+export const NOTES_DATA = {
+  pageBadge: 'My Notes',
+  pageTitle: 'Dig in the latest notes',
+};
+
 function getMDXFiles(dir: string) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === '.mdx');
 }

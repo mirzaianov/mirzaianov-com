@@ -1,5 +1,6 @@
 import BlurFade from '@/components/magicui/blur-fade';
 import NotesList from '@/components/notes-list';
+import { NOTES_DATA } from '@/data/notes';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -11,10 +12,10 @@ export default function NotePage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                My Notes
+                {NOTES_DATA.pageBadge}
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Dig in the latest notes
+                {NOTES_DATA.pageTitle}
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                 I study a lot and usually save notes that seemed useful. Here I
