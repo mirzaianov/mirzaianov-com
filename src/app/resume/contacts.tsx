@@ -43,7 +43,7 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
                   <p>{contact.name}</p>
                 </div>
                 <Link
-                  className="lg:link-hover-effect lg:link-hover-effect:hover lg:no-truncate truncate underline [direction:rtl] hover:text-clip lg:self-start lg:overflow-auto lg:no-underline"
+                  className="lg:link-hover-effect lg:link-hover-effect:hover lg:no-truncate truncate underline underline-offset-[0.1rem] [direction:rtl] hover:text-clip lg:self-start lg:overflow-auto lg:no-underline"
                   href={contact.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -57,7 +57,7 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
               <p>Location</p>
             </div>
             <Link
-              className="lg:link-hover-effect lg:link-hover-effect:hover lg:no-truncate truncate underline [direction:rtl] hover:text-clip lg:self-start lg:overflow-auto lg:no-underline"
+              className="lg:link-hover-effect lg:link-hover-effect:hover lg:no-truncate truncate underline underline-offset-[0.1rem] [direction:rtl] hover:text-clip lg:self-start lg:overflow-auto lg:no-underline"
               href={locationLink}
               target="_blank"
               rel="noopener noreferrer"
