@@ -137,7 +137,7 @@ export const MAIN_DATA = {
       badges: [],
       location: 'Remote',
       title: 'Frontend Developer',
-      logoUrl: '/icons/rm.png',
+      logoUrl: '/icons/rm.svg',
       start: 'April 2023',
       end: '',
       description: [
@@ -158,7 +158,7 @@ export const MAIN_DATA = {
       badges: [],
       location: 'Türkiye',
       title: 'Career transition',
-      logoUrl: '/icons/react.png',
+      logoUrl: '/icons/react.svg',
       start: 'October 2022',
       end: 'March 2023',
       description: [
@@ -177,7 +177,7 @@ export const MAIN_DATA = {
       href: 'https://www.knorr-bremse.com/de/',
       location: 'Russia',
       title: 'R&D Engineer',
-      logoUrl: '/icons/knorr.png',
+      logoUrl: '/icons/knorr.svg',
       start: 'April 2017',
       end: 'September 2022',
       description: [
@@ -198,7 +198,7 @@ export const MAIN_DATA = {
       href: 'https://kai.ru/web/en/',
       degree: "Master's Degree",
       specialization: 'Engineering Technology',
-      logoUrl: '/icons/kai.png',
+      logoUrl: '/icons/kai.svg',
       start: 2003,
       end: 2008,
       gpa: 4.2,

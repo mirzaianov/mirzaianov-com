@@ -29,8 +29,8 @@ export function CourseCard({
 }: Props) {
   return (
     <li className="relative ml-10 py-4">
-      <div className="absolute -left-16 top-2 flex items-center justify-center rounded-full bg-white">
-        <Avatar className="m-auto size-12 border">
+      <div className="absolute -left-16 top-2 flex items-center justify-center rounded-full bg-muted">
+        <Avatar className="flex size-12 items-center justify-center border">
           <AvatarImage
             src={image}
             alt={title}
