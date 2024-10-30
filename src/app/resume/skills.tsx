@@ -17,7 +17,7 @@ export default function Skills({ resumeSkills }: Props) {
           {resumeSkills.map((skill, index) => (
             <BlurFade
               key={skill}
-              delay={BLUR_FADE_DELAY * 18 + index * 0.01}
+              delay={BLUR_FADE_DELAY * 18 + index * 0.025}
             >
               <li
                 key={skill}
