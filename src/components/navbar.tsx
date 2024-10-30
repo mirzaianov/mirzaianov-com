@@ -74,7 +74,9 @@ export default function Navbar() {
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
-              <ModeToggle />
+              <div className="flex items-center gap-2">
+                <ModeToggle />
+              </div>
             </TooltipTrigger>
             <TooltipContent>
               <p>Theme</p>
