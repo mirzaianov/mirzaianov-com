@@ -15,7 +15,7 @@ export const MAIN_DATA = {
   currentCity: 'Novi Sad',
   currentCountry: 'Serbia',
   description:
-    'Frontend Developer. I love to deliver interfaces that harmonize functionality and appearance.',
+    'Frontend Developer. I love delivering interfaces that harmonize functionality and appearance.',
   about: [
     '1.5 years in Frontend Development, Higher technical education (GPA 4.2), advanced English (C1), collaboration in international cross-functional teams',
     'Technology Stack: HTML, CSS, JavaScript, React, Next, Redux, TypeScript, Tailwind',
