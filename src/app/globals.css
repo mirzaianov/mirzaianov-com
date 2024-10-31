@@ -90,6 +90,9 @@
     color: theme('colors.primary.foreground');
     box-shadow: inset 1000px 0 0 0 theme('colors.primary.DEFAULT');
   }
+  .navbar-shadow-dark-inner {
+    box-shadow: 0 -20px 80px -20px #ffffff1f inset;
+  }
 }
 
 h3 code {
