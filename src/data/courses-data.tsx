@@ -336,7 +336,7 @@ export const COURSES_DATA = {
       description:
         'Jump in on this 21-day challenge, put the time in, and you will walk out understanding how you can make a responsive layouts',
       image: '/icons/css.svg',
-      inResume: true,
+      inResume: false,
       links: [
         {
           title: 'Website',
