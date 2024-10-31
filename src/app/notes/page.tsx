@@ -21,7 +21,7 @@ export default async function NotePage() {
               </h2>
               <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                 I study a lot and usually save a bunch of notes that I would
-                enjoy sharing. Browse {notes.length}+ notes in my collection.
+                enjoy sharing. Glance at {notes.length}+ notes in my collection.
               </p>
             </div>
           </div>

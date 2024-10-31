@@ -268,7 +268,7 @@ export default async function Page() {
                 </h2>
                 <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   I study a lot and usually save a bunch of notes that I would
-                  enjoy sharing. Browse{' '}
+                  enjoy sharing. Glance at{' '}
                   <Link
                     href="/notes"
                     className="text-gray-900 underline dark:text-white"
