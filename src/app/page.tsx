@@ -163,7 +163,7 @@ export default async function Page() {
                     href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    download it in PDF format (EN, A4)
+                    download it in PDF (EN, A4)
                   </Link>
                   .
                 </p>
