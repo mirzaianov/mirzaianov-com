@@ -122,7 +122,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
             {...sparkle}
           />
         ))}
-        <strong>{text}</strong>
+        <p>{text}</p>
       </span>
     </div>
   );
