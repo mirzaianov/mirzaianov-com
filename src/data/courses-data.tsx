@@ -448,7 +448,7 @@ export const COURSES_DATA = {
       ],
     },
     {
-      title: 'CSS - The Complete Guide 2024 (incl. Flexbox, Grid & Sass)',
+      title: 'CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass)',
       date: '2023',
       source: 'Udemy',
       author: 'Maximilian Schwarzmüller',
