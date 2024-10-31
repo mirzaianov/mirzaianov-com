@@ -178,7 +178,7 @@ export default async function Page() {
                 title={MAIN_DATA.name}
                 description={MAIN_DATA.role}
                 dates=""
-                tags={MAIN_DATA.skills.filter((_, index) => index < 5)}
+                tags={['React', 'Next', 'Typescript', 'Tailwind', 'Shadcn/UI']}
                 video={MAIN_DATA.resume.video}
                 links={MAIN_DATA.resume.links}
                 self={MAIN_DATA.resume.self}
