@@ -263,14 +263,15 @@ export default async function Page() {
                   {NOTES_DATA.pageTitle}
                 </h2>
                 <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                  I study a lot and usually save notes that seemed useful. Check
-                  out{' '}
+                  I study a lot and usually save a bunch of notes that I would
+                  enjoy sharing. Browse{' '}
                   <Link
                     href="/notes"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    {notes.length}+ notes in my collection.
+                    {notes.length}+ notes
                   </Link>{' '}
+                  in my collection.
                 </p>
               </div>
             </div>

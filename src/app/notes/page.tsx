@@ -1,10 +1,12 @@
 import BlurFade from '@/components/magicui/blur-fade';
 import NotesList from '@/components/notes-list';
-import { NOTES_DATA } from '@/data/notes-data';
+import { getNotesPosts, NOTES_DATA } from '@/data/notes-data';
 
 const BLUR_FADE_DELAY = 0.04;
 
-export default function NotePage() {
+export default async function NotePage() {
+  const notes = await getNotesPosts();
+
   return (
     <main id="notes">
       <div className="w-full space-y-12 pb-12">
@@ -18,8 +20,8 @@ export default function NotePage() {
                 {NOTES_DATA.pageTitle}
               </h2>
               <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                I study a lot and usually save notes that seemed useful. Here I
-                share some of my notes.
+                I study a lot and usually save a bunch of notes that I would
+                enjoy sharing. Browse {notes.length}+ notes in my collection.
               </p>
             </div>
           </div>

@@ -9,7 +9,7 @@ import { unified } from 'unified';
 
 export const NOTES_DATA = {
   pageBadge: 'My Notes',
-  pageTitle: 'Dig in the latest notes',
+  pageTitle: 'Browse my notes',
 };
 
 function getMDXFiles(dir: string) {
