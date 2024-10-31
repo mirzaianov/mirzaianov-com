@@ -5,24 +5,6 @@ export const COURSES_DATA = {
   pageTitle: 'Follow my study path',
   list: [
     {
-      title: 'Introduction to Next.js, v3',
-      date: '2024',
-      source: 'Frontend Masters',
-      author: 'Scott Moss',
-      active: true,
-      description:
-        "In this course, you'll learn server-side rendering, static site generation, data fetching, building API endpoints, creating pages, and new features in Next.js, like using the app router, server and client components, and server actions!",
-      image: '/icons/next.svg',
-      inResume: true,
-      links: [
-        {
-          title: 'Website',
-          icon: <Icons.globe className="size-3" />,
-          href: 'https://frontendmasters.com/courses/next-js-v3/',
-        },
-      ],
-    },
-    {
       title: 'React & TypeScript - The Practical Guide',
       date: '2024',
       source: 'Udemy',
@@ -75,6 +57,24 @@ export const COURSES_DATA = {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
           href: '/certificates/UC-4de5d88a-3db6-453e-ad89-f86f5f108353.pdf',
+        },
+      ],
+    },
+    {
+      title: 'Introduction to Next.js, v3',
+      date: '2024',
+      source: 'Frontend Masters',
+      author: 'Scott Moss',
+      active: true,
+      description:
+        "In this course, you'll learn server-side rendering, static site generation, data fetching, building API endpoints, creating pages, and new features in Next.js, like using the app router, server and client components, and server actions!",
+      image: '/icons/next.svg',
+      inResume: true,
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="size-3" />,
+          href: 'https://frontendmasters.com/courses/next-js-v3/',
         },
       ],
     },
