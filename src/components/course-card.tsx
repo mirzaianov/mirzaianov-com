@@ -39,7 +39,7 @@ export function CourseCard({
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
       </div>
-      <CardTitle className="mt-1 text-base">{title}</CardTitle>
+      <CardTitle className="text-base">{title}</CardTitle>
       <CardContent className="mt-auto flex flex-col gap-1">
         <p className="text-sm text-muted-foreground">
           {source && <span>{source} • </span>}
@@ -52,7 +52,7 @@ export function CourseCard({
           </span>
         )}
       </CardContent>
-      <CardFooter>
+      <CardFooter className="mb-1">
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
