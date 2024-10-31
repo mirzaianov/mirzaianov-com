@@ -203,14 +203,18 @@ export default async function Page() {
                 </h2>
                 <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   I have worked on a variety of projects, from simple websites
-                  to complex web applications. Find more{' '}
+                  to complex web applications. Check out{' '}
                   <Link
                     href="/projects"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    on this page
-                  </Link>
-                  .
+                    {
+                      PROJECTS_DATA.list.filter((project) => project.active)
+                        .length
+                    }
+                    + cases
+                  </Link>{' '}
+                  in my portfolio.
                 </p>
               </div>
             </div>

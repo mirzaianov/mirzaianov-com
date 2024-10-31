@@ -2,7 +2,7 @@ import { Icons } from '@/components/icons';
 
 export const PROJECTS_DATA = {
   pageBadge: 'My Projects',
-  pageTitle: 'Check out my work',
+  pageTitle: 'Observe my work',
   list: [
     {
       title: 'alsu.',
