@@ -19,8 +19,7 @@ export default async function ProjectsPage() {
               </h2>
               <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                 I have worked on a variety of projects, from simple websites to
-                complex web applications. Some of them became businesses which
-                make money. Here are a few of my favorites.
+                complex web applications. Here are a few of my favorites.
               </p>
             </div>
           </section>
