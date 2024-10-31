@@ -30,7 +30,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Build type-safe React apps & use TypeScript to enhance your components, state management, Redux & side effects code',
-      image: '/icons/ts.svg',
+      image: '/icons/react.svg',
       inResume: true,
       links: [
         {
@@ -111,9 +111,9 @@ export const COURSES_DATA = {
       date: '2024',
       source: 'Udemy',
       author: 'George S',
-      active: true,
+      active: false,
       description: "Deeply understand JavaScript's newest features",
-      image: '/icons/vs-code.svg',
+      image: '/icons/udemy.svg',
       inResume: false,
       links: [
         {
@@ -199,7 +199,7 @@ export const COURSES_DATA = {
       author: 'Colt Steele',
       active: false,
       description: 'The Missing Computer Science and Coding Interview Bootcamp',
-      image: '/icons/dsa.png',
+      image: '/icons/dsa.svg',
       inResume: false,
       links: [
         {
@@ -437,7 +437,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Working with text is a fundamentally crucial task in every programming language. This course will help you deepen your knowledge of the String and Regex API of the JavaScript language',
-      image: '/icons/vs-code.svg',
+      image: '/icons/js.svg',
       inResume: false,
       links: [
         {
