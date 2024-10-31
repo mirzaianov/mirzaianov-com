@@ -12,6 +12,7 @@ type Job = {
   specialization: string;
   description: readonly string[];
   inResume: boolean;
+  self?: boolean;
 };
 
 type Props = {
@@ -43,6 +44,8 @@ export default function Experience({ work }: Props) {
                     <Link
                       href={job.href}
                       className="lg:link-hover-effect lg:link-hover-effect:hover lg:no-truncate truncate font-bold underline underline-offset-[0.1rem] lg:self-start lg:overflow-auto lg:no-underline"
+                      target={job?.self ? '_self' : '_blank'}
+                      rel="noopener noreferrer"
                     >
                       {job.company}
                     </Link>

@@ -152,6 +152,7 @@ export const MAIN_DATA = {
       inResume: true,
       field: 'Software Engineering',
       specialization: 'Web Development',
+      self: true,
     },
     {
       company: 'Career Break',
@@ -171,6 +172,7 @@ export const MAIN_DATA = {
       inResume: false,
       field: 'Software Engineering',
       specialization: 'Web Development',
+      self: true,
     },
     {
       company: 'Knorr-Bremse AG',
@@ -191,6 +193,7 @@ export const MAIN_DATA = {
       inResume: true,
       field: 'Automotive',
       specialization: 'Braking Systems',
+      self: false,
     },
   ],
   education: [
