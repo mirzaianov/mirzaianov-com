@@ -148,24 +148,25 @@ export default async function Page() {
                   {MAIN_DATA.resume.pageTitle}
                 </h2>
                 <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                  Get acquainted with the resume{' '}
+                  I thoroughly analysed my strengths and weaknesses and
+                  transformed those into an elegant and eye-catching CV. Get
+                  acquainted{' '}
                   <Link
                     href="/resume"
                     className="text-gray-900 underline dark:text-white"
                   >
                     online
                   </Link>{' '}
-                  or
-                  <br /> immediately{' '}
+                  or immediately{' '}
                   <Link
                     rel="noopener noreferrer"
                     target="_blank"
                     href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
                     className="text-gray-900 underline dark:text-white"
                   >
-                    download it in PDF (EN, A4)
-                  </Link>
-                  .
+                    download
+                  </Link>{' '}
+                  it in PDF (EN, A4).
                 </p>
               </div>
             </div>
