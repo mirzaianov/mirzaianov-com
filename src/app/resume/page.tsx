@@ -36,7 +36,7 @@ export default async function ResumePage() {
                 {MAIN_DATA.resume.pageTitle}
               </h2>
               <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                I thoroughly analysed my strengths and weaknesses and
+                I thoroughly analyzed my strengths and weaknesses and
                 transformed those into an elegant and eye-catching CV. Browse it
                 here or immediately{' '}
                 <Link
