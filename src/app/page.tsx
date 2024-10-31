@@ -3,6 +3,7 @@ import Markdown from 'react-markdown';
 import BlurFade from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
 import WordPullUp from '@/components/magicui/word-pull-up';
+import SparklesText from '@/components/magicui/sparkles-text';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import rehypeExternalLinks from 'rehype-external-links';
 import CoursesList from '@/components/courses-list';
@@ -292,9 +293,10 @@ export default async function Page() {
               <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
                 {MAIN_DATA.contact.pageBadge}
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                {MAIN_DATA.contact.pageTitle}
-              </h2>
+              <SparklesText
+                className="text-3xl font-bold tracking-tighter sm:text-5xl"
+                text={MAIN_DATA.contact.pageTitle}
+              />
               <p className="mx-auto max-w-[600px] text-balance text-muted-foreground md:text-xl/relaxed lg:text-xl/relaxed">
                 Have an offer or want to chat? I am always open to new
                 challenges. Just shoot me a dm{' '}
