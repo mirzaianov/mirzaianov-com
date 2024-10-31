@@ -2,7 +2,7 @@ import { Icons } from '@/components/icons';
 
 export const COURSES_DATA = {
   pageBadge: 'Courses',
-  pageTitle: 'Follow my study path',
+  pageTitle: 'Explore my study path',
   list: [
     {
       title: 'React & TypeScript - The Practical Guide',

@@ -231,17 +231,17 @@ export default async function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   {COURSES_DATA.pageTitle}
                 </h2>
-                <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                  To boost my professional growth and broaden horizons, I
-                  completed{' '}
+                <p className="text-pretty text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
+                  To boost professional growth and broaden horizons, I attend
+                  online classes. Discover{' '}
                   <Link
                     href="/courses"
                     className="text-gray-900 underline dark:text-white"
                   >
                     {COURSES_DATA.list.filter((course) => course.active).length}
-                    + online courses
-                  </Link>
-                  . Here are some of the latest ones.
+                    + first-rate courses
+                  </Link>{' '}
+                  that I have accomplished.
                 </p>
               </div>
             </div>
