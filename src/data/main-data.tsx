@@ -26,7 +26,7 @@ export const MAIN_DATA = {
   ],
   summary:
     "In 2022, I quit my job as an R&D Engineer from an [international A-Tier automotive manufacturer](https://www.knorr-bremse.com/de/), moved abroad and started a fresh new journey as a software engineer. In the past, I had pursued a Master's Degree in Engineering Technology at [Kazan Aviation University](https://kai.ru/web/en/our-history), passed English [IELTS test](https://ielts.org/) at C1 level, and participated in several engineering workshops in Europe.",
-  avatarUrl: '/icons/me.png',
+  avatarUrl: '/icons/me.svg',
   skills: [
     'JavaScript',
     'React',

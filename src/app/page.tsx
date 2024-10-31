@@ -39,7 +39,7 @@ export default async function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28">
+              <Avatar className="size-28 bg-white">
                 <AvatarImage
                   alt={MAIN_DATA.name}
                   src={MAIN_DATA.avatarUrl}
