@@ -90,8 +90,20 @@
     color: theme('colors.primary.foreground');
     box-shadow: inset 1000px 0 0 0 theme('colors.primary.DEFAULT');
   }
-  .navbar-shadow-dark-inner {
-    box-shadow: 0 -20px 80px -20px #ffffff1f inset;
+
+  .navbar-shadow {
+    box-shadow:
+      0 0 0 1px rgb(0 0 0 / 0.03),
+      0 2px 4px rgb(0 0 0 / 0.05),
+      0 12px 24px rgb(0 0 0 / 0.05);
+  }
+
+  .navbar-shadow-dark {
+    box-shadow:
+      0 -20px 80px -20px #ffffff1f inset,
+      0 0 0 1px rgb(255 255 255 / 0.03),
+      0 2px 4px rgb(255 255 255 / 0.05),
+      0 12px 24px rgb(255 255 255 / 0.05);
   }
 }
 
