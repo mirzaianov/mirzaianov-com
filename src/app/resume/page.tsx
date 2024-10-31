@@ -37,8 +37,8 @@ export default async function ResumePage() {
               </h2>
               <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                 I thoroughly analyzed my strengths and weaknesses and
-                transformed those into an elegant and eye-catching CV. Browse it
-                here or immediately{' '}
+                transformed those into an elegant and eye-catching CV. Get
+                acquainted here or immediately{' '}
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
