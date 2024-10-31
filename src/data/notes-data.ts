@@ -8,7 +8,7 @@ import remarkRehype from 'remark-rehype';
 import { unified } from 'unified';
 
 export const NOTES_DATA = {
-  pageBadge: 'My Notes',
+  pageBadge: 'Notes',
   pageTitle: 'Browse my notes',
 };
 

@@ -212,7 +212,7 @@ export const MAIN_DATA = {
     },
   ],
   resume: {
-    pageBadge: 'My Resume',
+    pageBadge: 'Resume',
     pageTitle: 'Assess my resume',
     skills: [
       'JavaScript',
