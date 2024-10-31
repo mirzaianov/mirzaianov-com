@@ -202,8 +202,8 @@ export default async function Page() {
                   {PROJECTS_DATA.pageTitle}
                 </h2>
                 <p className="text-balance text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Find more{' '}
+                  I have worked on a variety of projects, from simple websites
+                  to complex web applications. Find more{' '}
                   <Link
                     href="/projects"
                     className="text-gray-900 underline dark:text-white"
