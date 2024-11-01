@@ -1,8 +1,52 @@
 ---
 title: 'Fetch Waterfall in React'
+author: 'Lazar Nikolov'
 publishedAt: '2024-10-21'
-summary: 'A common data fetching issue in React'
+summary: 'The common data fetching issue in React'
 tags: 'React'
+url: https://blog.sentry.io/fetch-waterfall-in-react/
 ---
 
-[An article](https://blog.sentry.io/fetch-waterfall-in-react/) regarding **Fetch Waterfall in React** written by **Lazar Nikolov**.
+Have you seen this problem?
+
+![](https://images.ctfassets.net/em6l9zw4tzag/2MwNODhVgqNxZ7S8YOOL59/bcf9b83f6ea1e7ccfe676ecd0047eb54/fetch-waterfall-sentry.png?w=2232&h=280&q=50&fm=png)
+
+Or maybe this one?
+
+![](https://images.ctfassets.net/em6l9zw4tzag/mSLstPYrpiHS3YbKSkiRv/864e20921b75b7c81d2f8eadc8416a09/fetch-waterfall-chrome.png?w=2796&h=468&q=50&fm=png)
+
+You’ve most likely seen this:
+
+```bash
+  export const Component = () => {
+    const [data, setData] = useState()
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+      const fetchData = async () => {
+        const res = await fetch(api)
+        const json = await res.json()
+        setData(json)
+        setLoading(false)
+      }
+
+      fetchData()
+    }, [])
+
+    if (loading) {
+      return <Spinner />
+    }
+
+    return <> ... <AnotherComponent /> ... </>;
+  }
+```
+
+---
+
+Hint: they’re all the same. The first image is [Sentry’s Event Details page](https://docs.sentry.io/product/sentry-basics/concepts/tracing/event-detail), the second is [Chrome’s Network tab](https://developer.chrome.com/docs/devtools/network/), and the code snippet is what causes it.
+
+---
+
+If you can answer yes to any of these, then you need to keep reading. If not, you still need to keep reading, so your future self can thank you.
+
+This is called **“fetch waterfall”** and it’s a common data fetching issue in React. It happens when you create a hierarchy of components that fetch their own data and show a “Loading” state before rendering their child component, which then does the same etc.

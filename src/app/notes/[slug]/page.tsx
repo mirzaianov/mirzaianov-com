@@ -10,6 +10,7 @@ import BackButton from '@/components/back-button';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -50,18 +51,31 @@ export default async function Notes({
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-                Note
-              </div>
+              {note.metadata.tags && note.metadata.tags.length > 0 ? (
+                <ul className="flex flex-wrap justify-center gap-1">
+                  {note.metadata.tags.split(', ').map((tag: string) => (
+                    <li
+                      className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background"
+                      key={tag}
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
+                  Note
+                </div>
+              )}
               <h2 className="text-balance text-3xl font-bold tracking-tighter sm:text-5xl">
                 {note.metadata.title}
               </h2>
-              <h3 className="text-balance text-2xl font-bold tracking-tighter sm:text-3xl">
-                {note.metadata.author}
+              <h3 className="text-balance text-2xl/relaxed font-bold tracking-tighter sm:text-3xl/relaxed">
+                by {note.metadata.author}
               </h3>
               <Suspense fallback={<p className="h-5" />}>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
-                  {formatDate(note.metadata.publishedAt)}
+                  added on {formatDate(note.metadata.publishedAt)}
                 </p>
               </Suspense>
             </div>

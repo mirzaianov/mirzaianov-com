@@ -1,8 +1,28 @@
 ---
 title: "Don't Sleep on AbortController"
+author: 'Artem Zakharchenko'
 publishedAt: '2024-10-20'
 summary: 'How to stop one or more Web requests as and when desired'
 tags: 'JavaScript, Web API'
+url: 'https://kettanaito.com/blog/dont-sleep-on-abort-controller'
 ---
 
-[An article](https://kettanaito.com/blog/dont-sleep-on-abort-controller) regarding **AbortController** written by **Artem Zakharchenko**.
+Today, I'd like to talk about one of the standard JavaScript APIs you are likely sleeping on. It's called `AbortController`.
+
+## What is `AbortController`?
+
+[`AbortController`](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) is a global class in JavaScript that you can use to abort, well, anything!
+
+Here's how you use it:
+
+```bash
+  const controller = new AbortController()
+
+  controller.signal
+  controller.abort()
+```
+
+Once you create a controller instance, you get two things:
+
+- The `signal` property, which is an instance of [`AbortSignal`](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal). This is a pluggable part you can provide to any API to react to an abort event, and implement it accordingly. For example, providing it to a `fetch()` request will abort the request;
+- The `.abort()` method that, when called, triggers the abort event on the `signal`. It also updates the signal to be marked as aborted.
