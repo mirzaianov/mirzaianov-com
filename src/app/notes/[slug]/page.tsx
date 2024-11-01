@@ -7,6 +7,9 @@ import BlurFade from '@/components/magicui/blur-fade';
 import Markdown from 'react-markdown';
 import rehypeExternalLinks from 'rehype-external-links';
 import BackButton from '@/components/back-button';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ChevronRight } from 'lucide-react';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -65,13 +68,32 @@ export default async function Notes({
           </div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 15}>
-          <article className="prose dark:prose-invert">
+          <article className="prose text-sm dark:prose-invert sm:text-base">
             <Markdown
               rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
             >
               {note.source}
             </Markdown>
           </article>
+        </BlurFade>
+        <BlurFade
+          className="flex justify-center"
+          delay={BLUR_FADE_DELAY * 17}
+        >
+          <Button
+            asChild
+            className="group pr-2 text-sm transition-all duration-300 hover:scale-105 sm:text-base"
+          >
+            <Link
+              href={note?.metadata.url}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="flex items-center gap-1"
+            >
+              Read more
+              <ChevronRight className="transition-transform duration-300 group-hover:translate-x-0.5" />
+            </Link>
+          </Button>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 19}>
           <BackButton />
