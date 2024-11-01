@@ -70,9 +70,11 @@ export default async function Notes({
               <h2 className="text-balance text-3xl font-bold tracking-tighter sm:text-5xl">
                 {note.metadata.title}
               </h2>
-              <h3 className="text-balance text-2xl/relaxed font-bold tracking-tighter sm:text-3xl/relaxed">
-                by {note.metadata.author}
-              </h3>
+              {note.metadata.author && (
+                <h3 className="text-balance text-2xl/relaxed font-bold tracking-tighter sm:text-3xl/relaxed">
+                  by {note.metadata.author}
+                </h3>
+              )}
               <Suspense fallback={<p className="h-5" />}>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   added on {formatDate(note.metadata.publishedAt)}
@@ -90,25 +92,27 @@ export default async function Notes({
             </Markdown>
           </article>
         </BlurFade>
-        <BlurFade
-          className="flex justify-center"
-          delay={BLUR_FADE_DELAY * 17}
-        >
-          <Button
-            asChild
-            className="group pr-2 text-sm transition-all duration-300 hover:scale-105 sm:text-base"
+        {note.metadata.url && (
+          <BlurFade
+            className="flex justify-center"
+            delay={BLUR_FADE_DELAY * 17}
           >
-            <Link
-              href={note?.metadata.url}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="flex items-center gap-1"
+            <Button
+              asChild
+              className="group pr-2 text-sm transition-all duration-300 hover:scale-105 sm:text-base"
             >
-              Read more
-              <ChevronRight className="transition-transform duration-300 group-hover:translate-x-0.5" />
-            </Link>
-          </Button>
-        </BlurFade>
+              <Link
+                href={note.metadata.url}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="flex items-center gap-1"
+              >
+                Read more
+                <ChevronRight className="transition-transform duration-300 group-hover:translate-x-0.5" />
+              </Link>
+            </Button>
+          </BlurFade>
+        )}
         <BlurFade delay={BLUR_FADE_DELAY * 19}>
           <BackButton />
         </BlurFade>
