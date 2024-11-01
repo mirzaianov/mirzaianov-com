@@ -1,0 +1,52 @@
+---
+title: 'Browser Event loop'
+author: 'Nik'
+publishedAt: '2023-08-17'
+summary: 'Micro and macro tasks, call stack, render queue: layout, paint, composite'
+tags: 'Web API'
+url: 'https://blog.xnim.me/event-loop-and-render-queue'
+---
+
+The article focuses on the event loop, the order of execution, and how developers can optimise code. The fully detailed schema:
+
+![Detailed schema of event loop](https://xnim.me/The%20long%20journey%20to%20the%20runtime%20Part%203%20Event%20loop,%2005203256cba04d22bc89656fdf50f252/Untitled.png)
+
+## Event loop
+
+Old operational systems didn't support multithreading and their event loop can be approximately described as a simple cycle:
+
+```bash
+    <span>while</span> (<span>true</span>) {
+        <span>if</span> (execQueue.isNotEmpty()) {
+            execQueue.pop().exec();
+        }
+    }
+```
+
+This code utilises all CPU. It was so in old OS. Modern OS schedulers are utterly complicated. They have prioritisation, execution queues, and many other technologies.
+
+We can start describing the event loop as a cycle, which checks whether we have any pending tasks:
+
+![Simple cycle, which checks if we have any tasks to execute](https://xnim.me/The%20long%20journey%20to%20the%20runtime%20Part%203%20Event%20loop,%2005203256cba04d22bc89656fdf50f252/Untitled%201.png)
+
+To get a task for the execution let's draft
+
+✍️The list of triggers that can put a task into the event loop:
+
+1.  `<script>` tag
+
+2.  Postponed tasks: `setTimeout`, `setInterval`, `requestIdleCallback`
+
+3.  Event handlers from browser API: `click`, `mousedown`, `input`, `blur,` and etc.
+
+    1.  Some of the events are user-initiated like clicks, tab switching, etc.
+
+    2.  Some of them are from our code: `XmlHttpRequest` response handler, `fetch` promise resolve, and so on
+
+4.  The promise state change. More about [promises in my series](https://dev.to/xnimorz/101-series-promises-1-how-promises-work-1k1i)
+
+5.  Observers like `DOMMutationObserver`, `IntersectionObserver`
+
+6.  `RequestAnimationFrame`
+
+Almost everything we described above is planned through `WebAPI` (or browserAPI).

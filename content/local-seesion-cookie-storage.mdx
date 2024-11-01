@@ -1,0 +1,35 @@
+---
+title: 'Local Storage vs Session Storage vs Cookie Storage'
+author: 'Paulund'
+publishedAt: '2022-07-01'
+summary: 'For those’s that are always reaching for that comparison'
+tags: 'Web API'
+url: 'https://paulund.medium.com/local-storage-vs-session-storage-vs-cookie-storage-bff113d72a11'
+---
+
+If you’re like me you always need to look up the difference between local storage, session storage and cookies.
+
+This post is for those’s that are always reaching for that comparison.
+
+## Local Storage
+
+- Stores data with no expiry date
+- Cleared only via JavaScript or clearing browser cache
+- The storage limit is the largest of the 3 as big as 5MB
+- Not supported by older browsers IE7 or lower
+- Works on the same-origin policy. So, data stored will only be available on the same origin.
+
+## Session Storage
+
+- Stores data only for the duration of the session, when the user closes their browser the data is lost
+- Top-level browsing context, therefore it’s unique to each browser tab
+- The storage limit is larger than cookies at 5MB
+- Not supported by older browsers IE7 or lower
+
+## Cookies
+
+- Stores data that can be transferred to the server via headers
+- LocalStorage and SessionStorage can only be accessed on client-side
+- Expiry is set on the creation of the cookie
+- The storage limit is smallest at 4kb
+- Cookies can be made secure making client side unable to read the contents. This is important for authentication to store user tokens.
