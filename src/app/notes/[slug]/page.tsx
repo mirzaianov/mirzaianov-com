@@ -39,10 +39,7 @@ export default async function Notes({
             description: note.metadata.summary,
             tags: note.metadata.tags,
             url: `${MAIN_DATA.url}/notes/${note.slug}`,
-            author: {
-              '@type': 'Person',
-              name: MAIN_DATA.name,
-            },
+            author: note.metadata.author,
           }),
         }}
       />
@@ -56,6 +53,9 @@ export default async function Notes({
               <h2 className="text-balance text-3xl font-bold tracking-tighter sm:text-5xl">
                 {note.metadata.title}
               </h2>
+              <h3 className="text-balance text-2xl font-bold tracking-tighter sm:text-3xl">
+                {note.metadata.author}
+              </h3>
               <Suspense fallback={<p className="h-5" />}>
                 <p className="text-muted-foreground md:text-xl/relaxed xl:text-xl/relaxed">
                   {formatDate(note.metadata.publishedAt)}
