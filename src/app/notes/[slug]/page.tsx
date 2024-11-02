@@ -10,7 +10,6 @@ import BackButton from '@/components/back-button';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 
 const BLUR_FADE_DELAY = 0.04;
 
