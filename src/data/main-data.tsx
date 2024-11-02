@@ -135,7 +135,6 @@ export const MAIN_DATA = {
     {
       company: 'Self Employed',
       href: '/',
-      badges: [],
       location: 'Remote',
       title: 'Frontend Developer',
       logoUrl: '/icons/rm.svg',
@@ -157,7 +156,6 @@ export const MAIN_DATA = {
     {
       company: 'Career Break',
       href: '/projects',
-      badges: [],
       location: 'Türkiye',
       title: 'Career transition',
       logoUrl: '/icons/react.svg',
@@ -176,7 +174,6 @@ export const MAIN_DATA = {
     },
     {
       company: 'Knorr-Bremse AG',
-      badges: [],
       href: 'https://www.knorr-bremse.com/de/',
       location: 'Russia',
       title: 'R&D Engineer',

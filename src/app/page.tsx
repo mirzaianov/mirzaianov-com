@@ -84,7 +84,6 @@ export default async function Page() {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-                badges={work.badges}
                 period={`${work.start} - ${work.end || 'Present'}`}
                 description={work.description}
               />
