@@ -1,0 +1,96 @@
+---
+title: 'Type Checking in JS'
+author: ''
+publishedAt: '2022-10-17'
+summary: 'Options to check the type of a variable in JavaScript'
+tags: 'JavaScript'
+url: ''
+---
+
+### Primitives:
+
+1.  String:
+
+    - **if (typeof str === 'string')**
+    - if (str instanceof String || Object.prototype.toString.call(str) === '[object String]')
+    - if (str.constructor === String)
+
+2.  Number:
+
+    - **if (typeof num === 'number')**
+    - if (num instanceof Number || Object.prototype.toString.call(num) === '[object Number]')
+    - if (num.constructor === Number)
+
+    Integer:
+
+    - **if (Number.isInteger(num))**
+    - if (num % 1 === 0)
+    - if (Number.isSafeInteger(num)) // The **`Number.isSafeInteger()`** method determines whether a value is a safe integer (within the range of **`-2^53`** to **`2^53 - 1`**).
+
+    Float:
+
+    - **if (!Number.isInteger(num))**
+    - if (num % 1 !== 0)
+
+    NaN:
+
+    - **if (Number.isNaN(value))**
+    - if (isNaN(value))
+    - if (value !== value) // As mentioned earlier, **`NaN`** is the only value that is not equal to itself. You can take advantage of this property for detection.
+
+3.  BigInt:
+
+    - **if (typeof bigIntValue === 'bigint')**
+    - if (bigIntValue.constructor === BigInt)
+    - if (bigIntValue instanceof BigInt || Object.prototype.toString.call(bigIntValue) === '[object BigInt]')
+    - if (BigInt.asIntN(64, bigIntValue) === bigIntValue) // This method can check if the value is within the range of a certain bit length
+
+4.  Symbol:
+
+    - **if (typeof symbolValue === 'symbol')**
+    - if (symbolValue === Symbol.iterator)
+    - if (symbolValue instanceof Symbol || Object.prototype.toString.call(symbolValue) === '[object Symbol]')
+    - if (symbolValue.constructor === Symbol)
+
+5.  Boolean:
+
+    - **if (typeof boolValue === 'boolean')**
+    - if (boolValue instanceof Boolean || Object.prototype.toString.call(boolValue) === '[object Boolean]')
+    - if (boolValue.constructor === Boolean)
+
+6.  Null:
+
+    - **if (nullValue === null)**
+    - if (typeof nullValue === 'object' && nullValue === null) // The **`typeof`** operator returns **`'object'`** for **`null`**, which is a historical quirk and not a true indication of its type. Therefore, using strict equality (**`===`**) is the preferred way to check for **`null`** values.
+
+7.  Undefined:
+
+    - **if (undefinedValue === undefined)**
+    - if (typeof undefinedValue === 'undefined')
+    - if (undefinedValue === undefinedValue) // **Checking if a variable is declared but not assigned a value**
+    - if (undefinedValue === void 0)
+
+### Reference:
+
+1. Object:
+
+   - **if (typeof obj === 'object' && obj !== null)**
+   - if (obj instanceof Object && obj !== null)
+   - if (Object.prototype.toString.call(obj) === '[object Object]')
+
+2. Array:
+
+   - **if (Array.isArray(arr))**
+   - if (arr instanceof Array)
+   - if (arr.constructor === Array)
+   - if (Object.getPrototypeOf(arr) === Array.prototype)
+
+3. Function:
+
+   - **if (typeof myFunction === 'function')**
+   - if (myFunction instanceof Function)
+
+4. Date:
+
+   - **if (myDate instanceof Date)**
+   - if (Object.prototype.toString.call(myDate) === '[object Date]')

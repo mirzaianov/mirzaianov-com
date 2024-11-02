@@ -1,0 +1,38 @@
+---
+title: 'JavaScript Numerical Prefixes'
+author: ''
+publishedAt: '2023-02-17'
+summary: 'Commonly used prefixes for different numeral systems'
+tags: 'JavaScript'
+url: ''
+---
+
+In JavaScript, number literals can be represented in various numeral systems using different prefixes. Here are the commonly used prefixes for different numeral systems:
+
+1. Decimal: No prefix is required for decimal numbers.
+   For example: **`42`**, **`3.14`**, **`10`**.
+2. Binary:
+   The **`0b`** or **`0B`** prefix is used to represent binary numbers. Binary numbers consist of only **`0`** and **`1`**. For example: **`0b1010`** represents the binary number **`1010`**, which is equivalent to **`10`** in decimal.
+3. Octal:
+   The **`0o`** or **`0O`** prefix is used to represent octal numbers. Octal numbers consist of digits from **`0`** to **`7`**. For example: **`0o77`** represents the octal number **`77`**, which is equivalent to **`63`** in decimal.
+4. Hexadecimal:
+   The **`0x`** or **`0X`** prefix is used to represent hexadecimal numbers. Hexadecimal numbers consist of digits from **`0`** to **`9`** and letters **`A`** to **`F`** (or **`a`** to **`f`**) representing values from **`10`** to **`15`**. For example: **`0xFF`** represents the hexadecimal number **`FF`**, which is equivalent to **`255`** in decimal.
+
+Here are some examples illustrating the use of different prefixes:
+
+```jsx
+    javascriptCopy code
+    const decimal = 42; // Decimal number
+    const binary = 0b1010; // Binary number (10 in decimal)
+    const octal = 0o77; // Octal number (63 in decimal)
+    const hexadecimal = 0xFF; // Hexadecimal number (255 in decimal)
+
+    console.log(decimal); // Outputs: 42
+    console.log(binary); // Outputs: 10
+    console.log(octal); // Outputs: 63
+    console.log(hexadecimal); // Outputs: 255
+```
+
+It's important to note that these prefixes are used only for number literals. Once a number is assigned to a variable, the numeral system is not associated with the value itself. Therefore, you can perform arithmetic operations or manipulate the numbers regardless of the numeral system used in the original literal representation.
+
+Additionally, these prefixes are not limited to **`BigInt`** or specific number types. They can be used with regular numbers (**`number`**) as well. However, it's worth mentioning that binary literals and the **`BigInt`** type were introduced in more recent versions of JavaScript, so their support may vary across different environments or older browsers.
