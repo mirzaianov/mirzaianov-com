@@ -47,7 +47,7 @@ export default function NoteCard({
             <div className="flex flex-wrap gap-1">
               {tags?.split(', ').map((tag) => (
                 <Badge
-                  className="px-1 py-0 text-[10px]"
+                  className="px-1.5 py-0.5 text-xs"
                   variant="secondary"
                   key={tag}
                 >

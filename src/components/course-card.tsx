@@ -65,7 +65,7 @@ export function CourseCard({
                 <Badge
                   key={idx}
                   title={link.title}
-                  className="flex gap-2 px-2 py-1 text-[10px]"
+                  className="flex gap-2 px-2 py-1 text-xs"
                 >
                   {link.icon}
                   {link.title}

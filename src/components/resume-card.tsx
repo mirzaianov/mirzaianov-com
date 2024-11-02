@@ -98,7 +98,7 @@ export const ResumeCard = ({
             >
               {description.map((paragraph, index) => (
                 <li
-                  className="flex gap-0.5 text-xs"
+                  className="flex gap-0.5 text-sm"
                   key={index}
                 >
                   <p>•</p>
