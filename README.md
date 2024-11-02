@@ -46,6 +46,6 @@ Next will start the server on http://localhost:3000/
 
 ### MIT license
 
-Based on the beautiful concept created by [Mr. Dillion Verma](https://dillion.io/)
+Inspired by [Mr. Dillion Verma](https://dillion.io/)
 
 You can use the code, but I ask you do not copy this site without giving credit to Mr. Dillion Verma and me

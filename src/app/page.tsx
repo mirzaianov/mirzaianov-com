@@ -314,20 +314,6 @@ export default async function Page() {
           </BlurFade>
         </div>
       </section>
-
-      {/* Credits */}
-      <section id="credits">
-        <div className="grid w-full items-center justify-center gap-4 px-4 py-12 text-center md:px-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <Markdown
-              rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
-              className="prose max-w-full text-balance font-sans text-base text-muted-foreground dark:prose-invert"
-            >
-              {MAIN_DATA.credits}
-            </Markdown>
-          </BlurFade>
-        </div>
-      </section>
     </main>
   );
 }
