@@ -1,3 +1,4 @@
+import { color } from 'framer-motion';
 import type { Config } from 'tailwindcss';
 import { fontFamily } from 'tailwindcss/defaultTheme';
 
@@ -80,18 +81,33 @@ const config = {
         DEFAULT: {
           css: {
             'code::before': {
-              content: '&nbsp;&nbsp;',
+              // content: '&nbsp;&nbsp;',
+              content: 'none',
             },
             'code::after': {
-              content: '&nbsp;&nbsp;',
+              // content: '&nbsp;&nbsp;',
+              content: 'none',
             },
             code: {
               background: 'hsl(var(--primary))',
               color: 'hsl(var(--primary-foreground))',
               wordWrap: 'break-word',
               boxDecorationBreak: 'clone',
-              padding: '.1rem .3rem .2rem',
+              padding: '.1rem .3rem .15rem',
               borderRadius: '.2rem',
+            },
+            a: {
+              code: {
+                color: 'hsl(var(--primary-foreground))',
+                textDecoration: 'underline',
+              },
+            },
+            'h1, h2, h3, h4, h5, h6': {
+              code: {
+                color: 'hsl(var(--primary-foreground))',
+                padding: '.1rem .5rem .15rem',
+                borderRadius: '.3rem',
+              },
             },
           },
         },
