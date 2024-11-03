@@ -93,7 +93,7 @@ const config = {
               color: 'hsl(var(--primary-foreground))',
               wordWrap: 'break-word',
               boxDecorationBreak: 'clone',
-              padding: '.1rem .3rem .15rem',
+              padding: '.15rem .3rem .1rem',
               borderRadius: '.2rem',
             },
             a: {
@@ -105,7 +105,7 @@ const config = {
             'h1, h2, h3, h4, h5, h6': {
               code: {
                 color: 'hsl(var(--primary-foreground))',
-                padding: '.1rem .5rem .15rem',
+                padding: '.15rem .5rem .1rem',
                 borderRadius: '.3rem',
               },
             },
