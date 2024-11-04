@@ -7,18 +7,11 @@ tags: 'JavaScript'
 url: ''
 ---
 
-The following summaries the difference between null and undefined in JavaScript.
+The following table summaries the difference between null and undefined in JavaScript.
 
-1. Undefined
-
-   - Undefined means the variable has been declared, but its value has not been assigned.
-   - The typeof() operator returns undefined for an undefined variable.
-   - It returns NaN on performing arithmetic operations.
-   - No, as there is no value assigned to the variable, it becomes undefined.
-
-2. Null
-
-   - Null means an empty value or a blank value.
-   - The typeof() operator returns the type as an object for a variable whose value is assigned as null.
-   - converts to 0 then perform the operation
-   - Yes, as we assign null to a variable, it is an assignment value.
+| Area                                | Undefined                                                                            | Null                                                                                                    |
+| ----------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| Definition                          | Undefined means the variable has been declared, but its value has not been assigned. | Null means an empty value or a blank value.                                                             |
+| The typeof operator                 | The typeof() operator returns **undefined** for an undefined variable.               | The typeof() operator returns the type as an **object** for a variable whose value is assigned as null. |
+| On performing arithmetic operations | It returns **NaN** on performing arithmetic operations.                              | converts to 0 then perform the operation                                                                |
+| Is it an assignment value?          | No, as there is no value assigned to the variable, it becomes undefined.             | Yes, as we assign null to a variable, it is an assignment value.                                        |
