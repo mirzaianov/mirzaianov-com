@@ -1,0 +1,82 @@
+---
+title: 'Bitwise Operators in JavaScript'
+author: ''
+publishedAt: '2023-06-06'
+summary: 'An explanation of all the bitwise operators available in JavaScript.'
+tags: 'JavaScript'
+url: ''
+---
+
+An explanation of all the bitwise operators available in JavaScript:
+
+- **`&`** (Bitwise AND): Returns a **`1`** in each bit position for which the corresponding bits of both operands are **`1`**. Otherwise, it returns **`0`**.
+
+```
+  Example:
+  9 & 14 => 8
+  9 in binary is 1001
+  14 in binary is 1110
+  The bitwise AND of 9 and 14 is 1000, which is 8 in decimal.
+```
+
+- **`|`** (Bitwise OR): Returns a **`1`** in each bit position for which the corresponding bits of either or both operands are **`1`**. Otherwise, it returns **`0`**.
+
+```
+  Example:
+  9 | 14 => 15
+  9 in binary is 1001
+  14 in binary is 1110
+  The bitwise OR of 9 and 14 is 1111, which is 15 in decimal.
+```
+
+- **`^`** (Bitwise XOR): Returns a **`1`** in each bit position for which the corresponding bits of either but not both operands are **`1`**. Otherwise, it returns **`0`**.
+
+```
+  Example
+  9 ^ 14 => 7
+  9 in binary is 1001
+  14 in binary is 1110
+  The bitwise XOR of 9 and 14 is 0111, which is 7 in decimal.
+```
+
+- **`~`** (Bitwise NOT): Inverts the bits of its operand. Returns a one's complement representation of the value.
+
+```
+  Example:
+  ~9 => -10
+  9 in binary is 1001
+  Inverting its bits gives 0110
+  This is the two's complement representation of -10 in decimal.
+```
+
+- **`<<`** (Left Shift): Shifts the bits of its first operand to the left by the number of positions specified by the second operand. The leftmost bits are filled with **`0`**.
+
+```
+  Example:
+  9 << 2 => 36
+  9 in binary is 1001
+  Shifting it left by 2 positions gives 100100
+  This is 36 in decimal.
+```
+
+- **`>>`** (Signed Right Shift): Shifts the bits of its first operand to the right by the number of positions specified by the second operand. The rightmost bits are filled with the sign bit (i.e. the most significant bit).
+
+```
+  Example:
+  -9 >> 2 => -3
+  -9 in binary is 11111111111111111111111111110111 (using 32-bit signed integer representation)
+  Shifting it right by 2 positions gives 11111111111111111111111111111101
+  This is the two's complement representation of -3 in decimal.
+```
+
+- **`>>>`** (Unsigned Right Shift): Shifts the bits of its first operand to the right by the number of positions specified by the second operand. The rightmost bits are filled with **`0`**.
+
+```
+  Example:
+  -9 >>> 2 => 1073741821
+  -9 in binary is 11111111111111111111111111110111 (using 32-bit signed integer representation)
+  Shifting it right by 2 positions and filling with 0s gives 00111111111111111111111111111101
+  This is 1073741821 in decimal.
+```
+
+Note that the left shift (**`<<`**) and right shift (**`>>`** and **`>>>`**) operators only work on integers (numbers without decimal points) in JavaScript. If you use these operators with non-integer numbers, the result will be truncated to an integer value before the shift is applied.
