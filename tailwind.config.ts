@@ -81,35 +81,20 @@ const config = {
         DEFAULT: {
           css: {
             'code::before': {
-              // content: '&nbsp;&nbsp;',
               content: 'none',
             },
             'code::after': {
-              // content: '&nbsp;&nbsp;',
               content: 'none',
             },
             code: {
-              background: 'hsl(var(--primary))',
-              color: 'hsl(var(--primary-foreground))',
+              background: 'hsl(var(--secondary))',
               wordWrap: 'break-word',
               boxDecorationBreak: 'clone',
               padding: '.15rem .4rem .1rem',
               borderRadius: '.2rem',
             },
-            a: {
-              code: {
-                color: 'hsl(var(--primary-foreground))',
-                textDecoration: 'underline',
-              },
-            },
-            p: {
-              code: {
-                color: 'hsl(var(--primary-foreground))',
-              },
-            },
             'h1, h2, h3, h4, h5, h6': {
               code: {
-                color: 'hsl(var(--primary-foreground))',
                 borderRadius: '.3rem',
               },
             },
