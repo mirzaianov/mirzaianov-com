@@ -23,10 +23,7 @@ export async function markdownToHTML(markdown: string) {
     .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypePrettyCode, {
-      theme: {
-        light: 'vitesse-light',
-        dark: 'vitesse-dark',
-      },
+      theme: 'andromeeda',
       keepBackground: false,
     })
     .use(rehypeStringify)
