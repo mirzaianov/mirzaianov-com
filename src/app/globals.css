@@ -70,6 +70,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -173,4 +174,8 @@ code[data-line-numbers-max-digits='2'] > [data-line]::before {
 
 code[data-line-numbers-max-digits='3'] > [data-line]::before {
   width: 3rem;
+}
+
+code:not(pre code) {
+  @apply break-words rounded-md bg-secondary box-decoration-clone px-1.5 py-1;
 }

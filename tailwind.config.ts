@@ -86,18 +86,6 @@ const config = {
             'code::after': {
               content: 'none',
             },
-            code: {
-              background: 'hsl(var(--secondary))',
-              wordWrap: 'break-word',
-              boxDecorationBreak: 'clone',
-              padding: '.15rem .4rem .1rem',
-              borderRadius: '.2rem',
-            },
-            'h1, h2, h3, h4, h5, h6': {
-              code: {
-                borderRadius: '.3rem',
-              },
-            },
           },
         },
       },

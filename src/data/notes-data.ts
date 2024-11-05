@@ -20,12 +20,12 @@ function getMDXFiles(dir: string) {
 export async function markdownToHTML(markdown: string) {
   const p = await unified()
     .use(remarkParse)
-    // .use(remarkGfm)
+    .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypePrettyCode, {
       theme: {
-        light: 'min-light',
-        dark: 'min-dark',
+        light: 'vitesse-light',
+        dark: 'vitesse-dark',
       },
       keepBackground: false,
     })
