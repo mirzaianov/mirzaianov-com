@@ -1,0 +1,58 @@
+---
+title: 'What is Prototypal Inheritance in JavaScript?'
+author: 'Austin Asoluka'
+publishedAt: '2023-07-25'
+summary: 'Explained with Code Examples'
+tags: 'JavaScript'
+url: 'https://www.freecodecamp.org/news/javascript-prototypal-inheritance/'
+---
+
+Prototypal inheritance can feel like a complex concept shrouded in technical jargon. But fear not! This guide will break it down using clear, relatable examples that go beyond the typical textbook explanations.
+
+We'll ditch the confusing terms and focus on real-world scenarios that you can easily understand.
+
+By the end of this post, you'll be a prototypal inheritance pro, realizing that it wasn't that hard after all!
+
+## Table of Contents
+
+- [Concept Introduction](https://www.freecodecamp.org/news/javascript-prototypal-inheritance//#heading-concept-introduction)
+- [What are JavaScript Objects?](https://www.freecodecamp.org/news/javascript-prototypal-inheritance//#heading-what-are-javascript-objects)
+- [What is an Object Prototype?](https://www.freecodecamp.org/news/javascript-prototypal-inheritance//#heading-what-is-an-object-prototype)
+- [How to Work with .prototype Object of a Constructor](https://www.freecodecamp.org/news/javascript-prototypal-inheritance//#heading-how-to-work-with-prototype-of-a-constructor)
+- [How to Alter a Constructor's Prototype](https://www.freecodecamp.org/news/javascript-prototypal-inheritance//#heading-how-to-alter-a-constructors-prototype)
+- [The **proto** Property](https://www.freecodecamp.org/news/javascript-prototypal-inheritance//#heading-the-proto-property)
+- [Summary](https://www.freecodecamp.org/news/javascript-prototypal-inheritance//#heading-summary)
+
+## Concept Introduction
+
+Imagine that I'm a parent and I have a child and a grandchild. If you were to represent my family tree in a diagram, it should look like this:
+
+![Image](https://www.freecodecamp.org/news/content/images/2024/05/Screenshot-2024-05-09-at-23.12.29.png) _**Fig 1**: Depicting the inheritance structure with family_
+
+You can see that `grandparent` is at the top of this family tree, while the `parent` is a direct descendant of the `grandparent`, and the `child` is a descendant of `parent`.
+
+If you attempt to walk your way back up, you'll see that `grandchild` is a child of `parent` and its own parent is a `child` of `grandparent`.
+
+## What are JavaScript Objects?
+
+You may have come across this statement at some point: "In JavaScript, almost everything is an Object".
+
+Notice how I spelt `Object`? When I use Object and object throughout this article, they will mean different things.
+
+Object is a constructor used to create objects. That is: one is parent/ancestor and the other is child.
+
+Using the illustration in **Fig 1.0** above, let's attempt to demonstrate how the family tree works in JavaScript.
+
+`Object` ⁠ is the grandparent.
+
+Constructors like ⁠ `Array`, `String`, `Number`, `Function`, ⁠ and `⁠ Boolean` ⁠ are all descendants of ⁠ `Object`.
+
+They all produce offspring of different types: `array`, `string`, `number`, `function`, and `Boolean`. However, if you trace back to their origin, they are all `Objects`.
+
+![Image](https://www.freecodecamp.org/news/content/images/2024/05/Screenshot-2024-05-10-at-00.08.57.png) _**Fig 2**: Object is at the top of the inheritance tree in JavaScript_
+
+So if you're asked why everything (except `null` and `undefined`) are regarded as objects in JavaScript, it is because they are all descendants of the `Object` constructor.
+
+The constructors listed in the image above are responsible for the different data types you use in JavaScript. That is, they are used behind the scenes to create familiar data types (and you can also use them to create values of different types explicitly).
+
+Let's try out some code snippets.

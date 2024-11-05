@@ -1,0 +1,66 @@
+---
+title: 'JavaScript Visualized: Promises & Async/Await'
+author: 'Lydia Hallie'
+publishedAt: '2023-07-29'
+summary: 'Why Should You Care about Promises?'
+tags: 'JavaScript'
+url: 'https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke'
+---
+
+If you're here in 2024 (or later), here's an updated video:
+
+[![JavaScript Visualized - Promise Execution](https://img.youtube.com/vi/Xs1EMmBLpn4/0.jpg)](https://www.youtube.com/watch?v=Xs1EMmBLpn4)
+
+---
+
+Ever had to deal with JS code that just... didn't run the way you expected it to? Maybe it seemed like functions got executed at random, unpredictable times, or the execution got delayed. There's a chance you were dealing with a cool new feature that ES6 introduced: **Promises**!
+
+My curiosity from many years ago has paid off and my sleepless nights have once again given me the time to make some animations. Time to talk about Promises: **why** would you use them, **how** do they work "under the hood", and how can we write them in the most **modern** way?
+
+---
+
+### [](https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke#introduction)Introduction
+
+When writing JavaScript, we often have to deal with tasks that rely on other tasks! Let's say that we want to get an image, compress it, apply a filter, and save it 📸
+
+The very first thing we need to do, is _get_ the image that we want to edit. A `getImage` function can take care of this! Only once that image has been loaded successfully, we can pass that value to a `resizeImage` function. When the image has been resized successfully, we want to apply a filter to the image in the `applyFilter` function. After the image has been compressed and we've added a filter, we want to save the image and let the user know that everything worked correctly! 🥳
+
+In the end, we'll end up with something like this:
+
+[![](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fixceqsql5hpdq8txx43s.png)](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fixceqsql5hpdq8txx43s.png)
+
+Hmm... Notice anything here? Although it's... _fine_, it's not great. We end up with many nested callback functions that are dependent on the previous callback function. This is often referred to as a [_callback hell_](http://callbackhell.com/), as we end up with tons of nested callback functions that make the code quite difficult to read!
+
+Luckily, we now got something called **promises** to help us out! Let's take a look at what promises are, and how they can help us in situations like these! 😃
+
+---
+
+### [](https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke#promise-syntax)Promise Syntax
+
+ES6 introduced **Promises**. In many tutorials, you'll read something like:
+
+> "A promise is a placeholder for a value that can either resolve or reject at some time in the future"
+
+Yeah... That explanation never made things clearer for me. In fact it only made me feel like a Promise was a weird, vague, unpredictable piece of magic. So let's look at what promises _really_ are.
+
+We can create a promise, using a `Promise` constructor that receives a callback. Okay cool, let's try it out!
+
+[![Alt Text](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F79zi452hphe7ecylhozy.gif)](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F79zi452hphe7ecylhozy.gif)
+
+Wait woah, what just got returned?
+
+A `Promise` is an object that contains a **status**, (`[[PromiseStatus]]`) and a **value** (`[[PromiseValue]]`). In the above example, you can see that the value of `[[PromiseStatus]]` is `"pending"`, and the value of the promise is `undefined`.
+
+Don't worry - you'll never have to interact with this object, you can't even access the `[[PromiseStatus]]` and `[[PromiseValue]]` properties! However, the values of these properties are important when working with promises.
+
+---
+
+The value of the `PromiseStatus`, the **state**, can be one of three values:
+
+- ✅ `fulfilled`: The promise has been `resolved`. Everything went fine, no errors occurred within the promise 🥳
+- ❌ `rejected` : The promise has been `rejected`. Argh, something went wrong..
+- ⏳ `pending`: The promise has neither resolved nor rejected (yet), the promise is still `pending`.
+
+Alright this all sounds great, but _when_ is a promise status `"pending"`, `"fulfilled"` or `"rejected"`? And why does that status even matter?
+
+In the above example, we just passed the simple callback function `() => {}` to the `Promise` constructor. However, this callback function actually receives two arguments. The value of the first argument, often called `resolve` or `res`, is the method to be called when the Promise should **resolve**. The value of the second argument, often called `reject` or `rej`, is the value method to be called when the Promise should **reject**, something went wrong.

@@ -1,0 +1,117 @@
+---
+title: "How Promises Work in JavaScript – A Comprehensive Beginner's Guide"
+author: 'Enyichi Agu'
+publishedAt: '2023-07-28'
+summary: 'This article is an in-depth guide to promises in JavaScript.'
+tags: 'JavaScript'
+url: 'https://www.freecodecamp.org/news/guide-to-javascript-promises/'
+---
+
+JavaScript has the ability to carry out asynchronous (or async) instructions. These instructions run in the background until they have finished processing.
+
+Asynchronous instructions do not stop the JavaScript engine from actively accepting and processing more instructions. This is why JavaScript is non-blocking in nature.
+
+There are a few asynchronous features in JavaScript, and one of them is **Promises**. To work with promises, you must adopt a special syntax that makes writing async instructions a lot more organized. Working with promises is a very useful skill every JavaScript developer should learn.
+
+This article is an in-depth guide to promises in JavaScript. You are going to learn why JavaScript has promises, what a promise is, and how to work with it. You are also going to learn how to use async/await—a feature derived from promises—and what a job queue is.
+
+Here are the topics we will cover:
+
+1.  [Why should you care about promises?](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-why-should-you-care-about-promises)
+2.  [What is a promise?](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-what-is-a-promise)
+3.  [How to create a promise in JavaScript](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-how-to-create-a-promise-in-javascript)
+4.  [How to attach a callback to a promise](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-how-to-attach-a-callback-to-a-promise)
+5.  [How to handle errors in a promise](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-how-to-handle-errors-in-a-promise)
+6.  [How to handle many promises at once](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-how-to-handle-many-promises-at-once)
+7.  [What is the async/await syntax?](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-what-is-the-asyncawait-syntax)
+8.  [How to create an async function in JavaScript](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-how-to-create-an-async-function-in-javascript)
+9.  [How to use the await keyword](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-how-to-use-the-await-keyword)
+10. [How to handle errors in async/await](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-how-to-handle-errors-in-asyncawait)
+11. [What is a job queue?](https://www.freecodecamp.org/news/guide-to-javascript-promises//#heading-what-is-a-job-queue)
+
+This guide _promises_ to be an interesting and insightful read. :) It is meant for anyone looking to be better at writing JavaScript async instructions, thereby properly utilizing what the language has to offer. With all that out of the way, let's get started.
+
+## Prerequisites
+
+In order to follow along with the material and grasp it, here are a few things you should have:
+
+- [Basic Knowledge of JavaScript](https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/)
+- [Knowledge of how JavaScript processes async operations](https://www.freecodecamp.org/news/javascript-asynchronous-operations-in-the-browser/)
+
+Knowing these topics will help you properly understand what you are about to learn. If you do not have the prerequisites, you can go learn them and return. The article will use some concepts from those topics here.
+
+## Why Should You Care about Promises?
+
+Promises were not always part of JavaScript. Callbacks worked together with asynchronous functions to produce desired results in the past. A callback is any function that is a parameter of an async function, which the async function invokes to complete its operation.
+
+To call an async function, you had to pass a callback as an argument like this:
+
+```
+  function callback(result) {
+    // Use the result from the Async operation
+  }
+
+  randomAsyncOperation((response) => callback(response));
+```
+
+But callbacks had a huge problem. Demonstrating the problem makes understanding it easier.
+
+Assume you had an asynchronous function that fetched data somewhere on the internet. This function should accept two callbacks, `successCallback` and `failureCallback`.
+
+The `successCallback` would run if the operation was successful and the program found the appropriate resource. But the `failureCallback` would run if the operation was unsuccessful and could not find the resource.
+
+```
+  function SuccessCallback(result) {
+    console.log("Resource found", result);
+  }
+
+  function failureCallback(error) {
+    console.error("Ooops. Something went wrong", error);
+  }
+```
+
+To run the async function, you had to pass the two callback functions as arguments:
+
+```
+  fetchResource(url, successCallback, failureCallback)
+```
+
+Here, `url` is a variable that represents the location of the resource.
+
+This code will run smoothly for now. You've taken care of both possible scenarios the function could run into. You have a callback for a successful operation and a callback for a failed operation.
+
+Now assume you want to perform many other fetch operations, but each operation must be successful for the next one to run. This is useful if the data you need must come in a certain order and cannot be scattered.
+
+For example, you might run into this situation if the result of the next operation depends on the result of the previous one.
+
+In this case, your success callbacks would have their own success callbacks, which is important because you need to use the results if they come in.
+
+```
+  fetchResource(
+    url,
+    function (result) {
+      // Do something with the result
+      fetchResource(
+        newUrl,
+        function (result) {
+          // Do something with the new result
+          fetchResource(
+            anotherUrl,
+            function (result) {
+              // Do something with the new result
+            },
+            failureCallback
+          );
+        },
+        failureCallback
+      );
+    },
+    failureCallback
+  );
+```
+
+From the example, you may notice a complication developing. You would have to keep nesting your success callbacks while repeating the `failureCallback` every time you call the async function.
+
+These nested callbacks led to the [‘Callback Pyramid of Doom’](https://medium.com/dsc-srm/javascript-callback-hell-or-pyramid-of-doom-4f786d14b997) or callback hell, which can quickly become a nightmare. Could there be a more efficient way of handling situations like this?
+
+JavaScript introduced Promises as part of [ES6 (ES2015)](https://262.ecma-international.org/6.0/#sec-promise-constructor) to solve this problem. It simplified working with callbacks and made for better syntax as you'll see shortly. Promises are now the foundation for most modern asynchronous operations developers use in JavaScript today.
