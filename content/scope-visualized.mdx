@@ -9,19 +9,19 @@ url: 'https://dev.to/lydiahallie/javascript-visualized-scope-chain-13pd'
 
 Let's take a look at the following code:
 
-```
-  const name = "Lydia"
-  const age = 21
-  const city = "San Francisco"
+```js
+const name = 'Lydia';
+const age = 21;
+const city = 'San Francisco';
 
-  function getPersonInfo() {
-    const name = "Sarah"
-    const age = 22
+function getPersonInfo() {
+  const name = 'Sarah';
+  const age = 22;
 
-    return `${name} is ${age} and lives in ${city}`
-  }
+  return `${name} is ${age} and lives in ${city}`;
+}
 
-  console.log(getPersonInfo())
+console.log(getPersonInfo());
 ```
 
 We're invoking the `getPersonInfo` function, which returns a string containing the values of the `name`, `age` and `city` variables:

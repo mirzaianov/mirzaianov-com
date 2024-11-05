@@ -5,6 +5,7 @@ import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeStringify from 'rehype-stringify';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
+import remarkGfm from 'remark-gfm';
 import { unified } from 'unified';
 
 export const NOTES_DATA = {
@@ -19,6 +20,7 @@ function getMDXFiles(dir: string) {
 export async function markdownToHTML(markdown: string) {
   const p = await unified()
     .use(remarkParse)
+    // .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypePrettyCode, {
       theme: {
@@ -37,8 +39,9 @@ export async function getPost(slug: string) {
   const filePath = path.join('content', `${slug}.mdx`);
   let source = fs.readFileSync(filePath, 'utf-8');
   const { content: rawContent, data: metadata } = matter(source);
+  const content = await markdownToHTML(rawContent);
   return {
-    source: rawContent,
+    source: content,
     metadata,
     slug,
   };

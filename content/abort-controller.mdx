@@ -15,11 +15,11 @@ Today, I'd like to talk about one of the standard JavaScript APIs you are likely
 
 Here's how you use it:
 
-```bash
-  const controller = new AbortController()
+```js
+const controller = new AbortController();
 
-  controller.signal
-  controller.abort()
+controller.signal;
+controller.abort();
 ```
 
 Once you create a controller instance, you get two things:

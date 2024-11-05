@@ -46,12 +46,12 @@ Promises were not always part of JavaScript. Callbacks worked together with asyn
 
 To call an async function, you had to pass a callback as an argument like this:
 
-```
-  function callback(result) {
-    // Use the result from the Async operation
-  }
+```js
+function callback(result) {
+  // Use the result from the Async operation
+}
 
-  randomAsyncOperation((response) => callback(response));
+randomAsyncOperation((response) => callback(response));
 ```
 
 But callbacks had a huge problem. Demonstrating the problem makes understanding it easier.
@@ -60,20 +60,20 @@ Assume you had an asynchronous function that fetched data somewhere on the inter
 
 The `successCallback` would run if the operation was successful and the program found the appropriate resource. But the `failureCallback` would run if the operation was unsuccessful and could not find the resource.
 
-```
-  function SuccessCallback(result) {
-    console.log("Resource found", result);
-  }
+```js
+function SuccessCallback(result) {
+  console.log('Resource found', result);
+}
 
-  function failureCallback(error) {
-    console.error("Ooops. Something went wrong", error);
-  }
+function failureCallback(error) {
+  console.error('Ooops. Something went wrong', error);
+}
 ```
 
 To run the async function, you had to pass the two callback functions as arguments:
 
-```
-  fetchResource(url, successCallback, failureCallback)
+```js
+fetchResource(url, successCallback, failureCallback);
 ```
 
 Here, `url` is a variable that represents the location of the resource.
@@ -86,28 +86,28 @@ For example, you might run into this situation if the result of the next operati
 
 In this case, your success callbacks would have their own success callbacks, which is important because you need to use the results if they come in.
 
-```
-  fetchResource(
-    url,
-    function (result) {
-      // Do something with the result
-      fetchResource(
-        newUrl,
-        function (result) {
-          // Do something with the new result
-          fetchResource(
-            anotherUrl,
-            function (result) {
-              // Do something with the new result
-            },
-            failureCallback
-          );
-        },
-        failureCallback
-      );
-    },
-    failureCallback
-  );
+```js
+fetchResource(
+  url,
+  function (result) {
+    // Do something with the result
+    fetchResource(
+      newUrl,
+      function (result) {
+        // Do something with the new result
+        fetchResource(
+          anotherUrl,
+          function (result) {
+            // Do something with the new result
+          },
+          failureCallback,
+        );
+      },
+      failureCallback,
+    );
+  },
+  failureCallback,
+);
 ```
 
 From the example, you may notice a complication developing. You would have to keep nesting your success callbacks while repeating the `failureCallback` every time you call the async function.

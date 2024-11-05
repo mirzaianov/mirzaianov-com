@@ -15,12 +15,12 @@ The article focuses on the event loop, the order of execution, and how developer
 
 Old operational systems didn't support multithreading and their event loop can be approximately described as a simple cycle:
 
-```bash
-    <span>while</span> (<span>true</span>) {
-        <span>if</span> (execQueue.isNotEmpty()) {
-            execQueue.pop().exec();
-        }
-    }
+```js
+while (true) {
+  if (execQueue.isNotEmpty()) {
+    execQueue.pop().exec();
+  }
+}
 ```
 
 This code utilizes all CPU. It was so in old OS. Modern OS schedulers are utterly complicated. They have prioritization, execution queues, and many other technologies.

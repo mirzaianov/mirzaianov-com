@@ -20,22 +20,22 @@ Let’s zoom in on each one.
 
 Compare this:
 
-```
-  const add = (x, y) => x + y;
+```js
+const add = (x, y) => x + y;
 
-  add(2, 4); // 6
+add(2, 4); // 6
 ```
 
 To this:
 
-```
-  let x = 2;
+```js
+let x = 2;
 
-  const add = (y) => {
-    x += y;
-  };
+const add = (y) => {
+  x += y;
+};
 
-  add(4); // x === 6 (the first time)
+add(4); // x === 6 (the first time)
 ```
 
 #### Pure Functions = Consistent Results

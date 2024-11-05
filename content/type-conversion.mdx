@@ -30,18 +30,18 @@ A non numeric string (like "John") converts to `NaN` (Not a Number).
 
 These will convert:
 
-```
-  Number('3.14');
-  Number(Math.PI);
-  Number(' ');
-  Number('');
+```js
+Number('3.14');
+Number(Math.PI);
+Number(' ');
+Number('');
 ```
 
 These will not convert:
 
-```
-  Number("99 88")
-  Number("John")
+```js
+Number('99 88');
+Number('John');
 ```
 
 ---
@@ -64,18 +64,18 @@ The **unary + operator** can be used to convert a variable to a number:
 
 ### Example
 
-```
-  let y = "5";      // y is a string
-  let x = + y;      // x is a number
+```js
+let y = '5'; // y is a string
+let x = +y; // x is a number
 ```
 
 If the variable cannot be converted, it will still become a number, but with the value `NaN` (Not a Number):
 
 ### Example
 
-```
-  let y = "John";   // y is a string
-  let x = + y;      // x is a number (NaN)
+```js
+let y = 'John'; // y is a string
+let x = +y; // x is a number (NaN)
 ```
 
 ---
@@ -88,20 +88,20 @@ It can be used on any type of numbers, literals, variables, or expressions:
 
 ### Example
 
-```
-  String(x)         // returns a string from a number variable x
-  String(123)       // returns a string from a number literal 123
-  String(100 + 23)  // returns a string from a number from an expression
+```js
+String(x); // returns a string from a number variable x
+String(123); // returns a string from a number literal 123
+String(100 + 23); // returns a string from a number from an expression
 ```
 
 The Number method `toString()` does the same.
 
 ### Example
 
-```
-  x.toString()
-  (123).toString()
-  (100 + 23).toString()
+```js
+x.toString()(123)
+  .toString()(100 + 23)
+  .toString();
 ```
 
 ---
@@ -120,16 +120,16 @@ The Number method `toString()` does the same.
 
 The global method `Number()` can be used to convert dates to numbers.
 
-```
-  d = new Date();
-  Number(d)          // returns 1404568027739
+```js
+d = new Date();
+Number(d); // returns 1404568027739
 ```
 
 The date method `getTime()` does the same.
 
-```
-  d = new Date();
-  d.getTime()        // returns 1404568027739
+```js
+d = new Date();
+d.getTime(); // returns 1404568027739
 ```
 
 ---
@@ -138,16 +138,16 @@ The date method `getTime()` does the same.
 
 The global method `String()` can convert dates to strings.
 
-```
-  String(Date())  // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)"
+```js
+String(Date()); // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)"
 ```
 
 The Date method `toString()` does the same.
 
 ### Example
 
-```
-  Date().toString()  // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)"
+```js
+Date().toString(); // returns "Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)"
 ```
 
 | Method            | Description                                       |
@@ -168,9 +168,9 @@ The Date method `toString()` does the same.
 
 The global method `Number()` can also convert booleans to numbers.
 
-```
-  Number(false)     // returns 0
-  Number(true)      // returns 1
+```js
+Number(false); // returns 0
+Number(true); // returns 1
 ```
 
 ---
@@ -179,16 +179,16 @@ The global method `Number()` can also convert booleans to numbers.
 
 The global method `String()` can convert booleans to strings.
 
-```
-  String(false)      // returns "false"
-  String(true)       // returns "true"
+```js
+String(false); // returns "false"
+String(true); // returns "true"
 ```
 
 The Boolean method `toString()` does the same.
 
-```
-  false.toString()   // returns "false"
-  true.toString()    // returns "true"
+```js
+false.toString(); // returns "false"
+true.toString(); // returns "true"
 ```
 
 ---
@@ -199,7 +199,7 @@ When JavaScript tries to operate on a "wrong" data type, it will try to convert 
 
 The result is not always what you expect:
 
-```
+```js
   5 + null    // returns 5         because null is converted to 0
   "5" + null  // returns "5null"   because null is converted to "null"
   "5" + 2     // returns "52"      because 2 is converted to "2"
@@ -213,22 +213,22 @@ The result is not always what you expect:
 
 JavaScript automatically calls the variable's `toString()` function when you try to "output" an object or a variable:
 
-```
-  document.getElementById("demo").innerHTML = myVar;
+```js
+document.getElementById('demo').innerHTML = myVar;
 ```
 
-```
-  // if myVar = \{name:"John"\}  // toString converts to "\[object Object\]"
-  // if myVar = \[1,2,3,4\]       // toString converts to "1,2,3,4"
-  // if myVar = new Date()      // toString converts to "Fri Jul 18 2014 09:08:55 GMT+0200"
+```js
+// if myVar = \{name:"John"\}  // toString converts to "\[object Object\]"
+// if myVar = \[1,2,3,4\]       // toString converts to "1,2,3,4"
+// if myVar = new Date()      // toString converts to "Fri Jul 18 2014 09:08:55 GMT+0200"
 ```
 
 Numbers and booleans are also converted, but this is not very visible:
 
-```
-  // if myVar = 123             // toString converts to "123"
-  // if myVar = true            // toString converts to "true"
-  // if myVar = false           // toString converts to "false"
+```js
+// if myVar = 123             // toString converts to "123"
+// if myVar = true            // toString converts to "true"
+// if myVar = false           // toString converts to "false"
 ```
 
 ---

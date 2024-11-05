@@ -17,28 +17,33 @@ Or maybe this one?
 
 You’ve most likely seen this:
 
-```bash
-  export const Component = () => {
-    const [data, setData] = useState()
-    const [loading, setLoading] = useState(true)
+```js
+export const Component = () => {
+  const [data, setData] = useState();
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-      const fetchData = async () => {
-        const res = await fetch(api)
-        const json = await res.json()
-        setData(json)
-        setLoading(false)
-      }
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch(api);
+      const json = await res.json();
+      setData(json);
+      setLoading(false);
+    };
 
-      fetchData()
-    }, [])
+    fetchData();
+  }, []);
 
-    if (loading) {
-      return <Spinner />
-    }
-
-    return <> ... <AnotherComponent /> ... </>;
+  if (loading) {
+    return <Spinner />;
   }
+
+  return (
+    <>
+      {' '}
+      ... <AnotherComponent /> ...{' '}
+    </>
+  );
+};
 ```
 
 ---
