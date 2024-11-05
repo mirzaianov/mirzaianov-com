@@ -7,7 +7,7 @@ tags: 'Web API'
 url: 'https://blog.xnim.me/event-loop-and-render-queue'
 ---
 
-The article focuses on the event loop, the order of execution, and how developers can optimise code. The fully detailed schema:
+The article focuses on the event loop, the order of execution, and how developers can optimize code. The fully detailed schema:
 
 ![Detailed schema of event loop](https://xnim.me/The%20long%20journey%20to%20the%20runtime%20Part%203%20Event%20loop,%2005203256cba04d22bc89656fdf50f252/Untitled.png)
 
@@ -23,7 +23,7 @@ Old operational systems didn't support multithreading and their event loop can b
     }
 ```
 
-This code utilises all CPU. It was so in old OS. Modern OS schedulers are utterly complicated. They have prioritisation, execution queues, and many other technologies.
+This code utilizes all CPU. It was so in old OS. Modern OS schedulers are utterly complicated. They have prioritization, execution queues, and many other technologies.
 
 We can start describing the event loop as a cycle, which checks whether we have any pending tasks:
 
