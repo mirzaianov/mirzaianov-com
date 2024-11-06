@@ -82,7 +82,7 @@ export default async function Notes({
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 15}>
           <article
-            className="prose text-sm dark:prose-invert sm:text-base"
+            className="prose text-sm dark:prose-invert prose-pre:text-muted-foreground dark:prose-pre:bg-secondary sm:text-base"
             dangerouslySetInnerHTML={{ __html: note.source }}
           />
         </BlurFade>
