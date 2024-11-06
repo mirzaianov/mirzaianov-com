@@ -3,12 +3,12 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: `Projects`,
+    default: `Note`,
     template: `%s • ${MAIN_DATA.name}`,
   },
 };
 
-export default function ProjectsLayout({
+export default function NotesLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
