@@ -87,7 +87,7 @@ export const COURSES_DATA = {
       description:
         'Introduction to APIs and RESTful Web Services. Includes HTTP, JSON, XML, REST, SOAP, OAuth, OpenID Connect, Postman, and Python',
       image: '/icons/postman.svg',
-      inResume: true,
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -456,7 +456,7 @@ export const COURSES_DATA = {
       description:
         'Learn CSS for the first time or brush up your CSS skills and dive in even deeper. EVERY web developer has to know CSS',
       image: '/icons/css.svg',
-      inResume: true,
+      inResume: false,
       links: [
         {
           title: 'Website',
