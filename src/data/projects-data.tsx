@@ -28,6 +28,35 @@ export const PROJECTS_DATA = {
       video: '/videos/alsu-me.mp4',
     },
     {
+      title: 'mirzaianov.com',
+      href: 'https://mirzaianov.com/',
+      dates: 'Sep 2024 - Nov 2024',
+      active: true,
+      description:
+        'A personal website for a frontend developer, including a resume, projects, courses, and notes pages.',
+      technologies: [
+        'Next',
+        'Typescript',
+        'Tailwind',
+        'Shadcn/UI',
+        'Framer Motion',
+      ],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://www.mirzaianov.com/',
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: 'Source',
+          href: 'https://github.com/mirzaianov/mirzaianov-com',
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: '',
+      video: '/videos/mirzaianov-com.mp4',
+    },
+    {
       title: 'Shopping List',
       href: 'https://shopping-mirzaianov.vercel.app/',
       dates: 'Nov 2023 - Jan 2024',
