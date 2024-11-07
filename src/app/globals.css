@@ -179,3 +179,7 @@ code[data-line-numbers-max-digits='3'] > [data-line]::before {
 code:not(pre code) {
   @apply break-words rounded-md bg-primary/15 box-decoration-clone px-1.5 py-1 dark:bg-secondary;
 }
+
+.scrollable-table > table {
+  @apply inline-block max-w-full overflow-x-auto;
+}
