@@ -5,12 +5,12 @@ export const PROJECTS_DATA = {
   pageTitle: 'Observe my work',
   list: [
     {
-      title: 'alsu.',
+      title: 'alsu.me',
       href: 'https://www.alsu.me/',
       dates: 'Jun 2024 - Jul 2024',
       active: true,
       description:
-        'A personal website for a professional tutor, translator & interpreter. Designed [in Figma](https://www.figma.com/design/OVTqGfHWzeTCEd0fpX456Z/karimova-me?node-id=0-1&t=i7E8AZOM53lRpkkz-1), crafted with React & Tailwind, and deployed on Vercel',
+        'A landing page for a professional tutor, translator & interpreter. Designed [in Figma](https://www.figma.com/design/OVTqGfHWzeTCEd0fpX456Z/karimova-me?node-id=0-1&t=i7E8AZOM53lRpkkz-1), crafted with React & Tailwind, and deployed on Vercel.',
       technologies: ['Vite', 'React', 'Tailwind'],
       links: [
         {
@@ -62,7 +62,7 @@ export const PROJECTS_DATA = {
       dates: 'Nov 2023 - Jan 2024',
       active: true,
       description:
-        'A lightweight web application to help always keep the shopping list close. It allows to organize a cart in a simple and convenient way',
+        'A lightweight web application to help always keep the shopping list close. It allows to organize a cart in a simple and convenient way.',
       technologies: ['Vite', 'React', 'Tailwind', 'Firebase'],
       links: [
         {
@@ -85,7 +85,7 @@ export const PROJECTS_DATA = {
       dates: 'Oct 2023 - Nov 2023',
       active: true,
       description:
-        'An app that allows to generate an image (512x512 px) using DALL·E in the OPENAI API according to the inserted prompt',
+        'An app that allows to generate an image (512x512 px) using DALL·E in the OPENAI API according to the inserted prompt.',
       technologies: ['Vite', 'React', 'CSS', 'AI', 'Open AI'],
       links: [
         {
@@ -108,7 +108,7 @@ export const PROJECTS_DATA = {
       dates: 'Sep 2023 - Oct 2023',
       active: true,
       description:
-        'An app that utilizes Unsplash API to provide with images according to the search request',
+        'An app that utilizes Unsplash API to provide with images according to the search request.',
       technologies: ['Vite', 'React', 'CSS', 'AI', 'Open AI'],
       links: [
         {
@@ -131,7 +131,7 @@ export const PROJECTS_DATA = {
       dates: 'Nov 2022 - Dec 2022',
       active: true,
       description:
-        'A test project which allows to get information about heroes from Marvel Comics Universe',
+        'A test project which allows to get information about heroes from Marvel Comics Universe.',
       technologies: [
         'React',
         'React Router',
