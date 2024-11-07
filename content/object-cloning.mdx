@@ -7,28 +7,28 @@ tags: 'JavaScript'
 url: ''
 ---
 
-| #   | Column 1                        | shallow copy | deep copy | inner objects | methods | built-in types | circular references |
-| --- | ------------------------------- | ------------ | --------- | ------------- | ------- | -------------- | ------------------- |
-| 1   | for (const key in obj)          | +            | -         | -             | -       | -              | -                   |
-| 2   | Object.assign({}, obj)          | +            | -         | -             | -       | -              | -                   |
-| 3   | Spread operator \{…obj\}        | +            | -         | -             | -       | -              | -                   |
-| 4   | JSON.parse(JSON.stringify(obj)) | -            | +         | +             | -       | -              | -                   |
-| 5   | Recursion                       | -            | +         | +             | +       | -              | -                   |
-| 6   | structuredClone()               | -            | +         | +             | -       | +              | +                   |
+| #   | Column 1                            | shallow copy | deep copy | inner objects | methods | built-in types | circular references |
+| --- | ----------------------------------- | ------------ | --------- | ------------- | ------- | -------------- | ------------------- |
+| 1   | **for (const key in obj)**          | +            | -         | -             | -       | -              | -                   |
+| 2   | **Object.assign({}, obj)**          | +            | -         | -             | -       | -              | -                   |
+| 3   | **Spread operator \{…obj\}**        | +            | -         | -             | -       | -              | -                   |
+| 4   | **JSON.parse(JSON.stringify(obj))** | -            | +         | +             | -       | -              | -                   |
+| 5   | **Recursion**                       | -            | +         | +             | +       | -              | -                   |
+| 6   | **structuredClone()**               | -            | +         | +             | -       | +              | +                   |
 
-1. For…in cycle with conditionals if we know levels:
+1. `For…in` cycle with conditionals if we know levels:
    - shallow copy ⇒ If our object contains objects, they will remain shared references
-2. Object.assign({}, obj):
+2. `Object.assign({}, obj)`:
    - shallow copy ⇒ If our object contains objects, they will remain shared references
    - turns getters into simple properties
-   - подтягивает любые сеттеры объекта
-3. Spread operator:
+   - summons all object’s getters
+3. `Spread` operator:
    - shallow copy ⇒ If our object contains objects, they will remain shared references
-4. JSON.parse(JSON.stringify(obj)):
+4. `JSON.parse(JSON.stringify(obj))`:
    - a temporary, potentially big string just to pipe it back into a parser
    - things like Maps, Sets, RegExps, Dates, ArrayBuffers and other built-in types just get lost at serialization
-5. Recursion if we don’t know levels
-6. Structured cloning
+5. `Recursion` if we don’t know levels
+6. `Structured cloning`
    - structuredClone(user)
    - new MessageChannel()
    - history.replaceState(obj, document.title)
