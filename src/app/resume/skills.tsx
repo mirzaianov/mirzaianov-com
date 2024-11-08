@@ -21,7 +21,7 @@ export default function Skills({ resumeSkills }: Props) {
             >
               <li
                 key={skill}
-                className="inline-block rounded-sm px-2 py-1 outline outline-1 -outline-offset-1 outline-primary transition-colors hover:bg-foreground hover:text-background"
+                className="inline-block rounded-sm px-2 py-1 outline outline-1 -outline-offset-1 outline-primary transition-colors duration-300 hover:bg-foreground hover:text-background"
               >
                 {skill}
               </li>
