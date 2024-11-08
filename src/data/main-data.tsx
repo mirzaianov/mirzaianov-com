@@ -157,7 +157,7 @@ export const MAIN_DATA = {
       company: 'Career Break',
       href: '/projects',
       location: 'Türkiye',
-      title: 'Career transition',
+      title: 'Career Transition',
       logoUrl: '/icons/react.svg',
       start: 'October 2022',
       end: 'March 2023',
