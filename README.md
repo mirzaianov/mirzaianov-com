@@ -1,4 +1,4 @@
-![MasterHead](/head.png)
+![MasterHead](/head.gif)
 
 # MIRZAIANOV.COM
 
