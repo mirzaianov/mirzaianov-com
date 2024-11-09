@@ -11,7 +11,7 @@ export default function BackButton() {
     <Button
       onClick={() => router.back()}
       variant="secondary"
-      className="group gap-2 bg-primary/15 transition-all duration-300 hover:scale-105 hover:bg-primary/20 dark:bg-secondary sm:text-base sm:leading-[1.2]"
+      className="group gap-2 transition-all duration-300 hover:scale-105 hover:bg-primary/10 sm:text-base sm:leading-[1.2]"
     >
       <ArrowLeft
         size={16}
