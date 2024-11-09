@@ -100,6 +100,7 @@ export const MAIN_DATA = {
         icon: Icons.telegram,
         navbar: true,
         mobile: true,
+        inResume: true,
       },
       Email: {
         name: 'Email',
@@ -107,6 +108,15 @@ export const MAIN_DATA = {
         icon: Icons.email,
         navbar: true,
         mobile: true,
+        inResume: true,
+      },
+      Website: {
+        name: 'Website',
+        url: 'https://mirzaianov.com',
+        icon: Icons.globe,
+        navbar: false,
+        mobile: false,
+        inResume: true,
       },
       LinkedIn: {
         name: 'LinkedIn',
@@ -114,6 +124,7 @@ export const MAIN_DATA = {
         icon: Icons.linkedin,
         navbar: true,
         mobile: true,
+        inResume: true,
       },
       GitHub: {
         name: 'GitHub',
@@ -121,6 +132,7 @@ export const MAIN_DATA = {
         icon: Icons.github,
         navbar: true,
         mobile: true,
+        inResume: true,
       },
       LeetCode: {
         name: 'LeetCode',
@@ -128,6 +140,7 @@ export const MAIN_DATA = {
         icon: Icons.leetcode,
         navbar: true,
         mobile: false,
+        inResume: false,
       },
     },
   },
@@ -252,7 +265,7 @@ export const MAIN_DATA = {
       'Algorithms',
       'Data Structures',
       'React Hooks',
-      'CSS-modules',
+      'CSS Modules',
       'Github Flow',
       'RTK',
       'Tanstack Query',
