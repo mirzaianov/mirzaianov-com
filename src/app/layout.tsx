@@ -24,6 +24,13 @@ export const metadata: Metadata = {
     description: MAIN_DATA.description,
     url: MAIN_DATA.url,
     siteName: `${MAIN_DATA.name}`,
+    images: [
+      {
+        url: 'https://www.mirzaianov.com/og.png', // Must be an absolute URL
+        width: 800,
+        height: 800,
+      },
+    ],
     locale: 'en_US',
     type: 'website',
   },
