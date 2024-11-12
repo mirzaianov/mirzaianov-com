@@ -1,4 +1,5 @@
 import Navbar from '@/components/navbar';
+import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from '@/components/theme-provider';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { MAIN_DATA } from '@/data/main-data';
@@ -81,6 +82,7 @@ export default function RootLayout({
           </TooltipProvider>
         </ThemeProvider>
       </body>
+      <Analytics />
     </html>
   );
 }
