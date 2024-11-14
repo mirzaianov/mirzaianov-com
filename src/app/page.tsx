@@ -16,6 +16,7 @@ import { MAIN_DATA } from '@/data/main-data';
 import { PROJECTS_DATA } from '@/data/projects-data';
 import { COURSES_DATA } from '@/data/courses-data';
 import { getNotesPosts, NOTES_DATA } from '@/data/notes-data';
+import { link } from 'fs';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -161,7 +162,11 @@ export default async function Page() {
                   <Link
                     rel="noopener noreferrer"
                     target="_blank"
-                    href="https://utfs.io/f/etzPSWYSlL8TqwyXqbOht2feDJLdOmc90I4YSQ3AWVXwiE6P"
+                    href={
+                      MAIN_DATA.resume.links.find(
+                        (link) => link.type === 'Download',
+                      )?.href || '#'
+                    }
                     className="text-gray-900 underline dark:text-white"
                   >
                     download

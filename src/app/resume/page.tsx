@@ -42,7 +42,11 @@ export default async function ResumePage() {
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://utfs.io/f/etzPSWYSlL8TqwyXqbOht2feDJLdOmc90I4YSQ3AWVXwiE6P"
+                  href={
+                    MAIN_DATA.resume.links.find(
+                      (link) => link.type === 'Download',
+                    )?.href || '#'
+                  }
                   className="text-gray-900 underline dark:text-white"
                 >
                   download
