@@ -111,7 +111,7 @@ export const COURSES_DATA = {
       date: '2024',
       source: 'Udemy',
       author: 'George S',
-      active: false,
+      active: true,
       description: "Deeply understand JavaScript's newest features",
       image: '/icons/udemy.svg',
       inResume: false,
@@ -356,7 +356,7 @@ export const COURSES_DATA = {
       ],
     },
     {
-      title: 'Responsive UX/UI Design in Figma 1.5h deep dive 2024 UPDATE!',
+      title: 'Responsive UX/UI Design in Figma 2h deep dive JULY 2023 UPDATE',
       date: '2023',
       source: 'Udemy',
       author: 'Christine moonlearning',
