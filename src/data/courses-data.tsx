@@ -12,7 +12,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Build type-safe React apps & use TypeScript to enhance your components, state management, Redux & side effects code',
-      image: '/icons/react.svg',
+      image: '/react.svg',
       inResume: true,
       links: [
         {
@@ -28,7 +28,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-6dfcde92-f3f1-4dba-ad8f-a34292cac315.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8T3H0g8mqXEfCPbAo9YrugvqJ5VkK0Up8GiDae',
         },
       ],
     },
@@ -40,7 +40,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Learn to use typing for the sake of results, and not just for the sake of it',
-      image: '/icons/ts.svg',
+      image: '/ts.svg',
       inResume: true,
       links: [
         {
@@ -56,7 +56,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-4de5d88a-3db6-453e-ad89-f86f5f108353.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TkfOer1oXtTU2u5nqlAfYaHSbCGgmsz9ReoOy',
         },
       ],
     },
@@ -68,7 +68,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         "In this course, you'll learn server-side rendering, static site generation, data fetching, building API endpoints, creating pages, and new features in Next.js, like using the app router, server and client components, and server actions!",
-      image: '/icons/next.svg',
+      image: '/next.svg',
       inResume: true,
       links: [
         {
@@ -86,7 +86,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Introduction to APIs and RESTful Web Services. Includes HTTP, JSON, XML, REST, SOAP, OAuth, OpenID Connect, Postman, and Python',
-      image: '/icons/postman.svg',
+      image: '/postman.svg',
       inResume: false,
       links: [
         {
@@ -102,7 +102,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-6d5861d0-2a0e-4be8-99b1-e0ef1e16342b.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TYAOiO9zEQcLKwZIDOXsrzyRW0v5P6SqN31da',
         },
       ],
     },
@@ -111,9 +111,9 @@ export const COURSES_DATA = {
       date: '2024',
       source: 'Udemy',
       author: 'George S',
-      active: false,
+      active: true,
       description: "Deeply understand JavaScript's newest features",
-      image: '/icons/udemy.svg',
+      image: '/udemy.svg',
       inResume: false,
       links: [
         {
@@ -129,7 +129,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-e6d84011-c920-48c1-ad31-2716a9b348cd.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TFqYPsyWDjy0PI6MY4JSleW8tackgEvrUbRQN',
         },
       ],
     },
@@ -141,7 +141,7 @@ export const COURSES_DATA = {
       active: false,
       description:
         'Dive in and learn React.js from scratch! Learn React, Hooks, Redux, React Router, Next.js, Best Practices and way more!',
-      image: '/icons/react.svg',
+      image: '/react.svg',
       inResume: false,
       links: [
         {
@@ -159,7 +159,7 @@ export const COURSES_DATA = {
       active: false,
       description:
         'Learn Git & GitHub and master working with commits, branches, the stash, cherry picking, rebasing, pull requests & more!',
-      image: '/icons/git.svg',
+      image: '/git.svg',
       inResume: false,
       links: [
         {
@@ -177,7 +177,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Understand and learn all the key features of React: Components, JSX, Props, State, useState, useEffect, and Redux',
-      image: '/icons/redux.svg',
+      image: '/redux.svg',
       inResume: true,
       links: [
         {
@@ -199,7 +199,7 @@ export const COURSES_DATA = {
       author: 'Colt Steele',
       active: false,
       description: 'The Missing Computer Science and Coding Interview Bootcamp',
-      image: '/icons/dsa.svg',
+      image: '/dsa.svg',
       inResume: false,
       links: [
         {
@@ -217,7 +217,7 @@ export const COURSES_DATA = {
       active: false,
       description:
         'The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!',
-      image: '/icons/js.svg',
+      image: '/js.svg',
       inResume: false,
       links: [
         {
@@ -234,7 +234,7 @@ export const COURSES_DATA = {
       author: 'Anthony Alicea',
       active: true,
       description: "Deeply understand JavaScript's newest features",
-      image: '/icons/js.svg',
+      image: '/js.svg',
       inResume: false,
       links: [
         {
@@ -250,7 +250,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-0b371869-51c5-4be6-9be8-c270a8433e9c.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TJ5VCBbjKX53TzqgxPmHAhtlC8bdrZv4nL9yF',
         },
       ],
     },
@@ -263,7 +263,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Learn all the key Typescript features such as variable typing, function signatures, union and intersection types, type aliases, and generics. Use effective strategies for transitioning your codebase to TypeScript for more robust and scalable applications',
-      image: '/icons/ts.svg',
+      image: '/ts.svg',
       inResume: false,
       links: [
         {
@@ -281,7 +281,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'This course is for React newbies and anyone looking to build a solid foundation. It’s designed to teach you everything you need to start building web applications in React right away',
-      image: '/icons/react.svg',
+      image: '/react.svg',
       inResume: false,
       links: [
         {
@@ -299,7 +299,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'A neat, necessary, slightly "advanced" course on Git that makes a developer\'s life easier. Detailed, from simple to complex, with detailed explanations',
-      image: '/icons/git.svg',
+      image: '/git.svg',
       inResume: false,
       links: [
         {
@@ -317,7 +317,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         "Asynchronous programming is often intimidating, it's not how we normally consider writing code. This course shows how promises and async/await can help simplify async programming.",
-      image: '/icons/js.svg',
+      image: '/js.svg',
       inResume: false,
       links: [
         {
@@ -335,7 +335,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Jump in on this 21-day challenge, put the time in, and you will walk out understanding how you can make a responsive layouts',
-      image: '/icons/css.svg',
+      image: '/css.svg',
       inResume: false,
       links: [
         {
@@ -351,19 +351,19 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/Conquering Responsive Layouts-certificate.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8ThqPAJ8TT1X2aAqW5SxokjrelDvypuNb3U40K',
         },
       ],
     },
     {
-      title: 'Responsive UX/UI Design in Figma 1.5h deep dive 2024 UPDATE!',
+      title: 'Responsive UX/UI Design in Figma 2h deep dive JULY 2023 UPDATE',
       date: '2023',
       source: 'Udemy',
       author: 'Christine moonlearning',
       active: true,
       description:
         'Figma Auto Layout, Constraints and Breakpoints: Responsive setup, testing and design documentation, min/max width, wrap',
-      image: '/icons/figma.svg',
+      image: '/figma.svg',
       inResume: false,
       links: [
         {
@@ -379,7 +379,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-e67bb419-5e23-4b4c-b54d-f9f50b816155.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8Tn2zkGR5Nf39SFYtIUuloWqw1GXcsVjLx5DTP',
         },
       ],
     },
@@ -391,7 +391,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'The only class fully updated with the latest Figma UI and features, released in October 2024!',
-      image: '/icons/figma.svg',
+      image: '/figma.svg',
       inResume: false,
       links: [
         {
@@ -407,7 +407,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-22e5f94e-48a0-44bd-9e2a-c16979f328bd.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TzfBZB93gcKmqphCdW7QxSwE5012LrvUjHeos',
         },
       ],
     },
@@ -419,7 +419,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Learn CSS animation basics and transition to advanced concepts like orchestration and choreography. Techniques you’ll learn: CSS transitions, animations, custom properties, data attributes, choreography, animation states, layout animations, and reactive animations with a little bit of JavaScript',
-      image: '/icons/css.svg',
+      image: '/css.svg',
       inResume: false,
       links: [
         {
@@ -437,7 +437,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Working with text is a fundamentally crucial task in every programming language. This course will help you deepen your knowledge of the String and Regex API of the JavaScript language',
-      image: '/icons/js.svg',
+      image: '/js.svg',
       inResume: false,
       links: [
         {
@@ -455,7 +455,7 @@ export const COURSES_DATA = {
       active: false,
       description:
         'Learn CSS for the first time or brush up your CSS skills and dive in even deeper. EVERY web developer has to know CSS',
-      image: '/icons/css.svg',
+      image: '/css.svg',
       inResume: false,
       links: [
         {
@@ -474,7 +474,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Master the most popular programming language - JavaScript, the React library and learn how to apply it in practice!',
-      image: '/icons/js.svg',
+      image: '/js.svg',
       inResume: true,
       links: [
         {
@@ -490,7 +490,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-1f0a1090-1098-48ef-9491-d7be1350699b.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8T6tJ3KAZkXJP1lgzwHjWKxCud9pMcI5nmG3Fe',
         },
       ],
     },
@@ -502,7 +502,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         "Learn the essential CSS layout techniques for building responsive, beautiful web applications. You'll get hands-on practice using CSS Grid for two-dimensional, grid-based layouts and Flexbox for styling one-directional flow. You'll master using these techniques and responsive images to build real-world, responsive web layouts!",
-      image: '/icons/css.svg',
+      image: '/css.svg',
       inResume: false,
       links: [
         {
@@ -520,7 +520,7 @@ export const COURSES_DATA = {
       active: true,
       description:
         'Master everything you need to create web products and start making money from it!',
-      image: '/icons/html.svg',
+      image: '/html.svg',
       inResume: false,
       links: [
         {
@@ -536,7 +536,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-03049cff-42f9-4689-8384-3bd33140d70b.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TVe9qG4uZgreSy2GOIf9wY7np3uFxLM8WADXK',
         },
       ],
     },

@@ -42,7 +42,11 @@ export default async function ResumePage() {
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
+                  href={
+                    MAIN_DATA.resume.links.find(
+                      (link) => link.type === 'Download',
+                    )?.href || '#'
+                  }
                   className="text-gray-900 underline dark:text-white"
                 >
                   download
