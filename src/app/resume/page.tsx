@@ -42,7 +42,7 @@ export default async function ResumePage() {
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="/pdf/MIRZAIANOV_CV_A4EN.pdf"
+                  href="https://utfs.io/f/etzPSWYSlL8TqwyXqbOht2feDJLdOmc90I4YSQ3AWVXwiE6P"
                   className="text-gray-900 underline dark:text-white"
                 >
                   download

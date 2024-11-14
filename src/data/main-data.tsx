@@ -281,7 +281,7 @@ export const MAIN_DATA = {
       },
       {
         type: 'Download',
-        href: '/pdf/MIRZAIANOV_CV_A4EN.pdf',
+        href: 'https://utfs.io/f/etzPSWYSlL8TqwyXqbOht2feDJLdOmc90I4YSQ3AWVXwiE6P',
         icon: <Icons.download className="size-3" />,
       },
     ],
