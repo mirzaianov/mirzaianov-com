@@ -25,7 +25,8 @@ export const PROJECTS_DATA = {
         },
       ],
       image: '',
-      video: '/videos/alsu-me.mp4',
+      video:
+        'https://utfs.io/f/etzPSWYSlL8TZ177Uf6XYgjoRrCQSmZD4hudylPfWtnA8MTK',
     },
     {
       title: 'mirzaianov.com',
@@ -54,7 +55,8 @@ export const PROJECTS_DATA = {
         },
       ],
       image: '',
-      video: '/videos/mirzaianov-com.mp4',
+      video:
+        'https://utfs.io/f/etzPSWYSlL8TFLxY6aWDjy0PI6MY4JSleW8tackgEvrUbRQN',
     },
     {
       title: 'Shopping List',
@@ -77,7 +79,8 @@ export const PROJECTS_DATA = {
         },
       ],
       image: '',
-      video: '/videos/shopping-list.mp4',
+      video:
+        'https://utfs.io/f/etzPSWYSlL8T6KEcuFkXJP1lgzwHjWKxCud9pMcI5nmG3Fes',
     },
     {
       title: 'AI Image Generator',
@@ -100,7 +103,8 @@ export const PROJECTS_DATA = {
         },
       ],
       image: '',
-      video: '/videos/igenerator.mp4',
+      video:
+        'https://utfs.io/f/etzPSWYSlL8TxL4afCi3KfRvgkF45mqpCoS9bEVDOyN28P7a',
     },
     {
       title: 'Unsplash Image Search Application',
@@ -123,7 +127,8 @@ export const PROJECTS_DATA = {
         },
       ],
       image: '',
-      video: '/videos/isearch.mp4',
+      video:
+        'https://utfs.io/f/etzPSWYSlL8TMnjXT1FJaJVKdwefbPtg8SorFXpNQCcBUi7Z',
     },
     {
       title: 'Marvel Information Portal',
@@ -155,7 +160,8 @@ export const PROJECTS_DATA = {
         },
       ],
       image: '',
-      video: '/videos/marvel.mp4',
+      video:
+        'https://utfs.io/f/etzPSWYSlL8Tnoaz9w5Nf39SFYtIUuloWqw1GXcsVjLx5DTP',
     },
   ],
 };

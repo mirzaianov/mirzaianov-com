@@ -285,7 +285,7 @@ export const MAIN_DATA = {
         icon: <Icons.download className="size-3" />,
       },
     ],
-    video: '/videos/resume.mp4',
+    video: 'https://utfs.io/f/etzPSWYSlL8TNnP25YMSjAIXY9TyeCRGZPwr2NbDHdLsMWQK',
     self: true,
   },
   credits: 'Inspired by [dillion.io](https://dillion.io/)',
