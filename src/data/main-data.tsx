@@ -26,7 +26,7 @@ export const MAIN_DATA = {
   ],
   summary:
     "In 2022, I quit my job as an R&D Engineer from an [international A-Tier automotive manufacturer](https://www.knorr-bremse.com/de/), moved abroad and started a fresh new journey as a software engineer. In the past, I had pursued a Master's Degree in Engineering Technology at [Kazan Aviation University](https://kai.ru/web/en/our-history), passed English [IELTS test](https://ielts.org/) at C1 level, and participated in several engineering workshops in Europe.",
-  avatarUrl: '/icons/me.svg',
+  avatarUrl: '/me.svg',
   skills: [
     'JavaScript',
     'React',
@@ -150,7 +150,7 @@ export const MAIN_DATA = {
       href: '/',
       location: 'Remote',
       title: 'Frontend Developer',
-      logoUrl: '/icons/rm.svg',
+      logoUrl: '/rm.svg',
       start: 'April 2023',
       end: '',
       description: [
@@ -171,7 +171,7 @@ export const MAIN_DATA = {
       href: '/projects',
       location: 'Türkiye',
       title: 'Career Transition',
-      logoUrl: '/icons/react.svg',
+      logoUrl: '/react.svg',
       start: 'October 2022',
       end: 'March 2023',
       description: [
@@ -190,7 +190,7 @@ export const MAIN_DATA = {
       href: 'https://www.knorr-bremse.com/de/',
       location: 'Russia',
       title: 'R&D Engineer',
-      logoUrl: '/icons/knorr.svg',
+      logoUrl: '/knorr.svg',
       start: 'April 2017',
       end: 'September 2022',
       description: [
@@ -212,7 +212,7 @@ export const MAIN_DATA = {
       href: 'https://kai.ru/web/en/',
       degree: "Master's Degree",
       specialization: 'Engineering Technology',
-      logoUrl: '/icons/kai.svg',
+      logoUrl: '/kai.svg',
       start: 2003,
       end: 2008,
       gpa: 4.2,
