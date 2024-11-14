@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: `${MAIN_DATA.name}`,
     images: [
       {
-        url: 'https://www.mirzaianov.com/og.png', // Must be an absolute URL
+        url: 'https://utfs.io/f/etzPSWYSlL8TIN3GF6Zn0eYdQRG9Eqfv7WrKLwhcbUySN31H', // Must be an absolute URL
         width: 800,
         height: 800,
       },
