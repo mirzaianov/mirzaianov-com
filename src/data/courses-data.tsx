@@ -28,7 +28,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-6dfcde92-f3f1-4dba-ad8f-a34292cac315.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8T3H0g8mqXEfCPbAo9YrugvqJ5VkK0Up8GiDae',
         },
       ],
     },
@@ -56,7 +56,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-4de5d88a-3db6-453e-ad89-f86f5f108353.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TkfOer1oXtTU2u5nqlAfYaHSbCGgmsz9ReoOy',
         },
       ],
     },
@@ -102,7 +102,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-6d5861d0-2a0e-4be8-99b1-e0ef1e16342b.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TYAOiO9zEQcLKwZIDOXsrzyRW0v5P6SqN31da',
         },
       ],
     },
@@ -129,7 +129,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-e6d84011-c920-48c1-ad31-2716a9b348cd.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TFqYPsyWDjy0PI6MY4JSleW8tackgEvrUbRQN',
         },
       ],
     },
@@ -250,7 +250,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-0b371869-51c5-4be6-9be8-c270a8433e9c.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TJ5VCBbjKX53TzqgxPmHAhtlC8bdrZv4nL9yF',
         },
       ],
     },
@@ -351,7 +351,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/Conquering Responsive Layouts-certificate.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8ThqPAJ8TT1X2aAqW5SxokjrelDvypuNb3U40K',
         },
       ],
     },
@@ -379,7 +379,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-e67bb419-5e23-4b4c-b54d-f9f50b816155.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8Tn2zkGR5Nf39SFYtIUuloWqw1GXcsVjLx5DTP',
         },
       ],
     },
@@ -407,7 +407,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-22e5f94e-48a0-44bd-9e2a-c16979f328bd.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TzfBZB93gcKmqphCdW7QxSwE5012LrvUjHeos',
         },
       ],
     },
@@ -490,7 +490,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-1f0a1090-1098-48ef-9491-d7be1350699b.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8T6tJ3KAZkXJP1lgzwHjWKxCud9pMcI5nmG3Fe',
         },
       ],
     },
@@ -536,7 +536,7 @@ export const COURSES_DATA = {
         {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
-          href: '/certificates/UC-03049cff-42f9-4689-8384-3bd33140d70b.pdf',
+          href: 'https://utfs.io/f/etzPSWYSlL8TVe9qG4uZgreSy2GOIf9wY7np3uFxLM8WADXK',
         },
       ],
     },
