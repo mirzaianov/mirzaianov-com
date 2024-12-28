@@ -5,6 +5,34 @@ export const COURSES_DATA = {
   pageTitle: 'Explore my study path',
   list: [
     {
+      title: 'JavaScript Unit Testing - The Practical Guide',
+      date: '2024',
+      source: 'Udemy',
+      author: 'Maximilian Schwarzmüller',
+      active: true,
+      description:
+        'Learn how to write automated tests (unit & integration tests) for your JavaScript projects with Vitest & Jest',
+      image: '/vitest.svg',
+      inResume: false,
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="size-3" />,
+          href: 'https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="size-3" />,
+          href: 'https://github.com/mirzaianov/udemy-javascript-unit-testing',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="size-3" />,
+          href: 'https://utfs.io/f/etzPSWYSlL8TTAFtDc6sBMYwVDX9iZcvoJ6b5j4Tt0F7ImP2',
+        },
+      ],
+    },
+    {
       title: 'React & TypeScript - The Practical Guide',
       date: '2024',
       source: 'Udemy',
