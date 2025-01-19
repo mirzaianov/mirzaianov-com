@@ -356,6 +356,34 @@ export const COURSES_DATA = {
       ],
     },
     {
+      title: 'Layout design and theme creation using CMS WordPress',
+      date: '2023',
+      source: 'Udemy',
+      author: 'Ivan Petrychenko',
+      active: true,
+      description:
+        'Learn how to install your own layout or create themes on WordPress and earn money by creating a full-fledged product',
+      image: '/wordpress.svg',
+      inResume: false,
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="size-3" />,
+          href: 'https://www.udemy.com/course/cms-wordpress/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="size-3" />,
+          href: 'https://github.com/mirzaianov/udemy-cms-wordpress',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="size-3" />,
+          href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8T8pzbffNW30qaXZnGQx2jESzm1AT4yPIYeo5R',
+        },
+      ],
+    },
+    {
       title: 'Conquering Responsive Layouts',
       date: '2023',
       source: 'KP',
