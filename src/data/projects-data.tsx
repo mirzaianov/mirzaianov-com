@@ -59,6 +59,29 @@ export const PROJECTS_DATA = {
         'https://utfs.io/f/etzPSWYSlL8TFLxY6aWDjy0PI6MY4JSleW8tackgEvrUbRQN',
     },
     {
+      title: 'Real Estate Website',
+      href: 'https://real-estate-mirzaianov.vercel.app/',
+      dates: 'Dec 2024 - Jan 2025',
+      active: true,
+      description: 'A landing page for a real estate production company.',
+      technologies: ['WordPress', 'JavaScript', 'HTML', 'CSS'],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://real-estate-mirzaianov.vercel.app/',
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: 'Source',
+          href: 'https://github.com/mirzaianov/test-real-estate',
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: '',
+      video:
+        'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TnIeQU15Nf39SFYtIUuloWqw1GXcsVjLx5DTP',
+    },
+    {
       title: 'Shopping List',
       href: 'https://shopping-mirzaianov.vercel.app/',
       dates: 'Nov 2023 - Jan 2024',
