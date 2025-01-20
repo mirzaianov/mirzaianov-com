@@ -118,7 +118,7 @@ export function ProjectCard({
               >
                 <Badge
                   key={idx}
-                  className="flex gap-2 px-2 py-1 text-xs"
+                  className="flex cursor-pointer gap-2 px-2 py-1 text-xs"
                 >
                   {link.icon}
                   {link.type}
