@@ -5,6 +5,33 @@ export const COURSES_DATA = {
   pageTitle: 'Explore my study path',
   list: [
     {
+      title: 'Codex - The Practical Guide',
+      date: '2026',
+      source: 'Udemy',
+      author: 'Maximilian Schwarzmüller',
+      active: true,
+      description: `Boost your agentic engineering game by mastering OpenAI's Codex agent. From basics to advanced features`,
+      image: '/codex.svg',
+      inResume: false,
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="size-3" />,
+          href: 'https://www.udemy.com/course/codex-the-practical-guide/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="size-3" />,
+          href: 'https://github.com/mirzaianov/udemy-codex-the-practical-giude',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="size-3" />,
+          href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TBXmijU4IHQAjSbOT6nagGuZ5cRkeX3w9MIt0',
+        },
+      ],
+    },
+    {
       title: 'JavaScript Unit Testing - The Practical Guide',
       date: '2024',
       source: 'Udemy',
