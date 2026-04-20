@@ -32,6 +32,33 @@ export const COURSES_DATA = {
       ],
     },
     {
+      title: 'Docker - The Complete Course',
+      date: '2026',
+      source: 'Udemy',
+      author: 'Bogdan Stashchuk',
+      active: true,
+      description: `Learn all the essential Docker features - Images, Containers, Dockerfiles, Docker Compose - in the complete Docker hands-on course`,
+      image: '/docker.svg',
+      inResume: false,
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="size-3" />,
+          href: 'https://www.udemy.com/course/docker-ru/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="size-3" />,
+          href: 'https://github.com/mirzaianov/udemy-docker-ru',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="size-3" />,
+          href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TrTnFqz4C2yjLNMdi3ZAOaI0qGHfho8EXWgBS',
+        },
+      ],
+    },
+    {
       title: 'JavaScript Unit Testing - The Practical Guide',
       date: '2024',
       source: 'Udemy',
