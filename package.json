@@ -2,6 +2,9 @@
   "name": "mirzaianov-com",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=24.14.1 <25"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -39,7 +42,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
-    "@types/node": "^20",
+    "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
