@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion, useInView, Variants } from 'framer-motion';
+import { AnimatePresence, motion, useInView, type Variants } from 'motion/react';
 import { useRef } from 'react';
 
 type InViewOptions = Parameters<typeof useInView>[1];

@@ -1,6 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.mjs";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media (width >= 96rem) {
+    max-width: 1400px;
+  }
+}
 
 @layer base {
   :root {
@@ -81,15 +89,15 @@
     padding: 0.05rem 0.3rem;
     margin: -0.05rem -0.3rem;
     border-radius: 0.25rem;
-    box-shadow: inset 0 0 0 0 theme('colors.primary.DEFAULT');
+    box-shadow: inset 0 0 0 0 hsl(var(--primary));
     transition:
       color 0.3s ease-in-out,
       box-shadow 0.3s ease-in-out;
   }
 
   .link-hover-effect:hover {
-    color: theme('colors.primary.foreground');
-    box-shadow: inset 1000px 0 0 0 theme('colors.primary.DEFAULT');
+    color: hsl(var(--primary-foreground));
+    box-shadow: inset 1000px 0 0 0 hsl(var(--primary));
   }
 
   .navbar-shadow {

@@ -64,6 +64,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      // Required for next-themes because it mutates the html element during hydration.
       suppressHydrationWarning
     >
       <body
