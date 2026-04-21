@@ -16,11 +16,12 @@ export const dynamic = 'force-static';
 export default async function Notes({
   params,
 }: {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }) {
-  const note = await getPost(params.slug);
+  const { slug } = await params;
+  const note = await getPost(slug);
 
   if (!note) {
     notFound();

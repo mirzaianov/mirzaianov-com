@@ -2,11 +2,12 @@ import { formatUrl } from '@/lib/utils';
 import { type IconProps } from '@/components/icons';
 import BlurFade from '@/components/magicui/blur-fade';
 import Link from 'next/link';
+import type { ComponentType } from 'react';
 
 type Contact = {
   name: string;
   url: string;
-  icon: (props: IconProps) => JSX.Element;
+  icon: ComponentType<IconProps>;
   navbar?: boolean;
   mobile?: boolean;
   inResume: boolean;
