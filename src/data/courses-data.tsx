@@ -143,6 +143,35 @@ export const COURSES_DATA = {
       ],
     },
     {
+      title:
+        'React - The Complete Course on React, Redux, and the Redux Toolkit',
+      date: '2024',
+      source: 'Udemy',
+      author: 'Bogdan Stashchuk',
+      active: true,
+      description:
+        'Understand and learn all the key features of React: Components, JSX, Props, State, useState, useEffect, and Redux',
+      image: '/redux.svg',
+      inResume: true,
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="size-3" />,
+          href: 'https://www.udemy.com/course/react-ru/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="size-3" />,
+          href: 'https://github.com/mirzaianov/udemy-react-ru',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="size-3" />,
+          href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TRRv07P1N3GAbp8scDjdOXFaxwChBTRJuUqym',
+        },
+      ],
+    },
+    {
       title: 'Introduction to Next.js, v3',
       date: '2024',
       source: 'Frontend Masters',
@@ -248,29 +277,6 @@ export const COURSES_DATA = {
           title: 'Website',
           icon: <Icons.globe className="size-3" />,
           href: 'https://www.udemy.com/course/git-github-practical-guide/',
-        },
-      ],
-    },
-    {
-      title: 'React - React & Redux Complete Course',
-      date: '2024',
-      source: 'Udemy',
-      author: 'Bogdan Stashchuk',
-      active: true,
-      description:
-        'Understand and learn all the key features of React: Components, JSX, Props, State, useState, useEffect, and Redux',
-      image: '/redux.svg',
-      inResume: true,
-      links: [
-        {
-          title: 'Website',
-          icon: <Icons.globe className="size-3" />,
-          href: 'https://www.udemy.com/course/react-ru/',
-        },
-        {
-          title: 'Source',
-          icon: <Icons.github className="size-3" />,
-          href: 'https://github.com/mirzaianov/udemy-react-ru',
         },
       ],
     },
