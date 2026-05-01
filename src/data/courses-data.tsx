@@ -59,6 +59,33 @@ export const COURSES_DATA = {
       ],
     },
     {
+      title: 'Redux for managing state in React applications',
+      date: '2026',
+      source: 'Udemy',
+      author: 'Mikhail Nepomniashchii',
+      active: true,
+      description: `Master the principles of Redux - both classic and modern use cases`,
+      image: '/redux.svg',
+      inResume: false,
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="size-3" />,
+          href: 'https://www.udemy.com/course/redux-react/',
+        },
+        {
+          title: 'Source',
+          icon: <Icons.github className="size-3" />,
+          href: 'https://github.com/mirzaianov/udemy-redux-react',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="size-3" />,
+          href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TYQu4OuzEQcLKwZIDOXsrzyRW0v5P6SqN31da',
+        },
+      ],
+    },
+    {
       title: 'JavaScript Unit Testing - The Practical Guide',
       date: '2024',
       source: 'Udemy',
