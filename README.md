@@ -23,21 +23,21 @@
 
 ## Installation & Execution
 
-### Install via Next:
+### Install via Next
 
-```
+```bash
   git clone https://github.com/mirzaianov/mirzaianov-com
   cd mirzaianov-com
   pnpm install
 ```
 
-### Run in the development mode:
+### Run in the development mode
 
-```
+```bash
   pnpm dev
 ```
 
-Next will start the server on http://localhost:3000/
+Next will start the server on [http://localhost:3000/](http://localhost:3000/)
 
 ## License
 

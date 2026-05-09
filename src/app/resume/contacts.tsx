@@ -36,13 +36,13 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
         </header>
         <ul className="flex flex-col gap-1">
           {Object.entries(contacts)
-            .filter(([_, contact]) => contact.inResume)
-            .map(([_, contact]) => (
+            .filter(([, contact]) => contact.inResume)
+            .map(([, contact]) => (
               <li
                 key={contact.name}
                 className="flex items-center gap-2"
               >
-                <div className="flex min-w-[59px] items-center gap-1">
+                <div className="flex min-w-14.75 items-center gap-1">
                   <p>{contact.name}</p>
                 </div>
                 <Link
@@ -56,7 +56,7 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
               </li>
             ))}
           <div className="flex items-center gap-2">
-            <div className="flex min-w-[59px] items-center gap-1">
+            <div className="flex min-w-14.75 items-center gap-1">
               <p>Location</p>
             </div>
             <Link

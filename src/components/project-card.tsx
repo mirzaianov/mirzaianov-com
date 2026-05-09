@@ -84,7 +84,9 @@ export function ProjectCard({
             {link?.replace('https://', '').replace('www.', '').replace('/', '')}
           </div>
           <div className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-            <Markdown rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}>
+            <Markdown
+              rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+            >
               {description}
             </Markdown>
           </div>
