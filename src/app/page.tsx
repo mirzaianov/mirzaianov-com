@@ -16,7 +16,6 @@ import { MAIN_DATA } from '@/data/main-data';
 import { PROJECTS_DATA } from '@/data/projects-data';
 import { COURSES_DATA } from '@/data/courses-data';
 import { getNotesPosts, NOTES_DATA } from '@/data/notes-data';
-import { link } from 'fs';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -60,7 +59,9 @@ export default async function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <div className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
-            <Markdown rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}>
+            <Markdown
+              rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+            >
               {MAIN_DATA.summary}
             </Markdown>
           </div>
