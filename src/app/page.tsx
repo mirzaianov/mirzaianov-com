@@ -16,7 +16,6 @@ import { MAIN_DATA } from '@/data/main-data';
 import { PROJECTS_DATA } from '@/data/projects-data';
 import { COURSES_DATA } from '@/data/courses-data';
 import { getNotesPosts, NOTES_DATA } from '@/data/notes-data';
-import { link } from 'fs';
 
 const BLUR_FADE_DELAY = 0.04;
 
