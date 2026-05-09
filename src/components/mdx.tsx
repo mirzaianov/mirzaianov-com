@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { type ImageProps } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -25,8 +25,12 @@ function Table({ data }: { data: { headers: string[]; rows: string[][] } }) {
   );
 }
 
-function CustomLink(props: any) {
-  let href = props.href;
+type CustomLinkProps = React.ComponentPropsWithoutRef<'a'>;
+
+function CustomLink({ href, children, ...props }: CustomLinkProps) {
+  if (!href) {
+    return <a {...props}>{children}</a>;
+  }
 
   if (href.startsWith('/')) {
     return (
@@ -34,28 +38,38 @@ function CustomLink(props: any) {
         href={href}
         {...props}
       >
-        {props.children}
+        {children}
       </Link>
     );
   }
 
   if (href.startsWith('#')) {
-    return <a {...props} />;
+    return (
+      <a
+        href={href}
+        {...props}
+      >
+        {children}
+      </a>
+    );
   }
 
   return (
     <a
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       {...props}
-    />
+    >
+      {children}
+    </a>
   );
 }
 
-function RoundedImage(props: any) {
+function RoundedImage({ alt, ...props }: ImageProps) {
   return (
     <Image
-      alt={props.alt}
+      alt={alt}
       className="rounded-lg"
       {...props}
     />
