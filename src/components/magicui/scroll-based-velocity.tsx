@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   motion,
   useAnimationFrame,
@@ -111,7 +111,6 @@ export function VelocityScroll({
   default_velocity = 1,
   className,
 }: VelocityScrollProps) {
-
   return (
     <section className="relative w-full">
       {/* <ParallaxText baseVelocity={default_velocity} className={className}>

@@ -59,7 +59,9 @@ export default async function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <div className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
-            <Markdown rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}>
+            <Markdown
+              rehypePlugins={[[rehypeExternalLinks, { target: '_blank' }]]}
+            >
               {MAIN_DATA.summary}
             </Markdown>
           </div>
