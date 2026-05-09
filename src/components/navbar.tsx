@@ -43,8 +43,8 @@ export default function Navbar() {
           className="h-full"
         />
         {Object.entries(MAIN_DATA.contact.social)
-          .filter(([_, social]) => social.navbar)
-          .filter(([_, social]) => social.mobile)
+          .filter(([, social]) => social.navbar)
+          .filter(([, social]) => social.mobile)
           .map(([name, social]) => (
             <DockIcon key={name}>
               <Tooltip>
@@ -110,7 +110,7 @@ export default function Navbar() {
           className="h-full"
         />
         {Object.entries(MAIN_DATA.contact.social)
-          .filter(([_, social]) => social.navbar)
+          .filter(([, social]) => social.navbar)
           .map(([name, social]) => (
             <DockIcon key={name}>
               <Tooltip>

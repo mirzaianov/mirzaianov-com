@@ -36,8 +36,8 @@ export default function Contacts({ contacts, location, locationLink }: Props) {
         </header>
         <ul className="flex flex-col gap-1">
           {Object.entries(contacts)
-            .filter(([_, contact]) => contact.inResume)
-            .map(([_, contact]) => (
+            .filter(([, contact]) => contact.inResume)
+            .map(([, contact]) => (
               <li
                 key={contact.name}
                 className="flex items-center gap-2"
