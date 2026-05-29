@@ -48,13 +48,15 @@ export default defineConfig([
       },
     },
     rules: {
-      'import/extensions': 0,
-      'import/namespace': 0,
-      'import/no-unresolved': 0,
-      'linebreak-style': ['error', 'unix'],
-      'no-bitwise': 0,
-      'no-restricted-syntax': 0,
-      'no-unused-expressions': ['error', { allowTernary: true }],
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+        {
+          blankLine: 'any',
+          prev: ['const', 'let', 'var'],
+          next: ['const', 'let', 'var'],
+        },
+      ],
       'prettier/prettier': ['error', { endOfLine: 'lf' }],
     },
   },
