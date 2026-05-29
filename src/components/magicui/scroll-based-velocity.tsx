@@ -27,6 +27,7 @@ interface ParallaxProps {
 
 export const wrap = (min: number, max: number, v: number) => {
   const rangeSize = max - min;
+
   return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
 };
 
@@ -57,6 +58,7 @@ function ParallaxText({
         const containerWidth = containerRef.current.offsetWidth;
         const textWidth = textRef.current.offsetWidth;
         const newRepetitions = Math.ceil(containerWidth / textWidth) + 2;
+
         setRepetitions(newRepetitions);
       }
     };
@@ -70,6 +72,7 @@ function ParallaxText({
   const x = useTransform(baseX, (v) => `${wrap(-100 / repetitions, 0, v)}%`);
 
   const directionFactor = useRef(1);
+
   useAnimationFrame((_, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 

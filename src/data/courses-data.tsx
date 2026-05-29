@@ -4,6 +4,7 @@ export const COURSES_DATA = {
   pageBadge: 'Courses',
   pageTitle: 'Explore my study path',
   list: [
+    // NOTE: 2026
     {
       title: 'Codex - The Practical Guide',
       date: '2026',
@@ -28,6 +29,29 @@ export const COURSES_DATA = {
           title: 'Certificate',
           icon: <Icons.download className="size-3" />,
           href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TBXmijU4IHQAjSbOT6nagGuZ5cRkeX3w9MIt0',
+        },
+      ],
+    },
+    {
+      title: 'Claude Code',
+      date: '2026',
+      source: 'Frontend Masters',
+      author: 'Lydia Hallie',
+      active: true,
+      description:
+        "Customize Claude Code for your codebase, using CLAUDE.md, plan mode, and permissions that adhere to your team's standards. Build reusable skills tailored to your processes and wire up hooks so Claude behaves consistently across the whole team. Go under the hood with Claude Code to generate and ship higher-quality code.",
+      image: '/claude.svg',
+      inResume: true,
+      links: [
+        {
+          title: 'Website',
+          icon: <Icons.globe className="size-3" />,
+          href: 'https://frontendmasters.com/courses/claude-code/',
+        },
+        {
+          title: 'Certificate',
+          icon: <Icons.download className="size-3" />,
+          href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TB42ggFIHQAjSbOT6nagGuZ5cRkeX3w9MIt0r',
         },
       ],
     },
@@ -85,6 +109,7 @@ export const COURSES_DATA = {
         },
       ],
     },
+    // NOTE: 2024
     {
       title: 'JavaScript Unit Testing - The Practical Guide',
       date: '2024',
@@ -369,7 +394,7 @@ export const COURSES_DATA = {
         },
       ],
     },
-    // # 2023
+    // NOTE: 2023
     {
       title: 'TypeScript 5+ Fundamentals, v4',
       date: '2023',
@@ -395,7 +420,7 @@ export const COURSES_DATA = {
       author: 'Kent C. Dodds',
       active: true,
       description:
-        'This course is for React newbies and anyone looking to build a solid foundation. It’s designed to teach you everything you need to start building web applications in React right away',
+        "This course is for React newbies and anyone looking to build a solid foundation. It's designed to teach you everything you need to start building web applications in React right away",
       image: '/react.svg',
       inResume: false,
       links: [
@@ -561,7 +586,7 @@ export const COURSES_DATA = {
       author: 'David Khourshid',
       active: true,
       description:
-        'Learn CSS animation basics and transition to advanced concepts like orchestration and choreography. Techniques you’ll learn: CSS transitions, animations, custom properties, data attributes, choreography, animation states, layout animations, and reactive animations with a little bit of JavaScript',
+        "Learn CSS animation basics and transition to advanced concepts like orchestration and choreography. Techniques you'll learn: CSS transitions, animations, custom properties, data attributes, choreography, animation states, layout animations, and reactive animations with a little bit of JavaScript",
       image: '/css.svg',
       inResume: false,
       links: [
@@ -608,7 +633,7 @@ export const COURSES_DATA = {
         },
       ],
     },
-    // # 2022
+    // NOTE: 2022
     {
       title: 'JavaScript + React Complete Course',
       date: '2022',
