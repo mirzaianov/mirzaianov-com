@@ -83,11 +83,13 @@ const SparklesText: React.FC<SparklesTextProps> = ({
       const scale = Math.random() * 1 + 0.3;
       const lifespan = Math.random() * 10 + 5;
       const id = `${starX}-${starY}-${Date.now()}`;
+
       return { id, x: starX, y: starY, color, delay, scale, lifespan };
     };
 
     const initializeStars = () => {
       const newSparkles = Array.from({ length: sparklesCount }, generateStar);
+
       setSparkles(newSparkles);
     };
 

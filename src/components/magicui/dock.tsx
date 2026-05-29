@@ -90,6 +90,7 @@ const DockIcon = ({
 
   const distanceCalc = useTransform(mousex ?? localMousex, (val: number) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+
     return val - bounds.x - bounds.width / 2;
   });
 

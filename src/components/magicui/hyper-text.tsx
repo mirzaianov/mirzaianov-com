@@ -65,6 +65,7 @@ export default function HyperText({
       },
       duration / (text.length * 10),
     );
+
     // Clean up interval on unmount
     return () => clearInterval(interval);
   }, [text, duration, trigger, animateOnLoad]);

@@ -105,6 +105,7 @@ function createHeading(level: number) {
       children,
     );
   };
+
   Heading.displayName = `Heading${level}`;
   return Heading;
 }
