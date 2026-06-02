@@ -12,8 +12,8 @@ export const MAIN_DATA = {
   initials: 'RM',
   role: 'Frontend Developer',
   url: 'https://mirzaianov.com',
-  currentCity: 'Novi Sad',
-  currentCountry: 'Serbia',
+  currentCity: 'Bursa',
+  currentCountry: 'Türkiye',
   description:
     'Frontend Developer. I love delivering interfaces that harmonize functionality and appearance.',
   about: [
@@ -285,7 +285,7 @@ export const MAIN_DATA = {
       },
       {
         type: 'Download',
-        href: 'https://utfs.io/f/etzPSWYSlL8TuwJ8nQGfZIsCE5nQ0Sy7Oap9YHR3wGoJrP2U',
+        href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TCYfRi6pGydc2xFL8nmWrtPqQ0Mbwua5ESNRj',
         icon: <Icons.download className="size-3" />,
       },
     ],

@@ -13,7 +13,7 @@ export const COURSES_DATA = {
       active: true,
       description: `Boost your agentic engineering game by mastering OpenAI's Codex agent. From basics to advanced features`,
       image: '/codex.svg',
-      inResume: false,
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -63,7 +63,7 @@ export const COURSES_DATA = {
       active: true,
       description: `Learn all the essential Docker features - Images, Containers, Dockerfiles, Docker Compose - in the complete Docker hands-on course`,
       image: '/docker.svg',
-      inResume: false,
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -90,7 +90,7 @@ export const COURSES_DATA = {
       active: true,
       description: `Master the principles of Redux - both classic and modern use cases`,
       image: '/redux.svg',
-      inResume: false,
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -119,7 +119,7 @@ export const COURSES_DATA = {
       description:
         'Learn how to write automated tests (unit & integration tests) for your JavaScript projects with Vitest & Jest',
       image: '/vitest.svg',
-      inResume: false,
+      inResume: true,
       links: [
         {
           title: 'Website',
@@ -147,7 +147,7 @@ export const COURSES_DATA = {
       description:
         'Build type-safe React apps & use TypeScript to enhance your components, state management, Redux & side effects code',
       image: '/react.svg',
-      inResume: true,
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -175,7 +175,7 @@ export const COURSES_DATA = {
       description:
         'Learn to use typing for the sake of results, and not just for the sake of it',
       image: '/ts.svg',
-      inResume: true,
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -204,7 +204,7 @@ export const COURSES_DATA = {
       description:
         'Understand and learn all the key features of React: Components, JSX, Props, State, useState, useEffect, and Redux',
       image: '/redux.svg',
-      inResume: true,
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -232,7 +232,7 @@ export const COURSES_DATA = {
       description:
         "In this course, you'll learn server-side rendering, static site generation, data fetching, building API endpoints, creating pages, and new features in Next.js, like using the app router, server and client components, and server actions!",
       image: '/next.svg',
-      inResume: true,
+      inResume: false,
       links: [
         {
           title: 'Website',
@@ -643,7 +643,7 @@ export const COURSES_DATA = {
       description:
         'Master the most popular programming language - JavaScript, the React library and learn how to apply it in practice!',
       image: '/js.svg',
-      inResume: true,
+      inResume: false,
       links: [
         {
           title: 'Website',
