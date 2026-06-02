@@ -119,7 +119,7 @@ export const COURSES_DATA = {
       description:
         'Learn how to write automated tests (unit & integration tests) for your JavaScript projects with Vitest & Jest',
       image: '/vitest.svg',
-      inResume: false,
+      inResume: true,
       links: [
         {
           title: 'Website',
