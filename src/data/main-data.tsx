@@ -285,7 +285,7 @@ export const MAIN_DATA = {
       },
       {
         type: 'Download',
-        href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TnlqmWL5Nf39SFYtIUuloWqw1GXcsVjLx5DTP',
+        href: 'https://z20ylsbvxn.ufs.sh/f/etzPSWYSlL8TCYfRi6pGydc2xFL8nmWrtPqQ0Mbwua5ESNRj',
         icon: <Icons.download className="size-3" />,
       },
     ],
