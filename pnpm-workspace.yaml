@@ -1,8 +1,15 @@
 minimumReleaseAge: 10080
 
 overrides:
-  postcss: 8.5.26
+  postcss: 8.5.28
+
+# These plugins run through @eslint/compat in eslint.config.js.
+peerDependencyRules:
+  allowedVersions:
+    'eslint-plugin-react@7.37.5>eslint': '^10.0.0'
+    'eslint-plugin-jsx-a11y@6.10.2>eslint': '^10.0.0'
+    'eslint-plugin-import@2.32.0>eslint': '^10.0.0'
 
 allowBuilds:
-  sharp@0.34.5: true
+  sharp@0.35.4: true
   unrs-resolver@1.12.2: true

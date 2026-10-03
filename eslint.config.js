@@ -1,4 +1,5 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
+import { fixupConfigRules } from '@eslint/compat';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
 import nextVitals from 'eslint-config-next/core-web-vitals';
@@ -17,7 +18,7 @@ export default defineConfig([
     '.pnpm-store/**',
     'next-env.d.ts',
   ]),
-  ...nextVitals,
+  ...fixupConfigRules(nextVitals),
   ...nextTypescript,
   eslintPluginPrettierRecommended,
   {
@@ -28,6 +29,7 @@ export default defineConfig([
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
+      parser: tseslint.parser,
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
