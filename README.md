@@ -31,6 +31,16 @@
   pnpm install
 ```
 
+### TypeScript and ESLint
+
+`pnpm typecheck` uses TypeScript 7 through the `@typescript/native` alias.
+The `typescript` alias supplies Microsoft's TypeScript 6 compatibility API for
+Next.js and typescript-eslint. `pnpm build` runs the TypeScript 7 check before
+Next.js builds and performs its own compatibility-API type check.
+
+ESLint 10 retains Next.js's rules through `@eslint/compat`; the matching peer
+exceptions are scoped to the three legacy plugins in `pnpm-workspace.yaml`.
+
 ### Run in the development mode
 
 ```bash
